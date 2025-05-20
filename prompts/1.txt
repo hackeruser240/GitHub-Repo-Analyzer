@@ -1,0 +1,11 @@
+I want to start the project 'GitHub Repository Analyzer + Contributor Insights Engine'. 
+
+1. First of all, i want to add this project to my portfolio. So, for a personal project give me some objectives that i can achieve with this project. 
+
+2. in a simple paragraph, explain in basic terms what I will be doing in this project.
+
+3. By keeping a certain goal in mind, layout a plan  with respect to this project.
+
+4. Now, give me a starting on how to actually start the project. Give a repo that is active in the dev community. Take that as a starting point and lay things out. For example, should I be accessing some API, start playing with it, or do some other thing? Another example, how can i use my account to access the metadata of the Repo you selected?
+
+and dont be a smarty pant and explain things clearly and simply
