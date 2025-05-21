@@ -1,0 +1,21 @@
+my project folder:
+
+main.py
+scripts (directory): variables.py, commits.py (and other files)
+
+in commits,py there is a line:
+
+from scripts.variables import var
+
+in main.py there is a line:
+
+from scripts.variables import var
+from scripts.commits import extracting_authors
+
+when I run from main.py, there is no error. but when i run commits.py i get the error: 
+
+ModuleNotFoundError: No module named 'scripts.variables'
+
+how can i control the importing such that it can run when the module is standalone as well as run as a module.
+
+now don't tell me to just put 'from variables import var' instead of 'from scripts.variables import var'

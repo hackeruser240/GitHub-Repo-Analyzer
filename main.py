@@ -91,8 +91,7 @@ def commits(repo,viz=False):
             print('❌ Failed to save commits.json')
 
         try:
-            extracting_authors(filepath)
-            print(f"Authors: {var.authors}")
+            extracting_authors(filepath,viz=True)
         except:
             print(" Couldn't process extracting_authors() ")
     else:

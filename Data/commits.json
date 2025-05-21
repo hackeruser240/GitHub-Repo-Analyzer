@@ -1,5 +1,87 @@
 [
     {
+        "sha": "459a2c4298187cb0ee45605e2575ff35f4a81183",
+        "node_id": "C_kwDOAJy2KtoAKDQ1OWEyYzQyOTgxODdjYjBlZTQ1NjA1ZTI1NzVmZjM1ZjRhODExODM",
+        "commit": {
+            "author": {
+                "name": "mofeiZ",
+                "email": "34200447+mofeiZ@users.noreply.github.com",
+                "date": "2025-05-21T21:23:29Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-21T21:23:29Z"
+            },
+            "message": "[compiler][gating] Experimental directive based gating (#33149)\n\nAdds `dynamicGating` as an experimental option for testing rollout DX at\nMeta. If specified, this enables dynamic gating which matches `use memo\nif(...)` directives.\n\n#### Example usage\nInput file\n```js\n// @dynamicGating:{\"source\":\"myModule\"}\nexport function MyComponent() {\n  'use memo if(isEnabled)';\n   return <div>...</div>;\n}\n```\nCompiler output\n```js\nimport {isEnabled} from 'myModule';\nexport const MyComponent = isEnabled()\n  ? <optimized version>\n  : <original version>;\n```\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/33149).\n* __->__ #33149\n* #33148",
+            "tree": {
+                "sha": "d0178cb98efef519253d07c9fefa593b2e9718e8",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/d0178cb98efef519253d07c9fefa593b2e9718e8"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/459a2c4298187cb0ee45605e2575ff35f4a81183",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoLkRRCRC1aQ7uu5UhlAAAO3gQAJVdLmGokr7r9X+SmIC2rZtX\no/eztBVbEiI3Qs9NZsJi83bzwK63AAwPaEGgYEs3EUrZxsRlhmoRd12qiRAzzYsB\nKQRp4c7PSHYy4gno9y1NMjMsOiARpflFvOLAUN3z5S1+tEblAOYYY5f48kc/R3K8\ngtgo4HEtgCzG0R5ogOx9jGUzmr8kywtaFuyD1Vvab+SpyH+Nmm+ao+0ee6TIihiJ\nMkoZ43frLVVG3ng8eiuFPLVVqgNwKqNTFF3V692RqyMSArIcWFoiDjcfmXeInttc\nFFfSuzfukF4XLWtvhACOIM7bozEvgCqKsBodqpxHpT6mQRgSiloGzJ1v4PW4tDMX\n48FqGh58+3wYeElRcp0QmmgBXIEB8928DV/CT3yQPRyVLM2A9WCG/u1i/aHxFPxx\nP1sBHO/yWJSRlIfwOzcY5cHvy1ndbq88IT5IqsBN39b3EZ3JDE38yjFI4o/xpDcw\nNv59RzezX9KzOncxBdZJi21llvo+NvNHyTdgQiPZHbxhXuDB2lo/MwPsWS9kdQPI\nQ+0UVEuopRk7C2gZCBjT8hh5xJ5YpLSv7Wml5GXfVqiYrg3TfkHiLv8Qmpy50QDk\nGz17NXBecboAnDjKJcIjD4ogHr8auZu64rJbPEJwFRIFXi0S1rHQukLgj2F1YqZl\nQ6C+bALtiC9sPvV58pUP\n=3cCy\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree d0178cb98efef519253d07c9fefa593b2e9718e8\nparent 1c43d0aed74de4aae210ba7081b60f944df31954\nauthor mofeiZ <34200447+mofeiZ@users.noreply.github.com> 1747862609 -0400\ncommitter GitHub <noreply@github.com> 1747862609 -0400\n\n[compiler][gating] Experimental directive based gating (#33149)\n\nAdds `dynamicGating` as an experimental option for testing rollout DX at\nMeta. If specified, this enables dynamic gating which matches `use memo\nif(...)` directives.\n\n#### Example usage\nInput file\n```js\n// @dynamicGating:{\"source\":\"myModule\"}\nexport function MyComponent() {\n  'use memo if(isEnabled)';\n   return <div>...</div>;\n}\n```\nCompiler output\n```js\nimport {isEnabled} from 'myModule';\nexport const MyComponent = isEnabled()\n  ? <optimized version>\n  : <original version>;\n```\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/33149).\n* __->__ #33149\n* #33148",
+                "verified_at": "2025-05-21T21:23:31Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/459a2c4298187cb0ee45605e2575ff35f4a81183",
+        "html_url": "https://github.com/facebook/react/commit/459a2c4298187cb0ee45605e2575ff35f4a81183",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/459a2c4298187cb0ee45605e2575ff35f4a81183/comments",
+        "author": {
+            "login": "mofeiZ",
+            "id": 34200447,
+            "node_id": "MDQ6VXNlcjM0MjAwNDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/34200447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mofeiZ",
+            "html_url": "https://github.com/mofeiZ",
+            "followers_url": "https://api.github.com/users/mofeiZ/followers",
+            "following_url": "https://api.github.com/users/mofeiZ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mofeiZ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mofeiZ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mofeiZ/subscriptions",
+            "organizations_url": "https://api.github.com/users/mofeiZ/orgs",
+            "repos_url": "https://api.github.com/users/mofeiZ/repos",
+            "events_url": "https://api.github.com/users/mofeiZ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mofeiZ/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "1c43d0aed74de4aae210ba7081b60f944df31954",
+                "url": "https://api.github.com/repos/facebook/react/commits/1c43d0aed74de4aae210ba7081b60f944df31954",
+                "html_url": "https://github.com/facebook/react/commit/1c43d0aed74de4aae210ba7081b60f944df31954"
+            }
+        ]
+    },
+    {
         "sha": "1c43d0aed74de4aae210ba7081b60f944df31954",
         "node_id": "C_kwDOAJy2KtoAKDFjNDNkMGFlZDc0ZGU0YWFlMjEwYmE3MDgxYjYwZjk0NGRmMzE5NTQ",
         "commit": {
@@ -2374,88 +2456,6 @@
                 "sha": "62d3f36ea79fc0a10b514d4bbcc4ba3f21b3206e",
                 "url": "https://api.github.com/repos/facebook/react/commits/62d3f36ea79fc0a10b514d4bbcc4ba3f21b3206e",
                 "html_url": "https://github.com/facebook/react/commit/62d3f36ea79fc0a10b514d4bbcc4ba3f21b3206e"
-            }
-        ]
-    },
-    {
-        "sha": "62d3f36ea79fc0a10b514d4bbcc4ba3f21b3206e",
-        "node_id": "C_kwDOAJy2KtoAKDYyZDNmMzZlYTc5ZmMwYTEwYjUxNGQ0YmJjYzRiYTNmMjFiMzIwNmU",
-        "commit": {
-            "author": {
-                "name": "Sebastian Markb\u00e5ge",
-                "email": "sebastian@calyptus.eu",
-                "date": "2025-05-13T19:45:11Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-13T19:45:11Z"
-            },
-            "message": "[Fiber] Trigger default transition indicator if needed (#33160)\n\nStacked on #33159.\n\nThis implements `onDefaultTransitionIndicator`.\n\nThe sequence is:\n\n1) In `markRootUpdated` we schedule Transition updates as needing\n`indicatorLanes` on the root. This tracks the lanes that currently need\nan indicator to either start or remain going until this lane commits.\n2) Track mutations during any commit. We use the same hook that view\ntransitions use here but instead of tracking it just per view transition\nscope, we also track a global boolean for the whole root.\n3) If a sync/default commit had any mutations, then we clear the\nindicator lane for the `currentEventTransitionLane`. This requires that\nthe lane is still active while we do these commits. See #33159. In other\nwords, a sync update gets associated with the current transition and it\nis assumed to be rendering the loading state for that corresponding\ntransition so we don't need a default indicator for this lane.\n4) At the end of `processRootScheduleInMicrotask`, right before we're\nabout to enter a new \"event transition lane\" scope, it is no longer\npossible to render any more loading states for the current transition\nlane. That's when we invoke `onDefaultTransitionIndicator` for any roots\nthat have new indicator lanes.\n5) When we commit, we remove the finished lanes from `indicatorLanes`\nand once that reaches zero again, then we can clean up the default\nindicator. This approach means that you can start multiple different\ntransitions while an indicator is still going but it won't stop/restart\neach time. Instead, it'll wait until all are done before stopping.\n\nFollow ups:\n\n- [x] Default updates are currently not enough to cancel because those\naren't flush in the same microtask. That's unfortunate. #33186\n- [x] Handle async actions before the setState. Since these don't\nnecessarily have a root this is tricky. #33190\n- [x] Disable for `useDeferredValue`. ~Since it also goes through\n`markRootUpdated` and schedules a Transition lane it'll get a default\nindicator even though it probably shouldn't have one.~ EDIT: Turns out\nthis just works because it doesn't go through `markRootUpdated` when\nwork is left behind.\n- [x] Implement built-in DOM version by default. #33162",
-            "tree": {
-                "sha": "6f22350b025f854dc6322ec848643cb004dabffc",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/6f22350b025f854dc6322ec848643cb004dabffc"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/62d3f36ea79fc0a10b514d4bbcc4ba3f21b3206e",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoI6FHCRC1aQ7uu5UhlAAAll4QAFNnwilsmRx4KwLSiVfU3Sy8\niheDN1Nvow34wl86A16WBaecFZ+9f68K5oPZbpJ8ItncwlBawbfk4+qaQiPuhLyU\nZHdLe0q2gUKBgzv7Uitww5zruZ3ux6kdoAVfywIYpSMEg40t0rDugsllimHMKY/L\nGN6au++P7XCuUnwHhZHaHyOzvhB/fy1y/igm1Jw7lo7h46UViVu8nak0ZNgZkwQF\nl6/52s7qO1KW+do50VH1+n/3If8hx6o8Odmsb/rP8u8MFXmVzcu4rx1d6/qiVqcJ\nN6ZYClD+PuaYmwhNhGlnGxc9JpKybnNsqWoNrJ7JNz7ilA7cnh1wJCxlbTY/YjOG\nL804sRhAkZYc+9M+cpgXW+rrH0ydEtIwpfvaxsTe1FWW70InomUk4KmYv6r4xK32\nGgW2uc9XaoCB1LoeCjZ6IFTDsBShRdtQkh5m9Le89PFOg0HYSvw/1pIdH+AwGF5i\n13NXjk8nb+2Eys+oYfFBMFyocsUse8mAkOvzBTIrUhJ0+cmMVBwz3GiKimCglbdK\n0wzi6fVcBjMz4HJ0X71z7bEcq853yFrip85pAeg7/WvrU4EQ29VqQzugRrovsseo\nAiV1cU4sq4dC3TkGL2+hjbYV6jR73Ym5tX97QrDJgvFtxxtRdWSsc2n2rhFifh7x\nVnsWyIRS5flR5YqxswAC\n=Zhkz\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree 6f22350b025f854dc6322ec848643cb004dabffc\nparent 0cac32d60dd4482b27fe8a54dffbabceb22c6272\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747165511 -0400\ncommitter GitHub <noreply@github.com> 1747165511 -0400\n\n[Fiber] Trigger default transition indicator if needed (#33160)\n\nStacked on #33159.\n\nThis implements `onDefaultTransitionIndicator`.\n\nThe sequence is:\n\n1) In `markRootUpdated` we schedule Transition updates as needing\n`indicatorLanes` on the root. This tracks the lanes that currently need\nan indicator to either start or remain going until this lane commits.\n2) Track mutations during any commit. We use the same hook that view\ntransitions use here but instead of tracking it just per view transition\nscope, we also track a global boolean for the whole root.\n3) If a sync/default commit had any mutations, then we clear the\nindicator lane for the `currentEventTransitionLane`. This requires that\nthe lane is still active while we do these commits. See #33159. In other\nwords, a sync update gets associated with the current transition and it\nis assumed to be rendering the loading state for that corresponding\ntransition so we don't need a default indicator for this lane.\n4) At the end of `processRootScheduleInMicrotask`, right before we're\nabout to enter a new \"event transition lane\" scope, it is no longer\npossible to render any more loading states for the current transition\nlane. That's when we invoke `onDefaultTransitionIndicator` for any roots\nthat have new indicator lanes.\n5) When we commit, we remove the finished lanes from `indicatorLanes`\nand once that reaches zero again, then we can clean up the default\nindicator. This approach means that you can start multiple different\ntransitions while an indicator is still going but it won't stop/restart\neach time. Instead, it'll wait until all are done before stopping.\n\nFollow ups:\n\n- [x] Default updates are currently not enough to cancel because those\naren't flush in the same microtask. That's unfortunate. #33186\n- [x] Handle async actions before the setState. Since these don't\nnecessarily have a root this is tricky. #33190\n- [x] Disable for `useDeferredValue`. ~Since it also goes through\n`markRootUpdated` and schedules a Transition lane it'll get a default\nindicator even though it probably shouldn't have one.~ EDIT: Turns out\nthis just works because it doesn't go through `markRootUpdated` when\nwork is left behind.\n- [x] Implement built-in DOM version by default. #33162",
-                "verified_at": "2025-05-13T19:45:14Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/62d3f36ea79fc0a10b514d4bbcc4ba3f21b3206e",
-        "html_url": "https://github.com/facebook/react/commit/62d3f36ea79fc0a10b514d4bbcc4ba3f21b3206e",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/62d3f36ea79fc0a10b514d4bbcc4ba3f21b3206e/comments",
-        "author": {
-            "login": "sebmarkbage",
-            "id": 63648,
-            "node_id": "MDQ6VXNlcjYzNjQ4",
-            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/sebmarkbage",
-            "html_url": "https://github.com/sebmarkbage",
-            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
-            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
-            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
-            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
-            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
-            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "0cac32d60dd4482b27fe8a54dffbabceb22c6272",
-                "url": "https://api.github.com/repos/facebook/react/commits/0cac32d60dd4482b27fe8a54dffbabceb22c6272",
-                "html_url": "https://github.com/facebook/react/commit/0cac32d60dd4482b27fe8a54dffbabceb22c6272"
             }
         ]
     }
