@@ -118,3 +118,4 @@ def top_contributors_VIZ(data,n=var.top_contributors):
         print("✅ Top 10 contributors.png")
     except:
         print("❌Failed to save the highest contributors image")
+

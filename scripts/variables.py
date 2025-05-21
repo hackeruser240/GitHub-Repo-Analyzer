@@ -11,4 +11,11 @@ class Variables:
         self.lowest_contributions=100
         self.top_contributors=10
 
+        '''
+        authors: dict
+        defined in commits.py
+        extracts the the list of authors of the commits of the github repo and counts each of their respective commits
+        '''
+        self.authors={}
+
 var=Variables()

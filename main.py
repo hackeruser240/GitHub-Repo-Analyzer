@@ -11,12 +11,10 @@ from scripts.contributors import (
     top_contributors_VIZ,
     top_contributors
 )
+from scripts.commits import extracting_authors
 
 
 headers = {'Authorization': f'token {var.token}'}
-
-# Example repo: facebook/react
-#repo = 'facebook/react'
 
 def contributors(repo,viz=False):
 
@@ -34,8 +32,18 @@ def contributors(repo,viz=False):
     if response.status_code == 200:
         data = response.json()
 
-        with open('contributions.json','w') as file:
-            json.dump( data, file, indent=4 )
+        try:
+            path=r'Data'
+            os.makedirs(path,exist_ok=True)
+
+            filepath=os.path.join(path,'contributions.json')
+
+            with open(filepath,'w') as file:
+                json.dump(data, file, indent=4 )
+
+                print("✅ Saved contributions.json")
+        except:
+            print('❌ Failed to save contributions.json')
         
         print(f"✅ Successfully fetched { len(data) } users in the JSON file")
         
@@ -64,28 +72,38 @@ def contributors(repo,viz=False):
 
 def commits(repo,viz=False):
     
-    print(f"Finding latest commtis of {repo} repo")
+    print(f"Finding latest commits of {repo} repo")
 
     commits= f'https://api.github.com/repos/{repo}/commits'
     response = requests.get(commits, headers=headers)
     
     if response.status_code==200:
         data=response.json()
+        print(f"Total {len(data)} commits found")
+        try:
+            path=r'Data'
+            os.makedirs(path,exist_ok=True)
+            filepath=os.path.join(path,'commits.json')
+            with open(filepath,'w') as file:
+                json.dump(data, file, indent=4 )
+                print("✅ Saved commits.json")
+        except:
+            print('❌ Failed to save commits.json')
 
         try:
-            with open('commits.json','w') as file:
-                json.dump(data, file, indent=4 )
+            extracting_authors(filepath)
+            print(f"Authors: {var.authors}")
         except:
-            print('Failed to save commits.json')
+            print(" Couldn't process extracting_authors() ")
     else:
         print(f"❌ Failed to fetch data. Status Code: {response.status_code}")
         print("Reason:", response.json().get("message", "Unknown error"))
 
 if __name__=="__main__":
     parser=ag.ArgumentParser()
-    parser.add_argument('--repo',required=True,help="Repo in the form 'owner/name' or full API URL")
+    parser.add_argument('--repo', required=True, help="Repo in the form 'owner/name' or full API URL")
     args=parser.parse_args()
     
     var.repo=args.repo
-    
-    contributors(var.repo,viz=True)
+    #contributors(args.repo)
+    commits(var.repo)
