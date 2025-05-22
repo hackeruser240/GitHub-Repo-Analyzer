@@ -105,4 +105,4 @@ if __name__=="__main__":
     
     var.repo=args.repo
     #contributors(args.repo)
-    commits(var.repo)
+    commits(var.repo,viz=True)

@@ -1,10 +1,15 @@
 import json
+import matplotlib.pyplot as plt
+import numpy as np
 import sys,os
 # Add parent directory (project root) to sys.path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import matplotlib.pyplot as plt
-import numpy as np
 
+from tabulate import tabulate #used in commit_title_visualization()
+
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+from reportlab.lib.units import inch
 from scripts.variables import var
 
 def loading_json_file(filename):
@@ -64,6 +69,61 @@ def commit_author_visualization():
     except:
         print("❌Failed to save the authors by timeline image")
 
+def commit_title_visualization(commits,filename):
+    
+    clean_messages = []
+
+    for commit in commits:
+        commit_data = commit.get('commit')
+        if commit_data:
+            message = commit_data.get('message', '')
+            title = message.split('\n\n')[0].strip()
+            clean_messages.append(title)
+            
+    table = [(i + 1, msg) for i, msg in enumerate(clean_messages)]
+    try:
+        print("Title of latest commits:")
+        print(tabulate(table, headers=["#", "Commit Title"], tablefmt="fancy_grid"))
+    except:
+        print("Title of latest commits could NOT be populated")
+
+
+    try:
+        #filepath=os.path.dirname(filename)
+        #print(f"filename:{filename}")
+        save_to_PDF(clean_messages,filename)
+    except Exception as e:
+        print("Error in commits.py -> extracting_authors() -> commit_title_visualization() -> save_to_PDF()")
+        print(f"Error: {e}")
+
+def save_to_PDF(commit_titles, save_path):
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    save_path=os.path.join( os.path.dirname(save_path) ,"Commit Titles.pdf")
+    
+    c = canvas.Canvas(save_path, pagesize=letter)
+    width, height = letter
+
+    title = "Commit Titles"
+    c.setFont("Helvetica-Bold", 14)
+    c.drawString(1 * inch, height - 1 * inch, title)
+
+    c.setFont("Helvetica", 10)
+    y = height - 1.2 * inch
+
+    for i, msg in enumerate(commit_titles, start=1):
+        text = f"{i}. {msg}"
+        c.drawString(1 * inch, y, text)
+        y -= 0.25 * inch  # adjust spacing
+
+        if y < 1 * inch:
+            c.showPage()  # new page
+            y = height - 1 * inch
+            c.setFont("Helvetica", 10)
+
+    c.save()
+    
+    print(f"PDF saved at: {save_path}")
+
 def extracting_authors(filename,viz=False):
     commits=loading_json_file(filename)
     #authors={}
@@ -102,12 +162,19 @@ def extracting_authors(filename,viz=False):
                 commit_author_visualization()
         except:
             print("Some error in commits.py -> commit_author_visualization() ")
-    
+
+        
+        try:
+            if viz:
+                commit_title_visualization(commits,filename)
+        except:
+            print("Some error in commits.py -> commit_title_visualization() ")
     
     else:
         print("No commit data loaded to process.")
 
 if __name__=='__main__':
+    filepath=r'C:\Users\HP\OneDrive\Documents\GithubRepos\Data'
     filename=r'C:\Users\HP\OneDrive\Documents\GithubRepos\Data\commits.json'
 
     extracting_authors(filename)
