@@ -12,6 +12,7 @@ from scripts.contributors import (
     top_contributors
 )
 from scripts.commits import extracting_authors
+from scripts.savetoPDF import save_to_PDF
 
 
 headers = {'Authorization': f'token {var.token}'}
@@ -70,20 +71,23 @@ def contributors(repo,viz=False):
         print(f"❌ Failed to fetch data. Status Code: {response.status_code}")
         print("Reason:", response.json().get("message", "Unknown error"))
 
-def commits(repo,viz=False):
+def commits(var,viz=False):
     
-    print(f"Finding latest commits of {repo} repo")
+    print(f"Finding latest commits of {var.repo} repo")
 
-    commits= f'https://api.github.com/repos/{repo}/commits'
+    commits= f'https://api.github.com/repos/{var.repo}/commits'
     response = requests.get(commits, headers=headers)
     
     if response.status_code==200:
         data=response.json()
         print(f"Total {len(data)} commits found")
         try:
-            path=r'Data'
-            os.makedirs(path,exist_ok=True)
-            filepath=os.path.join(path,'commits.json')
+            #path=r'Data'
+            os.makedirs(var.path,exist_ok=True)
+            filepath=os.path.join(var.path,'commits.json')
+            
+            var.save_dir=filepath
+            
             with open(filepath,'w') as file:
                 json.dump(data, file, indent=4 )
                 print("✅ Saved commits.json")
@@ -91,7 +95,7 @@ def commits(repo,viz=False):
             print('❌ Failed to save commits.json')
 
         try:
-            extracting_authors(filepath,viz=True)
+            extracting_authors(filepath,commit_author_viz=True)
         except Exception as e:
             print(f"Couldn't process extracting_authors() as per error: \n {e}")
     else:
@@ -103,6 +107,7 @@ if __name__=="__main__":
     parser.add_argument('--repo', required=True, help="Repo in the form 'owner/name' or full API URL")
     args=parser.parse_args()
     var.repo=args.repo
-    
+
     #contributors(args.repo)
-    commits(var.repo,viz=True)
+    commits(var,viz=True)
+    save_to_PDF(var)

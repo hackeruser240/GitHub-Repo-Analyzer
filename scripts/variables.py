@@ -33,4 +33,10 @@ class Variables:
         '''
         self.commit_titles=[]
 
+        '''
+        
+        '''
+        self.path=r'Data'
+        self.save_dir=''
+
 var=Variables()

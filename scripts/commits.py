@@ -7,10 +7,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from tabulate import tabulate #used in commit_title_visualization()
 
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
-from reportlab.lib.units import inch
 from scripts.variables import var
+from scripts.savetoPDF import save_to_PDF
 
 def loading_json_file(filename):
 
@@ -87,39 +85,6 @@ def commit_title_visualization(commits,commit_title_viz=False):
         except:
             print("Title of latest commits could NOT be populated")
 
-def save_to_PDF(commit_titles, save_path):
-    os.makedirs(os.path.dirname(save_path), exist_ok=True)
-    save_path=os.path.join( os.path.dirname(save_path) ,"Commit Titles.pdf")
-
-    c = canvas.Canvas(save_path, pagesize=letter)
-    width, height = letter
-    maintitle=f"'{var.repo}' details"
-    c.setFont("Helvetica-Bold", 16)
-    main_title_width = c.stringWidth(maintitle, "Helvetica-Bold", 16)
-    c.drawString((width - main_title_width) / 2, height - 1 * inch, maintitle)
-
-    sub_title = "Commit Titles:"
-    c.setFont("Helvetica-Bold", 14)
-    c.stringWidth(sub_title, "Helvetica-Bold", 14)
-    #sub_title_width = c.stringWidth(sub_title, "Helvetica", 14)
-    c.drawString(1*inch, height - 1.3 * inch, sub_title)
-
-    c.setFont("Helvetica", 10)
-    y = height - 1.6 * inch
-
-    for i, msg in enumerate(commit_titles, start=1):
-        text = f"{i}. {msg}"
-        c.drawString(1 * inch, y, text)
-        y -= 0.25 * inch  # adjust spacing
-
-        if y < 1 * inch:
-            c.showPage()  # new page
-            y = height - 1 * inch
-            c.setFont("Helvetica", 10)
-
-    c.save()
-    
-    print(f"PDF saved at: {save_path}")
 
 def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
     commits=loading_json_file(filename)
@@ -164,13 +129,6 @@ def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
             commit_title_visualization(commits,commit_title_viz=False)
         except Exception as e:
             print("Some error in commits.py -> commit_title_visualization()")
-            print(f"Error: {e}")
-
-
-        try:
-            save_to_PDF(var.commit_titles,filename)
-        except Exception as e:
-            print("Error in commits.py -> extracting_authors() -> save_to_PDF()")
             print(f"Error: {e}")
     
     else:
