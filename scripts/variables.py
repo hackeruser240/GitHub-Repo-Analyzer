@@ -25,5 +25,12 @@ class Variables:
         extracts the the list of authors of the commits of the github repo and counts each of their respective commits
         '''
         self.authors={}
+        
+        '''
+        defined in commits.py
+        used in commit_title_visualization()
+        stores the clean titles of the latest commits made in the repo
+        '''
+        self.commit_titles=[]
 
 var=Variables()

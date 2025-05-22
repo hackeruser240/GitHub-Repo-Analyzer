@@ -1,5 +1,333 @@
 [
     {
+        "sha": "3e9db65fc3341148a5248b3ffc6bc68c0640fd3f",
+        "node_id": "C_kwDOAJy2KtoAKDNlOWRiNjVmYzMzNDExNDhhNTI0OGIzZmZjNmJjNjhjMDY0MGZkM2Y",
+        "commit": {
+            "author": {
+                "name": "Christoph Nakazawa",
+                "email": "christoph.pojer@gmail.com",
+                "date": "2025-05-22T20:18:23Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-22T20:18:23Z"
+            },
+            "message": "Fix typo in error message. (#33313)\n\n## Summary\n\nI am writing code that isn't so good, so I saw this error message many\ntimes. It appears to have a typo. This PR fixes the typo.\n\n## How did you test this change?\n\nRan the tests",
+            "tree": {
+                "sha": "e2b072ab52fad19a6438c04b6d3750b51a014d1c",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/e2b072ab52fad19a6438c04b6d3750b51a014d1c"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/3e9db65fc3341148a5248b3ffc6bc68c0640fd3f",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoL4aPCRC1aQ7uu5UhlAAAbKwQAGmLfYb7XakTvwi+qV1qBhcZ\nlEL2NS9wp9cnihROH8u5GZxqwzGsAIl6fFQDAbNd8yym8J8ibJ3EWsEihrvAcb5t\nZng20DmCFNSDRWBCGDS4VRczjH3DFm3180Q1eaTW2Ly5s7BBh1ktUjbwrNykNC5G\nf0kWRcS8Mpn+kFs4GsaqbOGeMHjQkYuMAYaTA3mTN2Yu11kMQ+xjC6sHns4RxCls\nW8JtezqSOYxyTSpV3VC3lBvosY2He0gueNC1EhmuuVc4oYZPlgn1tY4AkOJJ6P9L\n/JoT0oKxxfR3TTqzk8B1pUlm6WmHwPIPlyFtpN/ltm0K9fGUmb2/zM8LHLR/s2BC\ntT4AeLPBnY62qjp3ckcNFiKnD5mORNX4qpHd3f1gEuFR72MpI2k+j/KEkQ460gqp\ncVMMvtYmk7eJZfSj3AodWz1Lgt9z/+cLC5FcmvTASec6yH3R1O19Bnxn2BEwUyKy\nwHMdH1ZVyfUIWu2jOkqmdss5AiGCNrVUvS6gFeNgMFKtB1l63hlNwicmm3ahvkxP\naPM+ATnLs7IK0SpiyujOdfVqnpzQcbus4QMKMQVWQwK42jjou6ttsomaesuYcsKJ\n49h2uDVMjNWO7iYaPbprPn7GQ5EDzWL1OeJJyKZ5Eb1stTg65JzQy6jqq+insAts\npkhRQaE2Xp2NU3Wv56wk\n=oECc\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree e2b072ab52fad19a6438c04b6d3750b51a014d1c\nparent 0d072884f9201f645ae298936f2933970b73bec4\nauthor Christoph Nakazawa <christoph.pojer@gmail.com> 1747945103 +0900\ncommitter GitHub <noreply@github.com> 1747945103 -0400\n\nFix typo in error message. (#33313)\n\n## Summary\n\nI am writing code that isn't so good, so I saw this error message many\ntimes. It appears to have a typo. This PR fixes the typo.\n\n## How did you test this change?\n\nRan the tests",
+                "verified_at": "2025-05-22T20:18:26Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/3e9db65fc3341148a5248b3ffc6bc68c0640fd3f",
+        "html_url": "https://github.com/facebook/react/commit/3e9db65fc3341148a5248b3ffc6bc68c0640fd3f",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/3e9db65fc3341148a5248b3ffc6bc68c0640fd3f/comments",
+        "author": {
+            "login": "cpojer",
+            "id": 13352,
+            "node_id": "MDQ6VXNlcjEzMzUy",
+            "avatar_url": "https://avatars.githubusercontent.com/u/13352?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/cpojer",
+            "html_url": "https://github.com/cpojer",
+            "followers_url": "https://api.github.com/users/cpojer/followers",
+            "following_url": "https://api.github.com/users/cpojer/following{/other_user}",
+            "gists_url": "https://api.github.com/users/cpojer/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/cpojer/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/cpojer/subscriptions",
+            "organizations_url": "https://api.github.com/users/cpojer/orgs",
+            "repos_url": "https://api.github.com/users/cpojer/repos",
+            "events_url": "https://api.github.com/users/cpojer/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/cpojer/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "0d072884f9201f645ae298936f2933970b73bec4",
+                "url": "https://api.github.com/repos/facebook/react/commits/0d072884f9201f645ae298936f2933970b73bec4",
+                "html_url": "https://github.com/facebook/react/commit/0d072884f9201f645ae298936f2933970b73bec4"
+            }
+        ]
+    },
+    {
+        "sha": "0d072884f9201f645ae298936f2933970b73bec4",
+        "node_id": "C_kwDOAJy2KtoAKDBkMDcyODg0ZjkyMDFmNjQ1YWUyOTg5MzZmMjkzMzk3MGI3M2JlYzQ",
+        "commit": {
+            "author": {
+                "name": "mofeiZ",
+                "email": "34200447+mofeiZ@users.noreply.github.com",
+                "date": "2025-05-22T20:14:49Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-22T20:14:49Z"
+            },
+            "message": "[compiler] Inferred effect dependencies now include optional chains (#33326)\n\nInferred effect dependencies now include optional chains.\n\nThis is a temporary solution while\nhttps://github.com/facebook/react/pull/32099 and its followups are\nworked on. Ideally, we should model reactive scope dependencies in the\nIR similarly to `ComputeIR` -- dependencies should be hoisted and all\nreferences rewritten to use the hoisted dependencies.\n\n`\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/33326).\n* __->__ #33326\n* #33325\n* #32286",
+            "tree": {
+                "sha": "09e92b78258d409d6094050607084174ec8fb26b",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/09e92b78258d409d6094050607084174ec8fb26b"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/0d072884f9201f645ae298936f2933970b73bec4",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoL4W5CRC1aQ7uu5UhlAAABdIQAHgK6nR3fWT4HgKPzaMFyXa6\na6EmPRUl14x9bVB9OyOPao2kwG7FYOpQeBQE89pNrnYacM5nGcvXGaBWnYwf/ENm\nVDsDuviqSO8SK2HyGqccRKxdZ12yKXvON0HXLlRg966VRWbENk1LAqRpJJ5GNreW\nSLM8MYhLdjawZ2E4WHW/IaFefDBOrX43pMXOpcrWXE7duYDNIAuUFaJuiRFqlsMq\n2auBcRUjMGK5MFmz2nOkyg2V8Pe0/FkKPR5Qao09Te+N87wkkm4yrPOgtYqhfaZp\nxzTkm1DM+Xpv7r+57Iz7OlmIS5RmJmu9v7DuhQWydIsPDYhAqF8Q2frSeDrnYA6E\nAk/dOjZgVzYYcawdNcuWq/iwgMLv11muWiLtelZe4jdq+GPMPZFS9aI0wy0AO3ic\nRUOw8gTx4s89/oEwKMPfnGLS++ouZKbpnBEyajaiRYIlKH2hj4hJgY/Ksfdh+LBA\nwau/RS56NE0FNVNdWDOiJs6uw/XAWuX4JC7jg2ZdTqaDXDuarypyalBsWiKpJjxJ\nl6NQVlkTGcqoDSRYYdxTnR6UYm1Ot/nfHhomTkMAvJcjiXZAYEGPt+gROK4T8GA+\nm/jPCoYwns/FeFQ1M1tVQIabtODgoI3yOq8PfyssPN0kh1F/PFuefgLZZz0bANfo\n2tOBVhU1ziJtpDT+u+7J\n=Ti88\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree 09e92b78258d409d6094050607084174ec8fb26b\nparent abf9fd559d584278c1c5f5464e35290651cf82bc\nauthor mofeiZ <34200447+mofeiZ@users.noreply.github.com> 1747944889 -0400\ncommitter GitHub <noreply@github.com> 1747944889 -0400\n\n[compiler] Inferred effect dependencies now include optional chains (#33326)\n\nInferred effect dependencies now include optional chains.\n\nThis is a temporary solution while\nhttps://github.com/facebook/react/pull/32099 and its followups are\nworked on. Ideally, we should model reactive scope dependencies in the\nIR similarly to `ComputeIR` -- dependencies should be hoisted and all\nreferences rewritten to use the hoisted dependencies.\n\n`\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/33326).\n* __->__ #33326\n* #33325\n* #32286",
+                "verified_at": "2025-05-22T20:14:51Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/0d072884f9201f645ae298936f2933970b73bec4",
+        "html_url": "https://github.com/facebook/react/commit/0d072884f9201f645ae298936f2933970b73bec4",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/0d072884f9201f645ae298936f2933970b73bec4/comments",
+        "author": {
+            "login": "mofeiZ",
+            "id": 34200447,
+            "node_id": "MDQ6VXNlcjM0MjAwNDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/34200447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mofeiZ",
+            "html_url": "https://github.com/mofeiZ",
+            "followers_url": "https://api.github.com/users/mofeiZ/followers",
+            "following_url": "https://api.github.com/users/mofeiZ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mofeiZ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mofeiZ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mofeiZ/subscriptions",
+            "organizations_url": "https://api.github.com/users/mofeiZ/orgs",
+            "repos_url": "https://api.github.com/users/mofeiZ/repos",
+            "events_url": "https://api.github.com/users/mofeiZ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mofeiZ/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "abf9fd559d584278c1c5f5464e35290651cf82bc",
+                "url": "https://api.github.com/repos/facebook/react/commits/abf9fd559d584278c1c5f5464e35290651cf82bc",
+                "html_url": "https://github.com/facebook/react/commit/abf9fd559d584278c1c5f5464e35290651cf82bc"
+            }
+        ]
+    },
+    {
+        "sha": "abf9fd559d584278c1c5f5464e35290651cf82bc",
+        "node_id": "C_kwDOAJy2KtoAKGFiZjlmZDU1OWQ1ODQyNzhjMWM1ZjU0NjRlMzUyOTA2NTFjZjgyYmM",
+        "commit": {
+            "author": {
+                "name": "mofeiZ",
+                "email": "34200447+mofeiZ@users.noreply.github.com",
+                "date": "2025-05-22T20:14:05Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-22T20:14:05Z"
+            },
+            "message": "[compiler] Add reactive flag on scope dependencies (#33325)\n\nWhen collecting scope dependencies, mark each dependency with `reactive:\ntrue | false`. This prepares for later PRs\nhttps://github.com/facebook/react/pull/33326 and\nhttps://github.com/facebook/react/pull/32099 which rewrite scope\ndependencies into instructions.\n\nNote that some reactive objects may have non-reactive properties, but we\ndo not currently track this.\n\nTechnically, state[0] is reactive and state[1] is not. Currently, both\nwould be marked as reactive.\n```js\nconst state = useState();\n```\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/33325).\n* #33326\n* __->__ #33325\n* #32286",
+            "tree": {
+                "sha": "29fc270cb76c2b72bbda03b70a77eeeb4ebb654a",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/29fc270cb76c2b72bbda03b70a77eeeb4ebb654a"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/abf9fd559d584278c1c5f5464e35290651cf82bc",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoL4WNCRC1aQ7uu5UhlAAA3EkQAG7NPxfm8slZZ3nEe3ZNPUGU\nJu2XUHcTRPJArJORlFEtWDmB5UAZ69QbKlugrM9MwPkzsFp/eO8beoVg9hrvwfZr\nzMFeiWb0hMule0yeydnIPu9D9GGjGqGj3gn9gHeXmBwdx1myRpuXq6JUDtzPemXa\nGtAUc/SDsEiG9+5x+IT0IVZz3LQcQeJgKCNVCOpwtlOEB8h/OXu0k5Ve70dO9Xfd\n7zahGi2djrTo8h/HqCYYyF9/4EI/ZKkSVRQJJKMaaygP21v5rcSGpoRoUeLlviZ7\nC3POgC8nWVn6L+8YbXS1a/Eyj2k9C5ruUAiIvbtC4sUGGbjahYvOMuHWvRTs3Ypf\nf6MjTWzG/eLqZXbKxF/jTa2Ykd8uSJEbDDtqLwTYXhdzjPz3WYDyyvQ5LgZP+dGQ\n6MCDfcOoQdHkhi6/6cNNGM80dUyPauOnD/PGayFJdB9JjVMF1uW74S8Mm+VpYYkt\n2Nb9RiqIcj+szoZfnA8zxPAiAks4kOxn1gQnLWa+VsrwF/ByU2odLnQgHnulSx+Y\nolZhGDH6wEOTqwBKSpsl+z2ZNOKXIp8anOOnQOdaFR9lz8cAGwENGFjHxg2FZ8qK\nR/j5mWB/uH90jMiZo7jAOHnie4QTFsP1YW6qwS52MBxtWl010+ABSdgFw6pifXun\npZNkyjIgBXUkD+rPlioT\n=ySrG\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree 29fc270cb76c2b72bbda03b70a77eeeb4ebb654a\nparent 13f20044f3a5a9433eb4c6ef4c6577b8f0d13350\nauthor mofeiZ <34200447+mofeiZ@users.noreply.github.com> 1747944845 -0400\ncommitter GitHub <noreply@github.com> 1747944845 -0400\n\n[compiler] Add reactive flag on scope dependencies (#33325)\n\nWhen collecting scope dependencies, mark each dependency with `reactive:\ntrue | false`. This prepares for later PRs\nhttps://github.com/facebook/react/pull/33326 and\nhttps://github.com/facebook/react/pull/32099 which rewrite scope\ndependencies into instructions.\n\nNote that some reactive objects may have non-reactive properties, but we\ndo not currently track this.\n\nTechnically, state[0] is reactive and state[1] is not. Currently, both\nwould be marked as reactive.\n```js\nconst state = useState();\n```\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/33325).\n* #33326\n* __->__ #33325\n* #32286",
+                "verified_at": "2025-05-22T20:14:08Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/abf9fd559d584278c1c5f5464e35290651cf82bc",
+        "html_url": "https://github.com/facebook/react/commit/abf9fd559d584278c1c5f5464e35290651cf82bc",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/abf9fd559d584278c1c5f5464e35290651cf82bc/comments",
+        "author": {
+            "login": "mofeiZ",
+            "id": 34200447,
+            "node_id": "MDQ6VXNlcjM0MjAwNDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/34200447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mofeiZ",
+            "html_url": "https://github.com/mofeiZ",
+            "followers_url": "https://api.github.com/users/mofeiZ/followers",
+            "following_url": "https://api.github.com/users/mofeiZ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mofeiZ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mofeiZ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mofeiZ/subscriptions",
+            "organizations_url": "https://api.github.com/users/mofeiZ/orgs",
+            "repos_url": "https://api.github.com/users/mofeiZ/repos",
+            "events_url": "https://api.github.com/users/mofeiZ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mofeiZ/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "13f20044f3a5a9433eb4c6ef4c6577b8f0d13350",
+                "url": "https://api.github.com/repos/facebook/react/commits/13f20044f3a5a9433eb4c6ef4c6577b8f0d13350",
+                "html_url": "https://github.com/facebook/react/commit/13f20044f3a5a9433eb4c6ef4c6577b8f0d13350"
+            }
+        ]
+    },
+    {
+        "sha": "13f20044f3a5a9433eb4c6ef4c6577b8f0d13350",
+        "node_id": "C_kwDOAJy2KtoAKDEzZjIwMDQ0ZjNhNWE5NDMzZWI0YzZlZjRjNjU3N2I4ZjBkMTMzNTA",
+        "commit": {
+            "author": {
+                "name": "mofeiZ",
+                "email": "34200447+mofeiZ@users.noreply.github.com",
+                "date": "2025-05-22T20:13:50Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-22T20:13:50Z"
+            },
+            "message": "[compiler] Prepare HIRBuilder to be used by later passes (#32286)\n\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/32286).\n* #33326\n* #33325\n* __->__ #32286",
+            "tree": {
+                "sha": "c89598202fb5e6e81c48d8f56e21fb5ab40dfd54",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/c89598202fb5e6e81c48d8f56e21fb5ab40dfd54"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/13f20044f3a5a9433eb4c6ef4c6577b8f0d13350",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoL4V+CRC1aQ7uu5UhlAAA+VsQAKYXZIXw7ccnz/wQMVSEf76d\n13NHtGOhx8stO8UafO/Y0wcN4d8yAC/Ddtt1i9FNtMnz6TkGc1iayKkLHWEUmaoU\nO+7mEpmsXtkVtD/PkHlm6i+S/A0WgILMNM6AA8LZCGVRcYDXvOJFt9/UlE3Rf2Ph\nx6SyYWfOeMIN+AgD4vvMl5Oii+eLN3OyQM/lEVKSTDprbeV3JWyIHn10KOZjVjdx\ngerpVik60BrZGaDJLjWobmScBVocylAnEHheub+NKH+iAcWIFCaFEwxQuv19Fjfd\nBOvaa3blhfg/qTjM2fYP9PEDgm6hvjtO8zPqfpNa7AibSUt8vPb+/212p16r17l3\npxWnFNMKhxiIb64JEJGZGih5ofLVXycoctSr+Ucjs3lkM5thT8RQd61LUZQ+yANl\nwYASOsuAFaVKTQfx7yaj+NQof0vXjCJ7r1rDZDI1+oBgSpBZYVXjxvCvGLTTCFeM\n2Lbath1Y9RTSIVn/ZD57fZ2vqQQVAVYB4pvNWuT2bl9ayO2AI5bk7ttdbxfQEeXd\nadfmbVFWTQTqjKWbvRpqX42rWHYprlIqvNnDwrspCVBiLdDwA8BFiJdBYXVLc9gT\n17uF1HfDBHgPXpHOdzIrAxuWFIqx31tMZxHbuaZSsq43kVti2W4dC36tqpDIQFtT\nKjpzXyBywEzmGOJqWvmN\n=NcrB\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree c89598202fb5e6e81c48d8f56e21fb5ab40dfd54\nparent 8ce15b0f56a066ece465963ca1370e46113bb868\nauthor mofeiZ <34200447+mofeiZ@users.noreply.github.com> 1747944830 -0400\ncommitter GitHub <noreply@github.com> 1747944830 -0400\n\n[compiler] Prepare HIRBuilder to be used by later passes (#32286)\n\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/32286).\n* #33326\n* #33325\n* __->__ #32286",
+                "verified_at": "2025-05-22T20:13:53Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/13f20044f3a5a9433eb4c6ef4c6577b8f0d13350",
+        "html_url": "https://github.com/facebook/react/commit/13f20044f3a5a9433eb4c6ef4c6577b8f0d13350",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/13f20044f3a5a9433eb4c6ef4c6577b8f0d13350/comments",
+        "author": {
+            "login": "mofeiZ",
+            "id": 34200447,
+            "node_id": "MDQ6VXNlcjM0MjAwNDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/34200447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mofeiZ",
+            "html_url": "https://github.com/mofeiZ",
+            "followers_url": "https://api.github.com/users/mofeiZ/followers",
+            "following_url": "https://api.github.com/users/mofeiZ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mofeiZ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mofeiZ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mofeiZ/subscriptions",
+            "organizations_url": "https://api.github.com/users/mofeiZ/orgs",
+            "repos_url": "https://api.github.com/users/mofeiZ/repos",
+            "events_url": "https://api.github.com/users/mofeiZ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mofeiZ/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "8ce15b0f56a066ece465963ca1370e46113bb868",
+                "url": "https://api.github.com/repos/facebook/react/commits/8ce15b0f56a066ece465963ca1370e46113bb868",
+                "html_url": "https://github.com/facebook/react/commit/8ce15b0f56a066ece465963ca1370e46113bb868"
+            }
+        ]
+    },
+    {
         "sha": "8ce15b0f56a066ece465963ca1370e46113bb868",
         "node_id": "C_kwDOAJy2KtoAKDhjZTE1YjBmNTZhMDY2ZWNlNDY1OTYzY2ExMzcwZTQ2MTEzYmI4Njg",
         "commit": {
@@ -2128,334 +2456,6 @@
                 "sha": "65b5aae010002ef88221cc4998711eaef6068006",
                 "url": "https://api.github.com/repos/facebook/react/commits/65b5aae010002ef88221cc4998711eaef6068006",
                 "html_url": "https://github.com/facebook/react/commit/65b5aae010002ef88221cc4998711eaef6068006"
-            }
-        ]
-    },
-    {
-        "sha": "65b5aae010002ef88221cc4998711eaef6068006",
-        "node_id": "C_kwDOAJy2KtoAKDY1YjVhYWUwMTAwMDJlZjg4MjIxY2M0OTk4NzExZWFlZjYwNjgwMDY",
-        "commit": {
-            "author": {
-                "name": "Sebastian Markb\u00e5ge",
-                "email": "sebastian@calyptus.eu",
-                "date": "2025-05-15T05:04:10Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-15T05:04:10Z"
-            },
-            "message": "[Fizz] Add vt- prefix attributes to annotate <ViewTransition> in HTML (#33206)\n\nStacked on #33194 and #33200.\n\nWhen Suspense boundaries reveal during streaming, the Fizz runtime will\nbe responsible for animating the reveal if necessary (not in this PR).\nHowever, for the future runtime to know what to do it needs to know\nabout the `<ViewTransition>` configuration to apply.\n\nOfc, these are virtual nodes that disappear from the HTML. We could\nmodel them as comments like we do with other virtual nodes like Suspense\nand Activity. However, that doesn't let us target them with\nquerySelector and CSS (for no-JS transitions). We also don't have to\nmodel every ViewTransition since not every combination can happen using\nonly the server runtime. So instead this collapses `<ViewTransition>`\nand applies the configuration to the inner DOM nodes.\n\n```js\n<ViewTransition name=\"hi\">\n  <div />\n  <div />\n</ViewTransition>\n```\n\nBecomes:\n\n```html\n<div vt-name=\"hi\" vt-update=\"auto\"></div>\n<div vt-name=\"hi_1\" vt-update=\"auto\"></div>\n```\n\nI use `vt-` prefix as opposed to `data-` to keep these virtual\nattributes away from user specific ones but we're effectively claiming\nthis namespace.\n\nThere are four triggers `vt-update`, `vt-enter`, `vt-exit` and\n`vt-share`. The server resolves which ones might apply to this DOM node.\nThe value represents the class name (after resolving\nview-transition-type mappings) or `\"auto\"` if no specific class name is\nneeded but this is still a trigger.\n\nThe value can also be `\"none\"`. This is different from missing because\nfor example an `vt-update=\"none\"` will block mutations inside it from\ntriggering the boundary where as a missing `vt-update` would bubble up\nto be handled by a parent.\n\n`vt-name` is technically only necessary when `vt-share` is specified to\nfind a pair. However, since an explicit name can also be used to target\nspecific CSS selectors, we include it even for other cases.\n\nWe want to exclude as many of these annotations as possible.\n\n`vt-enter` can only affect the first DOM node inside a Suspense\nboundary's content since the reveal would cause it to enter but nothing\ndeeper inside. Similarly `vt-exit` can only affect the first DOM node\ninside a fallback. So for every other case we can exclude them. (For\nfuture MPA ViewTransitions of the whole document it might also be\nsomething we annotate to children inside the `<body>` as well.) Ideally\nwe'd only include `vt-enter` for Suspense boundaries that actually\nflushed a fallback but since we prepare all that content earlier it's\nhard to know.\n\n`vt-share` can be anywhere inside an fallback or content. Technically we\ndon't have to include it outside the root most Suspense boundary or for\nboundaries that are inlined into the root shell. However, this is tricky\nto detect. It would also not be correct for future MPA ViewTransitions\nbecause in that case the shared scenario can affect anything in the two\ndocuments so it needs to be in every node everywhere which is\neffectively what we do. If a `share` class is specified but it has no\nexplicit name, we can exclude it since it can't match anything.\n\n`vt-update` is only necessary if something below or a sibling might\nupdate like a Suspense boundary. However, since we don't know when\nrendering a segment if it'll later asynchronously add a Suspense\nboundary later we have to assume that anywhere might have a child. So\nthese are always included. We collapse to use the inner most one when\ndirectly nested though since that's the one that ends up winning.\n\nThere are some weird edge cases that can't be fully modeled by the lack\nof virtual nodes.",
-            "tree": {
-                "sha": "74ffd2cdb79e739947890f596fd842945a2162a7",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/74ffd2cdb79e739947890f596fd842945a2162a7"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/65b5aae010002ef88221cc4998711eaef6068006",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoJXXKCRC1aQ7uu5UhlAAA2KMQAFVKI96mk5acdy+Nvlbo3QTH\nhotb4abplUub9GM2H028JAKKZpewZk/Uehc0xVcPDhod3PqzqKY2zK77JG4X0zzQ\nkfKO5G/AdONQZMG18hmaYac+D2GLl+Rom65XPMu1OzeWxNcyuwO+pK9E7n637CY6\ncyeZUn2RfgpSt/0EL0lSRc4cD2oBmWOY5g4W+5GL8rXPdcYkrxM59vbJCvSbzxVB\nWcQ37imXBPGrN8SNqU2s+5/1aF2/im3WfnzpYeGfC4nP4tPR59ccgeTRGF/q6+pi\nlRwgAQ2DFucYiAB9NANDp6Wf+vGubnoJFZhNR+2uoeSyvKSl8S1kdvJLi14qzdL8\nNWOifYwGvwsFVbk7/vTL4B7GX3CRVYG+UUupy3a4SC7Jj4RRj9QNHDDoqcNWea38\nXG0I5TKaiflSI/OnBxjDtJD1JiM4G0O0MzNashHBYW49GavNG4IOZQvr1M3uFIoy\ngVVg3VKeLOiG1Hzbp9HSo1ZNdNY4N7U/e1BOphs/cZnRXGGDmbS/Rc32b6njjplS\nmw0HLnCNuw1394C+5et4yknwlXPz7UY+aZXq3SSupiLewWicd2UKrJtsbqZTuv7v\nAyfy3OdlwI3Pp+Hk0IkLoICDir9Wk1eZxBmzNB167pDhLaZs6/xUBRb6j1TCyWPT\nQ8rUcpO4Nznl7tbIaBHf\n=LL0F\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree 74ffd2cdb79e739947890f596fd842945a2162a7\nparent 3f67d0857efc3ab21b9d30851f5a8451471166ab\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747285450 -0400\ncommitter GitHub <noreply@github.com> 1747285450 -0400\n\n[Fizz] Add vt- prefix attributes to annotate <ViewTransition> in HTML (#33206)\n\nStacked on #33194 and #33200.\n\nWhen Suspense boundaries reveal during streaming, the Fizz runtime will\nbe responsible for animating the reveal if necessary (not in this PR).\nHowever, for the future runtime to know what to do it needs to know\nabout the `<ViewTransition>` configuration to apply.\n\nOfc, these are virtual nodes that disappear from the HTML. We could\nmodel them as comments like we do with other virtual nodes like Suspense\nand Activity. However, that doesn't let us target them with\nquerySelector and CSS (for no-JS transitions). We also don't have to\nmodel every ViewTransition since not every combination can happen using\nonly the server runtime. So instead this collapses `<ViewTransition>`\nand applies the configuration to the inner DOM nodes.\n\n```js\n<ViewTransition name=\"hi\">\n  <div />\n  <div />\n</ViewTransition>\n```\n\nBecomes:\n\n```html\n<div vt-name=\"hi\" vt-update=\"auto\"></div>\n<div vt-name=\"hi_1\" vt-update=\"auto\"></div>\n```\n\nI use `vt-` prefix as opposed to `data-` to keep these virtual\nattributes away from user specific ones but we're effectively claiming\nthis namespace.\n\nThere are four triggers `vt-update`, `vt-enter`, `vt-exit` and\n`vt-share`. The server resolves which ones might apply to this DOM node.\nThe value represents the class name (after resolving\nview-transition-type mappings) or `\"auto\"` if no specific class name is\nneeded but this is still a trigger.\n\nThe value can also be `\"none\"`. This is different from missing because\nfor example an `vt-update=\"none\"` will block mutations inside it from\ntriggering the boundary where as a missing `vt-update` would bubble up\nto be handled by a parent.\n\n`vt-name` is technically only necessary when `vt-share` is specified to\nfind a pair. However, since an explicit name can also be used to target\nspecific CSS selectors, we include it even for other cases.\n\nWe want to exclude as many of these annotations as possible.\n\n`vt-enter` can only affect the first DOM node inside a Suspense\nboundary's content since the reveal would cause it to enter but nothing\ndeeper inside. Similarly `vt-exit` can only affect the first DOM node\ninside a fallback. So for every other case we can exclude them. (For\nfuture MPA ViewTransitions of the whole document it might also be\nsomething we annotate to children inside the `<body>` as well.) Ideally\nwe'd only include `vt-enter` for Suspense boundaries that actually\nflushed a fallback but since we prepare all that content earlier it's\nhard to know.\n\n`vt-share` can be anywhere inside an fallback or content. Technically we\ndon't have to include it outside the root most Suspense boundary or for\nboundaries that are inlined into the root shell. However, this is tricky\nto detect. It would also not be correct for future MPA ViewTransitions\nbecause in that case the shared scenario can affect anything in the two\ndocuments so it needs to be in every node everywhere which is\neffectively what we do. If a `share` class is specified but it has no\nexplicit name, we can exclude it since it can't match anything.\n\n`vt-update` is only necessary if something below or a sibling might\nupdate like a Suspense boundary. However, since we don't know when\nrendering a segment if it'll later asynchronously add a Suspense\nboundary later we have to assume that anywhere might have a child. So\nthese are always included. We collapse to use the inner most one when\ndirectly nested though since that's the one that ends up winning.\n\nThere are some weird edge cases that can't be fully modeled by the lack\nof virtual nodes.",
-                "verified_at": "2025-05-15T05:04:12Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/65b5aae010002ef88221cc4998711eaef6068006",
-        "html_url": "https://github.com/facebook/react/commit/65b5aae010002ef88221cc4998711eaef6068006",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/65b5aae010002ef88221cc4998711eaef6068006/comments",
-        "author": {
-            "login": "sebmarkbage",
-            "id": 63648,
-            "node_id": "MDQ6VXNlcjYzNjQ4",
-            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/sebmarkbage",
-            "html_url": "https://github.com/sebmarkbage",
-            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
-            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
-            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
-            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
-            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
-            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "3f67d0857efc3ab21b9d30851f5a8451471166ab",
-                "url": "https://api.github.com/repos/facebook/react/commits/3f67d0857efc3ab21b9d30851f5a8451471166ab",
-                "html_url": "https://github.com/facebook/react/commit/3f67d0857efc3ab21b9d30851f5a8451471166ab"
-            }
-        ]
-    },
-    {
-        "sha": "3f67d0857efc3ab21b9d30851f5a8451471166ab",
-        "node_id": "C_kwDOAJy2KtoAKDNmNjdkMDg1N2VmYzNhYjIxYjlkMzA4NTFmNWE4NDUxNDcxMTY2YWI",
-        "commit": {
-            "author": {
-                "name": "Sebastian Markb\u00e5ge",
-                "email": "sebastian@calyptus.eu",
-                "date": "2025-05-15T04:06:06Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-15T04:06:06Z"
-            },
-            "message": "[Fizz] Track whether we're in a fallback on FormatContext (#33194)\n\nRemoves the `isFallback` flag on Tasks and tracks it on the\nformatContext instead.\n\nLess memory and avoids passing and tracking extra arguments to all the\npushStartInstance branches that doesn't need it.\n\nWe'll need to be able to track more Suspense related contexts on this\nfor View Transitions anyway.",
-            "tree": {
-                "sha": "fcaeca9e28f6cbd4ecb8e47697a006a4f034473e",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/fcaeca9e28f6cbd4ecb8e47697a006a4f034473e"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/3f67d0857efc3ab21b9d30851f5a8451471166ab",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoJWguCRC1aQ7uu5UhlAAA+uUQAEVajGciSKYmtxkmjC1jYrnX\nhSWcgD8wRH0sZmGMXraAG7kys23Pxm62a3777z/4WcWn0zOkHN5oanLfKSK33gV1\nlszaV4uk/71mP3Upku2roiii2CQa4vc+CJ/x7vtiTYYM5K+2RyQG0KbfM7n4K9S8\narnQ/rxlyGtWKyl9EGoMueLkOAnsP8fGMuuO0eB/qvWbNj8yIYGAUR8rL9NfiWOF\n4xN8gyXAynd4aQsbfLY/wTpuP+QswbPwt5YD1JNKDmf3dFWvy99yzU2L0EbPbg3u\nspFwZj8JP5yeuGL0bhXnd4F3WeNwqE0UFv0iRRKPJWuRzEWvdJRAuJ0NpRc6eVHd\nIcvahB2W+wLh5dnj2tsPfcrXfqcashFYB6Dwo95Ts7k7OerIzZCEgZ32ntqNF/dk\njM6Tskd50/4jtpRWJPIqMUfeaBteW0qu4mX9PgOJGs3GJjLbqvQZbhXtd8/681e/\nCj9dHOy1bVje9MOkPT6UQz3pX4h4pLgswkJCyfO4QxMMSI6C85UENhvz8YEN7Ty7\nuN1xxpt2rBaCBsvAGf6yQNfQhSicOTUNFOGv/3N2QvA3eeGsAmUDjoYICXyKBlzr\nHmiLlrcYVI7rVOWz//q5yYeiCT9OoY1AxaI+zTF2v1eNkux2oIstMGkpGgz8BNcG\njwgqNiSTOiaqoFnFyJ7r\n=v+4E\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree fcaeca9e28f6cbd4ecb8e47697a006a4f034473e\nparent 96eb84e493c4ff2c280990659057164c0f16bbb8\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747281966 -0400\ncommitter GitHub <noreply@github.com> 1747281966 -0400\n\n[Fizz] Track whether we're in a fallback on FormatContext (#33194)\n\nRemoves the `isFallback` flag on Tasks and tracks it on the\nformatContext instead.\n\nLess memory and avoids passing and tracking extra arguments to all the\npushStartInstance branches that doesn't need it.\n\nWe'll need to be able to track more Suspense related contexts on this\nfor View Transitions anyway.",
-                "verified_at": "2025-05-15T04:06:09Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/3f67d0857efc3ab21b9d30851f5a8451471166ab",
-        "html_url": "https://github.com/facebook/react/commit/3f67d0857efc3ab21b9d30851f5a8451471166ab",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/3f67d0857efc3ab21b9d30851f5a8451471166ab/comments",
-        "author": {
-            "login": "sebmarkbage",
-            "id": 63648,
-            "node_id": "MDQ6VXNlcjYzNjQ4",
-            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/sebmarkbage",
-            "html_url": "https://github.com/sebmarkbage",
-            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
-            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
-            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
-            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
-            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
-            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "96eb84e493c4ff2c280990659057164c0f16bbb8",
-                "url": "https://api.github.com/repos/facebook/react/commits/96eb84e493c4ff2c280990659057164c0f16bbb8",
-                "html_url": "https://github.com/facebook/react/commit/96eb84e493c4ff2c280990659057164c0f16bbb8"
-            }
-        ]
-    },
-    {
-        "sha": "96eb84e493c4ff2c280990659057164c0f16bbb8",
-        "node_id": "C_kwDOAJy2KtoAKDk2ZWI4NGU0OTNjNGZmMmMyODA5OTA2NTkwNTcxNjRjMGYxNmJiYjg",
-        "commit": {
-            "author": {
-                "name": "Sebastian Markb\u00e5ge",
-                "email": "sebastian@calyptus.eu",
-                "date": "2025-05-14T21:52:41Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-14T21:52:41Z"
-            },
-            "message": "Claim the useId name space for every auto named ViewTransition (#33200)\n\nThis is a partial revert of #33094. It's true that we don't need the\nserver and client ViewTransition names to line up. However the server\ndoes need to be able to generate deterministic names for itself. The\ncheapest way to do that is using the useId algorithm. When it's used by\nthe server, the client needs to also materialize an ID even if it\ndoesn't use it.",
-            "tree": {
-                "sha": "79715ce7e65e7eef81fdfd28ad2f95ec6d4cb3ea",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/79715ce7e65e7eef81fdfd28ad2f95ec6d4cb3ea"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/96eb84e493c4ff2c280990659057164c0f16bbb8",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoJRCpCRC1aQ7uu5UhlAAAAHIQAKdcxebK8NGT3LHbQkCrL2pT\nv3tzFO47sFedD6X3qByE+TkNkIdfrV8+63WAJccCEJdB23j0Q+hPZIMur6THAoaM\n58C3GyzslpRofX+Pr1KjauOIpWcnw8JddQMtmRfqoib99HywU0s/grqveSXtZBJ7\n2v0ncyK6uFjRw//YUlw+6mu4sAM7/U2Gby/kvyrwB5rD6y7QEUQpP64Z6LqdYFn+\nZzvGppZD2HSEpoWgYXh4fyoBbwOFT9PyC4Yq7W/PHUoC9PbOQNsFtpq/t4Fali6B\nOCv6C3XlDZ+ZEbg5ks29uxoHUSvyPPbaR8Bt4IK5tVGIRX5I8FQc4fSIyNESrK16\n5hxQWqwOiA7ia0B3GfHNbaKMmwiDCqtByrYPvF0lbFus/bOszcALHkGFc1ZpSMFp\navCtc5tM188+s6VgYn3Quigda1rU2tULqHV2dCYAez9QPIwNZ4vj7hFUvCC1U8Mq\nv422E9zP/OFnXCIfb18gg0TRrrft/Fr+GBKranrHVePkrmGu7pJCE6C7U6ow2EWZ\nQ1GqvVil56BxCt8wVdqI+mnCydG50otaIHh+rwW3tBr5P9PeZvbTCx4M+U2SKxY+\nz9RUWf2hbociFPwImMgBHo9W+7k5j0Q2wq02is1n8IsHrVFiryv7JNFgc0UAO3zb\nhWLd+C175Im/1USPmgqs\n=s6jm\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree 79715ce7e65e7eef81fdfd28ad2f95ec6d4cb3ea\nparent 63d664b220b1587da0f3b4ced895456f3d8320da\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747259561 -0400\ncommitter GitHub <noreply@github.com> 1747259561 -0400\n\nClaim the useId name space for every auto named ViewTransition (#33200)\n\nThis is a partial revert of #33094. It's true that we don't need the\nserver and client ViewTransition names to line up. However the server\ndoes need to be able to generate deterministic names for itself. The\ncheapest way to do that is using the useId algorithm. When it's used by\nthe server, the client needs to also materialize an ID even if it\ndoesn't use it.",
-                "verified_at": "2025-05-14T21:52:41Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/96eb84e493c4ff2c280990659057164c0f16bbb8",
-        "html_url": "https://github.com/facebook/react/commit/96eb84e493c4ff2c280990659057164c0f16bbb8",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/96eb84e493c4ff2c280990659057164c0f16bbb8/comments",
-        "author": {
-            "login": "sebmarkbage",
-            "id": 63648,
-            "node_id": "MDQ6VXNlcjYzNjQ4",
-            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/sebmarkbage",
-            "html_url": "https://github.com/sebmarkbage",
-            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
-            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
-            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
-            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
-            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
-            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "63d664b220b1587da0f3b4ced895456f3d8320da",
-                "url": "https://api.github.com/repos/facebook/react/commits/63d664b220b1587da0f3b4ced895456f3d8320da",
-                "html_url": "https://github.com/facebook/react/commit/63d664b220b1587da0f3b4ced895456f3d8320da"
-            }
-        ]
-    },
-    {
-        "sha": "63d664b220b1587da0f3b4ced895456f3d8320da",
-        "node_id": "C_kwDOAJy2KtoAKDYzZDY2NGIyMjBiMTU4N2RhMGYzYjRjZWQ4OTU0NTZmM2Q4MzIwZGE",
-        "commit": {
-            "author": {
-                "name": "Sebastian Markb\u00e5ge",
-                "email": "sebastian@calyptus.eu",
-                "date": "2025-05-14T21:50:56Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-14T21:50:56Z"
-            },
-            "message": "Don't consider Portals animating unless they're wrapped in a ViewTransition (#33191)\n\nAnd that doesn't disable with `update=\"none\"`.\n\nThe principle here is that we want the content of a Portal to animate if\nother things are animating with it but if other things aren't animating\nthen we don't.",
-            "tree": {
-                "sha": "291aaefe6d970265cddb9599abab44cbbb913ce2",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/291aaefe6d970265cddb9599abab44cbbb913ce2"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/63d664b220b1587da0f3b4ced895456f3d8320da",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoJRBACRC1aQ7uu5UhlAAArNgQAC8pGsLSRSFxscivsWF04rHE\ntqEAUr6q4JsrpB6A5WGDDg+wp0NW6HMxKvTJTmq+l2M+8SH1HueSIh/iPOm9DpBc\neuXsjYn3EXmV8DcuiXI8bzFgn/2qNCzEjgnmvyd5ayy8hNQX3AFw6PszMqy1zz02\nQpGJxDhof0sRiaGN8NIx7I9SMVB8qaeEaq6qHz+VBzk8m0qvbeq3UzAF8z3S8sTX\n7GM4KtEk7Jkp+Lgkjv5tJ7V/hbr6R32DpaUX7lr7v/+t2ED386JRLpVRC+xju7WU\npXkhHuF0Mvgl3tQUAVmnzOWzdZkhqPoZoll27HKaTT9yaLoz14wjtw9svZX91/8t\n6V+V0EBMkZdbQQan3mg5IwjUjTtJe4rC2xeKE0jsRQsXS1+pfJayDpnzT7ZP2xUu\n3WsROq3mXkEyOVXqoYhLEEQpKDN6UcvvAz5pmSTfu8FL3xquvH2hka2e87BBkIyQ\n4lZTa9I8olWlFLP2TXtDG+BAjcW9aLbiDFLpFOGSWHk4NjskhFERyEPpuoNPf2m4\nbXS4g7qPlEGyMuaZds61z6LsZ0ef7xFO0EzkdsmvxKTThldTxyQkvH6MEIJUoLKp\nBOB/82HtAhLMaY0UzIdFByK//7xvpp+Mp/SPYe6l3bE0QUh6R+dCk0JTKrMRNoER\nyy3jxIPvg0AV5m7z9+ek\n=0/Vh\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree 291aaefe6d970265cddb9599abab44cbbb913ce2\nparent d85f86cf017151bcf5908d593c3899d876656a01\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747259456 -0400\ncommitter GitHub <noreply@github.com> 1747259456 -0400\n\nDon't consider Portals animating unless they're wrapped in a ViewTransition (#33191)\n\nAnd that doesn't disable with `update=\"none\"`.\n\nThe principle here is that we want the content of a Portal to animate if\nother things are animating with it but if other things aren't animating\nthen we don't.",
-                "verified_at": "2025-05-14T21:50:58Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/63d664b220b1587da0f3b4ced895456f3d8320da",
-        "html_url": "https://github.com/facebook/react/commit/63d664b220b1587da0f3b4ced895456f3d8320da",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/63d664b220b1587da0f3b4ced895456f3d8320da/comments",
-        "author": {
-            "login": "sebmarkbage",
-            "id": 63648,
-            "node_id": "MDQ6VXNlcjYzNjQ4",
-            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/sebmarkbage",
-            "html_url": "https://github.com/sebmarkbage",
-            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
-            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
-            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
-            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
-            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
-            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "d85f86cf017151bcf5908d593c3899d876656a01",
-                "url": "https://api.github.com/repos/facebook/react/commits/d85f86cf017151bcf5908d593c3899d876656a01",
-                "html_url": "https://github.com/facebook/react/commit/d85f86cf017151bcf5908d593c3899d876656a01"
             }
         ]
     }

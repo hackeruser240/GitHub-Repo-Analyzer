@@ -92,8 +92,8 @@ def commits(repo,viz=False):
 
         try:
             extracting_authors(filepath,viz=True)
-        except:
-            print(" Couldn't process extracting_authors() ")
+        except Exception as e:
+            print(f"Couldn't process extracting_authors() as per error: \n {e}")
     else:
         print(f"❌ Failed to fetch data. Status Code: {response.status_code}")
         print("Reason:", response.json().get("message", "Unknown error"))
@@ -102,7 +102,7 @@ if __name__=="__main__":
     parser=ag.ArgumentParser()
     parser.add_argument('--repo', required=True, help="Repo in the form 'owner/name' or full API URL")
     args=parser.parse_args()
-    
     var.repo=args.repo
+    
     #contributors(args.repo)
     commits(var.repo,viz=True)

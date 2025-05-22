@@ -69,33 +69,24 @@ def commit_author_visualization():
     except:
         print("❌Failed to save the authors by timeline image")
 
-def commit_title_visualization(commits,filename):
-    
-    clean_messages = []
+def commit_title_visualization(commits,commit_title_viz=False):
 
     for commit in commits:
         commit_data = commit.get('commit')
         if commit_data:
             message = commit_data.get('message', '')
             title = message.split('\n\n')[0].strip()
-            clean_messages.append(title)
-            
+            var.commit_titles.append(title)
 
-    try:
-        table = [(i + 1, msg) for i, msg in enumerate(clean_messages)]
-        print("Title of latest commits:")
-        print(tabulate(table, headers=["#", "Commit Title"], tablefmt="fancy_grid"))
-    except:
-        print("Title of latest commits could NOT be populated")
+    
+    if commit_title_viz:
+        try:
+            table = [(i + 1, msg) for i, msg in enumerate(var.commit_titles)]
+            print("Title of latest commits:")
+            print(tabulate(table, headers=["#", "Commit Title"], tablefmt="fancy_grid"))
+        except:
+            print("Title of latest commits could NOT be populated")
 
-
-    try:
-        #filepath=os.path.dirname(filename)
-        #print(f"filename:{filename}")
-        save_to_PDF(clean_messages,filename)
-    except Exception as e:
-        print("Error in commits.py -> extracting_authors() -> commit_title_visualization() -> save_to_PDF()")
-        print(f"Error: {e}")
 
 def save_to_PDF(commit_titles, save_path):
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
@@ -131,7 +122,7 @@ def save_to_PDF(commit_titles, save_path):
     
     print(f"PDF saved at: {save_path}")
 
-def extracting_authors(filename,viz=False):
+def extracting_authors(filename,viz=False,commit_title_viz=False):
     commits=loading_json_file(filename)
     #authors={}
     raw_author=[]
@@ -168,20 +159,50 @@ def extracting_authors(filename,viz=False):
             if viz:
                 commit_author_visualization()
         except:
-            print("Some error in commits.py -> commit_author_visualization() ")
+            print("Some error in commits.py -> commit_author_visualization()")
 
         
         try:
             if viz:
-                commit_title_visualization(commits,filename)
-        except:
-            print("Some error in commits.py -> commit_title_visualization() ")
+                commit_title_visualization(commits,commit_title_viz=False)
+        except Exception as e:
+            print("Some error in commits.py -> commit_title_visualization()")
+            print(f"Error: {e}")
+
+
+        try:
+            save_to_PDF(var.commit_titles,filename)
+        except Exception as e:
+            print("Error in commits.py -> extracting_authors() -> save_to_PDF()")
+            print(f"Error: {e}")
     
     else:
         print("No commit data loaded to process.")
 
 if __name__=='__main__':
-    filepath=r'C:\Users\HP\OneDrive\Documents\GithubRepos\Data'
+    
+    import requests
+    from scripts.variables import var
+    
     filename=r'C:\Users\HP\OneDrive\Documents\GithubRepos\Data\commits.json'
+    headers = {'Authorization': f'token {var.token}'}
+    
+    print(f"Finding latest commits of {var.repo} repo")
+
+    commits= f'https://api.github.com/repos/{var.repo}/commits'
+    response = requests.get(commits, headers=headers)
+    
+    if response.status_code==200:
+        data=response.json()
+        print(f"Total {len(data)} commits found")
+        try:
+            path=r'Data'
+            os.makedirs(path,exist_ok=True)
+            filepath=os.path.join(path,'commits.json')
+            with open(filepath,'w') as file:
+                json.dump(data, file, indent=4 )
+                print("✅ Saved commits.json")
+        except:
+            print('❌ Failed to save commits.json')
 
     extracting_authors(filename,viz=True)
