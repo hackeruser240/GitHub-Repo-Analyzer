@@ -1,5 +1,333 @@
 [
     {
+        "sha": "8ce15b0f56a066ece465963ca1370e46113bb868",
+        "node_id": "C_kwDOAJy2KtoAKDhjZTE1YjBmNTZhMDY2ZWNlNDY1OTYzY2ExMzcwZTQ2MTEzYmI4Njg",
+        "commit": {
+            "author": {
+                "name": "Sebastian Markb\u00e5ge",
+                "email": "sebastian@calyptus.eu",
+                "date": "2025-05-22T14:40:28Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-22T14:40:28Z"
+            },
+            "message": "[Fizz] Apply View Transition Name and Class to SSR:ed View Transitions (#33332)\n\nStacked on #33330.\n\nThis walks the element tree to activate the various classes under\ndifferent scenarios. There are some edge case things that are a little\ndifferent since we can't express every scenario without virtual nodes.\n\nThe main thing that's still missing though is avoiding animating updates\nif it can be contained to a layout or enter/exit/share if they're out of\nthe viewport. I.e. layout stuff.",
+            "tree": {
+                "sha": "85260d1bf51387dd4798c81848a194f81b83076d",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/85260d1bf51387dd4798c81848a194f81b83076d"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/8ce15b0f56a066ece465963ca1370e46113bb868",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoLzdcCRC1aQ7uu5UhlAAAphoQAFcGludMZzEUiwAShq3TbvwU\n5dGsRY2wD1NkcGjRDWV/nfRA0x/lWYGBlvY2WOb8XkWBptlA5wnU1C1FrnNLz9Qz\nc+c6HoyQmwVGOIAw/mx64DdMLPAvU31bq2TVkY0Rjp8Cy4CE7NlxAEcn47tFrF05\nfv17BRABQumX0ojFwqwUoao56SoiWuhxeRBoywUCf8jF0gNVQYpZdOf8G7S95vO8\nJKzZm/RLAu61cmAI2QQ6WJcAsOVeIMu/1HNi9SsLtnEZXN9hUB7oZmTTsoKSjiKs\nFDWfxY8nFuEBkv0nn2m6CSTy4R27dekvuxj9y1CgAX9Ac/tc/kd7Yz8oOqONtDOh\nJI30fYMNSF7h3qlcPJabVbpimKt9xnErj3VdkcvweOml1wTheig9BKcIglxS5bcG\niX37x/6PjUctLE8yZwhj6aY52cu/R0tKIpfsKIZ+8FTd5V3cbkzaCNZbTA7fut8j\nY1vZs+Rj00sfztgb2YHqfnoPLMdEqclYgw3M5dlK6f796k/NPfbvXxKSIZVFh3W8\njssMne4XVh3sORgG1DUD8S8lIyNz0sGMYKMbGkxyCjiUUC7VnE6gPcVuVnGPceN1\ntLKH7igPI/pOwMOyiRwLci25fMEZkKtWUEXKhE4H9iKJ7f8uIXGf0q91FZXfSm5P\nIn4xYkyqEEeZgeuB/13O\n=o+J3\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree 85260d1bf51387dd4798c81848a194f81b83076d\nparent 91ac1fea1aacf80c9eb2815956e230921b55808c\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747924828 -0400\ncommitter GitHub <noreply@github.com> 1747924828 -0400\n\n[Fizz] Apply View Transition Name and Class to SSR:ed View Transitions (#33332)\n\nStacked on #33330.\n\nThis walks the element tree to activate the various classes under\ndifferent scenarios. There are some edge case things that are a little\ndifferent since we can't express every scenario without virtual nodes.\n\nThe main thing that's still missing though is avoiding animating updates\nif it can be contained to a layout or enter/exit/share if they're out of\nthe viewport. I.e. layout stuff.",
+                "verified_at": "2025-05-22T14:40:29Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/8ce15b0f56a066ece465963ca1370e46113bb868",
+        "html_url": "https://github.com/facebook/react/commit/8ce15b0f56a066ece465963ca1370e46113bb868",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/8ce15b0f56a066ece465963ca1370e46113bb868/comments",
+        "author": {
+            "login": "sebmarkbage",
+            "id": 63648,
+            "node_id": "MDQ6VXNlcjYzNjQ4",
+            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/sebmarkbage",
+            "html_url": "https://github.com/sebmarkbage",
+            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
+            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
+            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
+            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
+            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
+            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "91ac1fea1aacf80c9eb2815956e230921b55808c",
+                "url": "https://api.github.com/repos/facebook/react/commits/91ac1fea1aacf80c9eb2815956e230921b55808c",
+                "html_url": "https://github.com/facebook/react/commit/91ac1fea1aacf80c9eb2815956e230921b55808c"
+            }
+        ]
+    },
+    {
+        "sha": "91ac1fea1aacf80c9eb2815956e230921b55808c",
+        "node_id": "C_kwDOAJy2KtoAKDkxYWMxZmVhMWFhY2Y4MGM5ZWIyODE1OTU2ZTIzMDkyMWI1NTgwOGM",
+        "commit": {
+            "author": {
+                "name": "Sebastian Markb\u00e5ge",
+                "email": "sebastian@calyptus.eu",
+                "date": "2025-05-22T14:25:13Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-22T14:25:13Z"
+            },
+            "message": "[Fizz] Pass batch as argument to revealCompletedBoundaries (#33330)\n\nFollow up to #33293.\n\nThis solves a race condition when boundaries are added to the batch\nafter the `startViewTransition` call.\n\nThis doesn't matter yet but it will once we start assigning names before\nthe `startViewTransition` call.\n\nA possible alternative solution might be to ensure the names are added\nsynchronously in the event that adds to the batch. It's possible to keep\nadding to a batch until the snapshot has happened.",
+            "tree": {
+                "sha": "ff23aa3d8ce4e439633e9dcfae160d1e0d19dd4e",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/ff23aa3d8ce4e439633e9dcfae160d1e0d19dd4e"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/91ac1fea1aacf80c9eb2815956e230921b55808c",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoLzPJCRC1aQ7uu5UhlAAA7hoQAJ+UIbvJbLJm1oGIgGFpd86J\n0vMncO9BxLtgGu3cMSamEgpWUCKfbB+tzsGNYqPj+YLfKnaHPtl6YgeV66uT188q\nZypGGC+B74VWjXaX2w5hUwqF0IeW0oqnldlftzj7PO5nmqOBjay8oqVsMBl4Cpzm\nupF5fx4qZJLtZMohnTys9pXXiZ6SG+ftnpt65GPunrDKE5j0YQYCF9czZoYs8JN2\nql+f1MTQnwCezsY1PC98n0T4eZEZDcx6NC78YGeKhPP32zBN+zqUuqALqYSkZnLx\naOF8PVe3qG3aOQajT+jz7G1u6HD9YccFpP/nK7Gvs6qZHUD+YxtpmjE7eTYba1kf\nDtDT27NfANKblIUXFD6f2X7lE9qlROaMSGrUTbBvuOgs8WH8vAG/WWovlpyGflJM\nqj9MjaZ4S2ewAivFQ7khnAAn/Stn4MhGPyn681hilfD/e85gjHkBmfs4BraHbpYR\n5yLL9P+gUzgaIwy/0/PUsmDbnG2da6cxd05Sj4J3+Zxqf2QRwpXOBj5hNqIFzjKg\nGXFqNlc6OKFcAl9aWgx1E768VFwwkvl5FS9WUAppp/KpoKvEVXn0qelHEsGx7ANB\nacQvldftbNyLDlseGWc1ZahLw+asGPSrJ1flEQ0s9qNNdwQ13M4jdbGArNbsfGf+\nJRkysSlnspN+nGUelawy\n=is1z\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree ff23aa3d8ce4e439633e9dcfae160d1e0d19dd4e\nparent 08064ea6713ff55730c5d4f50b733891ebe0e875\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747923913 -0400\ncommitter GitHub <noreply@github.com> 1747923913 -0400\n\n[Fizz] Pass batch as argument to revealCompletedBoundaries (#33330)\n\nFollow up to #33293.\n\nThis solves a race condition when boundaries are added to the batch\nafter the `startViewTransition` call.\n\nThis doesn't matter yet but it will once we start assigning names before\nthe `startViewTransition` call.\n\nA possible alternative solution might be to ensure the names are added\nsynchronously in the event that adds to the batch. It's possible to keep\nadding to a batch until the snapshot has happened.",
+                "verified_at": "2025-05-22T14:25:15Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/91ac1fea1aacf80c9eb2815956e230921b55808c",
+        "html_url": "https://github.com/facebook/react/commit/91ac1fea1aacf80c9eb2815956e230921b55808c",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/91ac1fea1aacf80c9eb2815956e230921b55808c/comments",
+        "author": {
+            "login": "sebmarkbage",
+            "id": 63648,
+            "node_id": "MDQ6VXNlcjYzNjQ4",
+            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/sebmarkbage",
+            "html_url": "https://github.com/sebmarkbage",
+            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
+            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
+            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
+            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
+            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
+            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "08064ea6713ff55730c5d4f50b733891ebe0e875",
+                "url": "https://api.github.com/repos/facebook/react/commits/08064ea6713ff55730c5d4f50b733891ebe0e875",
+                "html_url": "https://github.com/facebook/react/commit/08064ea6713ff55730c5d4f50b733891ebe0e875"
+            }
+        ]
+    },
+    {
+        "sha": "08064ea6713ff55730c5d4f50b733891ebe0e875",
+        "node_id": "C_kwDOAJy2KtoAKDA4MDY0ZWE2NzEzZmY1NTczMGM1ZDRmNTBiNzMzODkxZWJlMGU4NzU",
+        "commit": {
+            "author": {
+                "name": "Sebastian Markb\u00e5ge",
+                "email": "sebastian@calyptus.eu",
+                "date": "2025-05-22T14:21:28Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-22T14:21:28Z"
+            },
+            "message": "[Fizz] Make ViewTransition enter/exit/share null the same as none (#33331)\n\nI believe that these mean the same thing. We don't have to emit the\nattribute if it's `none` for these cases because if there is no matching\nscenario we won't apply the animation in this case.\n\nThe only case where we have to emit `none` in the attribute is for\n`vt-update` because those can block updates from propagating upwards.",
+            "tree": {
+                "sha": "bee546d0581b8f3ec1b58b86504c05cb08d34b03",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/bee546d0581b8f3ec1b58b86504c05cb08d34b03"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/08064ea6713ff55730c5d4f50b733891ebe0e875",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoLzLoCRC1aQ7uu5UhlAAAS+8QADElikCWEzaNtRBrGocSi89T\nTNkcRMn0jTtI+xqGjuwxZHfFaFiGbGe4aKkRvFLKReazRYDdDyq3ND58vxn6zQCa\nhhwICoHaii9fpha88pe4bAyWHqQUnzP8illZ3Sh/Dmuapj8L0023sz63ubgOKzuJ\n3IgR+UnJkZfAcgMY2Iiq0Zr4QdWEw7Ua+LFqYniNBx/OPUcL58JB9dwFuFEIqxnk\nqfP5SrdXn6+7hMaeYsWbXqpzlasu8Ce7XiTKmxF5HuQMJ9NlCkH5u7K7GL+Jw/Os\neUk+HquAOc+fzjNfgNZAtMl61jb1JMbzWh19haqw7OHuJrMz0APFfUidVlOSpgR9\nj7zq4e4NvQUaW1zQIBaYOk3ommlkNqH1j0YM2H+bAUycJ0ak41W2KqX9QFr4Zi/m\nULa+O7RlI/WsQQbEsg9SFlCek+d3E/k170k50i3Mtg0Tw85QxG3BlqL7M1pIcJ8e\nu0HHv4l+bGBTK/kp4K9/YMQnfFawXbfNVgqWvXcv3ekkgZje4AkXMYmhWv0/rJ96\numMoFlzC2UMzd7wOTOQpvaw+SjxocU3jNVWvb6aZzK48K2+b1uAr4pR91XQFkVNq\n8UHb/I3M6HpaUWZOv9bUh7qxSKeUM9KjEZvqIfP9r1/CbXEFoHRw1/9cKn6XNjgQ\nz3vRlAcvatsp2mhmQYHx\n=lalj\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree bee546d0581b8f3ec1b58b86504c05cb08d34b03\nparent 99781d605b6a6fd332bba654ac0c328e41df888c\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747923688 -0400\ncommitter GitHub <noreply@github.com> 1747923688 -0400\n\n[Fizz] Make ViewTransition enter/exit/share null the same as none (#33331)\n\nI believe that these mean the same thing. We don't have to emit the\nattribute if it's `none` for these cases because if there is no matching\nscenario we won't apply the animation in this case.\n\nThe only case where we have to emit `none` in the attribute is for\n`vt-update` because those can block updates from propagating upwards.",
+                "verified_at": "2025-05-22T14:21:30Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/08064ea6713ff55730c5d4f50b733891ebe0e875",
+        "html_url": "https://github.com/facebook/react/commit/08064ea6713ff55730c5d4f50b733891ebe0e875",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/08064ea6713ff55730c5d4f50b733891ebe0e875/comments",
+        "author": {
+            "login": "sebmarkbage",
+            "id": 63648,
+            "node_id": "MDQ6VXNlcjYzNjQ4",
+            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/sebmarkbage",
+            "html_url": "https://github.com/sebmarkbage",
+            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
+            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
+            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
+            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
+            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
+            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "99781d605b6a6fd332bba654ac0c328e41df888c",
+                "url": "https://api.github.com/repos/facebook/react/commits/99781d605b6a6fd332bba654ac0c328e41df888c",
+                "html_url": "https://github.com/facebook/react/commit/99781d605b6a6fd332bba654ac0c328e41df888c"
+            }
+        ]
+    },
+    {
+        "sha": "99781d605b6a6fd332bba654ac0c328e41df888c",
+        "node_id": "C_kwDOAJy2KtoAKDk5NzgxZDYwNWI2YTZmZDMzMmJiYTY1NGFjMGMzMjhlNDFkZjg4OGM",
+        "commit": {
+            "author": {
+                "name": "Sebastian Markb\u00e5ge",
+                "email": "sebastian@calyptus.eu",
+                "date": "2025-05-22T14:20:13Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-22T14:20:13Z"
+            },
+            "message": "[Fizz] Track boundaries in future rows as postponed (#33329)\n\nFollow up to #33321.\n\nWe can mark boundaries that were blocked in the prerender as postponed\nbut without anything to replayed inside them. That way they're not\nemitted in the prerender but is unblocked when replayed.\n\nTechnically this does some unnecessary replaying of the path to the\notherwise already completed boundary but it simplifies our model by just\nmarking the boundary as needing replaying.",
+            "tree": {
+                "sha": "67261bc928c3a5c3173d6779773349cf4c972f3a",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/67261bc928c3a5c3173d6779773349cf4c972f3a"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/99781d605b6a6fd332bba654ac0c328e41df888c",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoLzKdCRC1aQ7uu5UhlAAARGsQAFnngdj1wsKBSU+T1+zXKZSe\nIiz3GSt3dTi9k0ohJvMV2bfjh0RFDeTBxLoIVyRoHYp38zhYDIniYpFFKYSS9qoN\nNijdf98DVac3RUV2WcZwc3Oc3EHBQQJ7/0X9v3J/1yBA2KQoSrcReyRmwNRxsa4t\nZh28RqbeJlZJPSsiV2XiknRiOG1S+BIauCb1O7B3FYuWvQcVRcbnG8rPJUhgl+Qh\nR76hAr80wi6bU8bQJRkz0J9+kzvzQmniZD7HQS5v04oclnnfjBUc05ww8lImSqxb\n55ZlwK3iMx/RosOgNd33xHoUeeDQX/f52FOVzI5/bytVJdukqm9li8I+pkklEr/I\nRNUKv2BXQiVMcTIYu28ZbFabtje8g/1zUMmNN+QyOsNTh0WzINyqqsT2PozU18KQ\nqbpsfPV42o+oifCGjhqOhfbU0vaZBfBAhwmK2qFbftbT39HR0sejLKAFj7ghf7Eb\nx5CxVRwZwVwzlt0Ad1AcphEst2LiM1L3DBPiZ9YCMdpAoHhZqBwRlH9/JLuc6L9l\nCe+4eg/bV1UZbUAe/7irJJH0HCl8sOa9PxqQWQ8A7Y15thuxU1+IRYO9LIy/ZAZg\nOeLSQd5wUUFOCkM1Dy6Y72V5WPvobY8777fOMv2klVB+wIdhUan+UP+7KxH1Hiou\nFR41sL2biuDFnIYQHeAq\n=5tof\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree 67261bc928c3a5c3173d6779773349cf4c972f3a\nparent 459a2c4298187cb0ee45605e2575ff35f4a81183\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747923613 -0400\ncommitter GitHub <noreply@github.com> 1747923613 -0400\n\n[Fizz] Track boundaries in future rows as postponed (#33329)\n\nFollow up to #33321.\n\nWe can mark boundaries that were blocked in the prerender as postponed\nbut without anything to replayed inside them. That way they're not\nemitted in the prerender but is unblocked when replayed.\n\nTechnically this does some unnecessary replaying of the path to the\notherwise already completed boundary but it simplifies our model by just\nmarking the boundary as needing replaying.",
+                "verified_at": "2025-05-22T14:20:15Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/99781d605b6a6fd332bba654ac0c328e41df888c",
+        "html_url": "https://github.com/facebook/react/commit/99781d605b6a6fd332bba654ac0c328e41df888c",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/99781d605b6a6fd332bba654ac0c328e41df888c/comments",
+        "author": {
+            "login": "sebmarkbage",
+            "id": 63648,
+            "node_id": "MDQ6VXNlcjYzNjQ4",
+            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/sebmarkbage",
+            "html_url": "https://github.com/sebmarkbage",
+            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
+            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
+            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
+            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
+            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
+            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "459a2c4298187cb0ee45605e2575ff35f4a81183",
+                "url": "https://api.github.com/repos/facebook/react/commits/459a2c4298187cb0ee45605e2575ff35f4a81183",
+                "html_url": "https://github.com/facebook/react/commit/459a2c4298187cb0ee45605e2575ff35f4a81183"
+            }
+        ]
+    },
+    {
         "sha": "459a2c4298187cb0ee45605e2575ff35f4a81183",
         "node_id": "C_kwDOAJy2KtoAKDQ1OWEyYzQyOTgxODdjYjBlZTQ1NjA1ZTI1NzVmZjM1ZjRhODExODM",
         "commit": {
@@ -2128,334 +2456,6 @@
                 "sha": "d85f86cf017151bcf5908d593c3899d876656a01",
                 "url": "https://api.github.com/repos/facebook/react/commits/d85f86cf017151bcf5908d593c3899d876656a01",
                 "html_url": "https://github.com/facebook/react/commit/d85f86cf017151bcf5908d593c3899d876656a01"
-            }
-        ]
-    },
-    {
-        "sha": "d85f86cf017151bcf5908d593c3899d876656a01",
-        "node_id": "C_kwDOAJy2KtoAKGQ4NWY4NmNmMDE3MTUxYmNmNTkwOGQ1OTNjMzg5OWQ4NzY2NTZhMDE",
-        "commit": {
-            "author": {
-                "name": "Jan Kassens",
-                "email": "jkassens@meta.com",
-                "date": "2025-05-14T15:27:36Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-14T15:27:36Z"
-            },
-            "message": "Delete stray file (#33199)\n\nNot sure where this was coming from.",
-            "tree": {
-                "sha": "84c7abc2b4e51fb196d74ef329d30358a4e51ea1",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/84c7abc2b4e51fb196d74ef329d30358a4e51ea1"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/d85f86cf017151bcf5908d593c3899d876656a01",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoJLZoCRC1aQ7uu5UhlAAAjlwQAAeKM4SPo5M7TKMwYhRe2Hk9\nA4KletmQ8BzvbkmNMwakFEwDOb40uYpHcKJsT9z+XyXfpo3t03Fxqx2d7UgykAKl\nf5uFZgp+A1/vfXbLYtaND4NFSEeD1h9OvNp7IbJCVqB8UW02WIPSEoBVY3Gc7cbT\nCeuBbEF8Pa9PB8mH4JeVKsRpsFSWyA7GwL9vye4IjcP2gLdIFRvwbjVX3Xo0Vh4C\nexNKWGmPZBV8zbBNE4+QNnqgxtlhGmaeNqXpvgfb8dPBR4fyCCfPRw5HDXAa9Kk9\nDi+Mh4Biv+s6biTlQuANeebLM9sqy9vhG2i/EK3H6DIx41Q7PmZN416U8NMp/gnM\n5djLIhFVetkNhUForYBCjITp5TYXIKPbYdetWlVbPtyNa9fCMj+mGp2/TzanUlmO\nt2sQVPwURRNLouV2GOsK7jI6CCNRRD9WpFSHMbuAXyf/1FxA/kSQTHPxvBdjnEPz\nHgj4CXayk/XlJekkiYUx9LrkBoaGEMAwqdgKJGi4hMTvuR9oohSdMgBPM8pdhRu1\n7ktZRNULTwUMZ0kVfBntSOBy9H0WYzYp28/ap0W60Y+w9cBPpLVENnyH2Af6Tzur\nh24ncAiK4mGjZjJVacLkyBRHLwff+PEbpSo4rR55E85ec/S5rXUe5tMwQRFA+Luo\nsPGu2bHAnx2bmOfSCp34\n=Xy/3\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree 84c7abc2b4e51fb196d74ef329d30358a4e51ea1\nparent 3a5b326d8180f005a10e34a07ded6d5632efe337\nauthor Jan Kassens <jkassens@meta.com> 1747236456 -0400\ncommitter GitHub <noreply@github.com> 1747236456 -0400\n\nDelete stray file (#33199)\n\nNot sure where this was coming from.",
-                "verified_at": "2025-05-14T15:27:40Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/d85f86cf017151bcf5908d593c3899d876656a01",
-        "html_url": "https://github.com/facebook/react/commit/d85f86cf017151bcf5908d593c3899d876656a01",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/d85f86cf017151bcf5908d593c3899d876656a01/comments",
-        "author": {
-            "login": "kassens",
-            "id": 11849,
-            "node_id": "MDQ6VXNlcjExODQ5",
-            "avatar_url": "https://avatars.githubusercontent.com/u/11849?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/kassens",
-            "html_url": "https://github.com/kassens",
-            "followers_url": "https://api.github.com/users/kassens/followers",
-            "following_url": "https://api.github.com/users/kassens/following{/other_user}",
-            "gists_url": "https://api.github.com/users/kassens/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/kassens/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/kassens/subscriptions",
-            "organizations_url": "https://api.github.com/users/kassens/orgs",
-            "repos_url": "https://api.github.com/users/kassens/repos",
-            "events_url": "https://api.github.com/users/kassens/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/kassens/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "3a5b326d8180f005a10e34a07ded6d5632efe337",
-                "url": "https://api.github.com/repos/facebook/react/commits/3a5b326d8180f005a10e34a07ded6d5632efe337",
-                "html_url": "https://github.com/facebook/react/commit/3a5b326d8180f005a10e34a07ded6d5632efe337"
-            }
-        ]
-    },
-    {
-        "sha": "3a5b326d8180f005a10e34a07ded6d5632efe337",
-        "node_id": "C_kwDOAJy2KtoAKDNhNWIzMjZkODE4MGYwMDVhMTBlMzRhMDdkZWQ2ZDU2MzJlZmUzMzc",
-        "commit": {
-            "author": {
-                "name": "Sebastian Markb\u00e5ge",
-                "email": "sebastian@calyptus.eu",
-                "date": "2025-05-13T20:10:28Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-13T20:10:28Z"
-            },
-            "message": "[Fiber] Trigger default indicator for isomorphic async actions with no root associated (#33190)\n\nStacked on #33160, #33162, #33186 and #33188.\n\nWe have a special case that's awkward for default indicators. When you\nstart a new async Transition from `React.startTransition` then there's\nnot yet any associated root with the Transition because you haven't\nnecessarily `setState` on anything yet until the promise resolves.\nThat's what `entangleAsyncAction` handles by creating a lane that\neverything entangles with until all async actions are done.\n\nIf there are no sync updates before the end of the event, we should\ntrigger a default indicator until either the async action completes\nwithout update or if it gets entangled with some roots we should keep it\ngoing until those roots are done.",
-            "tree": {
-                "sha": "8bac834ae5477097b08105f3dea5a1911bfd43db",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/8bac834ae5477097b08105f3dea5a1911bfd43db"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/3a5b326d8180f005a10e34a07ded6d5632efe337",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoI6c0CRC1aQ7uu5UhlAAAARoQAJuYmB7iBM+QrS/MGuEabB0S\n6lNI5dkpuRv7069TsgEn/stSgt3jBiokf0RvMt5EGa8dKcyUY9WuvSKZhzJU2+2g\n+Po76C9zU/x2qbEJ8GWeV1FGNM/lOrftjYeFbtZNP6QKsOo+9E6aWov+EbnPxkOa\n2QWqf3DyG8jViEZnRDlxlwa2IlIwDK0H3hZ090mzD+XPT9yKPWFGpIhaP3UGEoyF\nR9sV+U08//goDCPdl2GWRgtSlBLxVdlE4UF4rU+W62yK4IiGLJZpmGRFFOWyuNqf\n1L2Rt91ctRjFHT3++C4UNlDPYo+/Jr4WUwGRq52lBEvo7XGt174yAYCFnRysSwQ9\nm2aWdmXjEJi8ZLLElRAUW/9aes6Spw2avIcV7+OirAdtkgaeGxvBhA4ml2ILgdvj\nutDlDcqSkWrxcacx3cLcWqm+nh8UdplfG5ju+JJCHuT9PJR1szGtoJ0c5m+KAKTe\nGj98eEpE/RzSpBBZsne1yRy89YQ2C50+IjOvlE7mZVGsrbY6kunYncqgPegiz/ce\nQZAYw+3DOj4RfNRY9X8jwGRhTSAnSy8ebCexMXoVPuItwLlIr4jgxgDaQmEoMMwP\ny5WdtOLTRuFmOCT4JRNHS5OGPtel7Sp5x98CNIWVzSl4uYoiGEndLTucwsf9qrXR\nR8v8E0+wg70IKbKTeW5x\n=6YaM\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree 8bac834ae5477097b08105f3dea5a1911bfd43db\nparent 59440424d05360cca32ca6f46ae33661f70d43e2\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747167028 -0400\ncommitter GitHub <noreply@github.com> 1747167028 -0400\n\n[Fiber] Trigger default indicator for isomorphic async actions with no root associated (#33190)\n\nStacked on #33160, #33162, #33186 and #33188.\n\nWe have a special case that's awkward for default indicators. When you\nstart a new async Transition from `React.startTransition` then there's\nnot yet any associated root with the Transition because you haven't\nnecessarily `setState` on anything yet until the promise resolves.\nThat's what `entangleAsyncAction` handles by creating a lane that\neverything entangles with until all async actions are done.\n\nIf there are no sync updates before the end of the event, we should\ntrigger a default indicator until either the async action completes\nwithout update or if it gets entangled with some roots we should keep it\ngoing until those roots are done.",
-                "verified_at": "2025-05-13T20:10:31Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/3a5b326d8180f005a10e34a07ded6d5632efe337",
-        "html_url": "https://github.com/facebook/react/commit/3a5b326d8180f005a10e34a07ded6d5632efe337",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/3a5b326d8180f005a10e34a07ded6d5632efe337/comments",
-        "author": {
-            "login": "sebmarkbage",
-            "id": 63648,
-            "node_id": "MDQ6VXNlcjYzNjQ4",
-            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/sebmarkbage",
-            "html_url": "https://github.com/sebmarkbage",
-            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
-            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
-            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
-            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
-            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
-            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "59440424d05360cca32ca6f46ae33661f70d43e2",
-                "url": "https://api.github.com/repos/facebook/react/commits/59440424d05360cca32ca6f46ae33661f70d43e2",
-                "html_url": "https://github.com/facebook/react/commit/59440424d05360cca32ca6f46ae33661f70d43e2"
-            }
-        ]
-    },
-    {
-        "sha": "59440424d05360cca32ca6f46ae33661f70d43e2",
-        "node_id": "C_kwDOAJy2KtoAKDU5NDQwNDI0ZDA1MzYwY2NhMzJjYTZmNDZhZTMzNjYxZjcwZDQzZTI",
-        "commit": {
-            "author": {
-                "name": "Sebastian Markb\u00e5ge",
-                "email": "sebastian@calyptus.eu",
-                "date": "2025-05-13T20:00:38Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-13T20:00:38Z"
-            },
-            "message": "Implement Navigation API backed default indicator for DOM renderer (#33162)\n\nStacked on #33160.\n\nBy default, if `onDefaultTransitionIndicator` is not overridden, this\nwill trigger a fake Navigation event using the Navigation API. This is\nintercepted to create an on-going navigation until we complete the\nTransition. Basically each default Transition is simulated as a\nNavigation.\n\nThis triggers the native browser loading state (in Chrome at least). So\nnow by default the browser spinner spins during a Transition if no other\nloading state is provided. Firefox and Safari hasn't shipped Navigation\nAPI yet and even in the flag Safari has, it doesn't actually trigger the\nnative loading state.\n\nTo ensures that you can still use other Navigations concurrently, we\ndon't start our fake Navigation if there's one on-going already.\nSimilarly if our fake Navigation gets interrupted by another. We wait\nfor on-going ones to finish and then start a new fake one if we're\nsupposed to be still pending.\n\nThere might be other routers on the page that might listen to intercept\nNavigation Events. Typically you'd expect them not to trigger a refetch\nwhen navigating to the same state. However, if they want to detect this\nwe provide the `\"react-transition\"` string in the `info` field for this\npurpose.",
-            "tree": {
-                "sha": "9b8e1347009d8388fd9ef0239e4ed7be188e7146",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/9b8e1347009d8388fd9ef0239e4ed7be188e7146"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/59440424d05360cca32ca6f46ae33661f70d43e2",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoI6TmCRC1aQ7uu5UhlAAAz/YQAAaa4QSqncuPFNGZAtNUHoB+\n22GKeRTHmy80Qess0Rbhqr3B/NioBv9XV7MplvbM2LZtUdlUWK1Bw51Dcb4Mv/JP\n7dcmEtXZLgaKai/0/O7z5Ogjz4gPrXmk//W95+TaEG+uTVAKNzAOhijaFTgb9AzE\n7jQS/rDnB3h9y2CAc+cqCeT4zMyy18Nv6OWmzTtaUVmZXWPX1PIT5KvGSaEoWHGA\nCYRRiqUmKZ8juYZbL0FNbMvxzKYp2xMApvdYwkKUOa7PjOYWR++9KwHr4U0dCWeg\nN+NfMzzeQsClEX39PABj8yM2a9vWu0hba/mBO68HTU5fqjchn3KZAL87Ln7BjiaN\nKlbjqjoL4rDEHDn68zWAmH68IIrZVWhC2/bZf9Wu5N+xMDSD4XsD9weLzbvZ4Wnu\nph7D7nB3++j4zV40lMQPL5ieDIikU9Mru7YFBo23o2x7bR4lfJWmATDXTb9AdVZr\n2xn+FVidxQ13qRhQPk0kUm7H9Z9CX5I/CaiOn9+U8GzOANCfZnuf42Jc52OBU8PA\n5KlaujOgP+baRqNlIJjn1tgNPMmageYoFh7JIwoN8NOpIUdGSKDOIG026A9dQ/Fo\n+qiDrNon5fKR7rGS4zlALUCvDixQE6Tl5jKS1OivxStFEIBCMYseWLMT8cBuDqxz\nYaeQzJiFBU2h0XeRLUxb\n=qFZb\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree 9b8e1347009d8388fd9ef0239e4ed7be188e7146\nparent b480865db0babfcad602a1a1909775069b5779f9\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747166438 -0400\ncommitter GitHub <noreply@github.com> 1747166438 -0400\n\nImplement Navigation API backed default indicator for DOM renderer (#33162)\n\nStacked on #33160.\n\nBy default, if `onDefaultTransitionIndicator` is not overridden, this\nwill trigger a fake Navigation event using the Navigation API. This is\nintercepted to create an on-going navigation until we complete the\nTransition. Basically each default Transition is simulated as a\nNavigation.\n\nThis triggers the native browser loading state (in Chrome at least). So\nnow by default the browser spinner spins during a Transition if no other\nloading state is provided. Firefox and Safari hasn't shipped Navigation\nAPI yet and even in the flag Safari has, it doesn't actually trigger the\nnative loading state.\n\nTo ensures that you can still use other Navigations concurrently, we\ndon't start our fake Navigation if there's one on-going already.\nSimilarly if our fake Navigation gets interrupted by another. We wait\nfor on-going ones to finish and then start a new fake one if we're\nsupposed to be still pending.\n\nThere might be other routers on the page that might listen to intercept\nNavigation Events. Typically you'd expect them not to trigger a refetch\nwhen navigating to the same state. However, if they want to detect this\nwe provide the `\"react-transition\"` string in the `info` field for this\npurpose.",
-                "verified_at": "2025-05-13T20:00:40Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/59440424d05360cca32ca6f46ae33661f70d43e2",
-        "html_url": "https://github.com/facebook/react/commit/59440424d05360cca32ca6f46ae33661f70d43e2",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/59440424d05360cca32ca6f46ae33661f70d43e2/comments",
-        "author": {
-            "login": "sebmarkbage",
-            "id": 63648,
-            "node_id": "MDQ6VXNlcjYzNjQ4",
-            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/sebmarkbage",
-            "html_url": "https://github.com/sebmarkbage",
-            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
-            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
-            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
-            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
-            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
-            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "b480865db0babfcad602a1a1909775069b5779f9",
-                "url": "https://api.github.com/repos/facebook/react/commits/b480865db0babfcad602a1a1909775069b5779f9",
-                "html_url": "https://github.com/facebook/react/commit/b480865db0babfcad602a1a1909775069b5779f9"
-            }
-        ]
-    },
-    {
-        "sha": "b480865db0babfcad602a1a1909775069b5779f9",
-        "node_id": "C_kwDOAJy2KtoAKGI0ODA4NjVkYjBiYWJmY2FkNjAyYTFhMTkwOTc3NTA2OWI1Nzc5Zjk",
-        "commit": {
-            "author": {
-                "name": "Sebastian Markb\u00e5ge",
-                "email": "sebastian@calyptus.eu",
-                "date": "2025-05-13T19:52:44Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-13T19:52:44Z"
-            },
-            "message": "[Fiber] Always flush Default priority in the microtask if a Transition was scheduled (#33186)\n\nStacked on #33160.\n\nThe purpose of this is to avoid calling `onDefaultTransitionIndicator`\nwhen a Default priority update acts as the loading indicator, but still\ncall it when unrelated Default updates happens nearby.\n\nWhen we schedule Default priority work that gets batched with other\nevents in the same frame more or less. This helps optimize by doing less\nwork. However, that batching means that we can't separate work from one\nsetState from another. If we would consider all Default priority work in\na frame when determining whether to show the default we might never show\nit in cases like when you have a recurring timer updating something.\n\nThis instead flushes the Default priority work eagerly along with the\nsync work at the end of the event, if this event scheduled any\nTransition work. This is then used to determine if the default indicator\nneeds to be shown.",
-            "tree": {
-                "sha": "d732bfafa208de71d28159fbf9ea250ad1b54571",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/d732bfafa208de71d28159fbf9ea250ad1b54571"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/b480865db0babfcad602a1a1909775069b5779f9",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoI6MMCRC1aQ7uu5UhlAAA5NYQAGtk4JNLW43G5lxXh2u+mgRL\nDoWwU95c1nU6IWhfSgX9QFOjG/F4sjlyJnoSbejlP5lpoPBxL1ltH3/4c7UQSbYq\nOjJFsI1oyra+dVIU8vd8JEsklMYoTnWAStREyWhkNUFCaiUdIkVT0fRiXPGGiDwO\nGq6jQzM6sIpAL2t0Lzcj5QFgwNZeB7nb9fiOmld1kgJjFWDuZP7PrseitCGT4yPg\nukRvZtUNbc2m94Lh9BxuJwQ4zwW3EORMY5s+huYQG0Klt+KJomXAaP7FoY+BTmbO\ntsZMSVl99VBzgtLOt0A0DZeZeS8IUDtak5EBgqQGocbd0A2Etgos2PQpvM2/VRQC\n4aELm8W1QAq7y7fR7AmeCkqMcEgR5jmoCJETcNz+cO3qRXnJl0VTMLBkFA01jpg2\nCvyrhJ8n6qo/UWEHxFHIo+t4jMZUHIlFOyhTu9b6x+Bn+5ViDgF8B9T5aSNJdKA5\n8WQx/0tdGdzVnnb7xWGIYliuxn/6D16gWFUKV4dA2c+jNowrggddE3KhNN7jakH6\nIPiXqOVynsdNHcEm8w2vJw1QvLBwoIai9IsnFxV6HRTq13s3F8FYpy1wesF4uC8w\nCARgfcG1QH68LhZ+5223Tp73oAHWY/+dLMdxoMLSPZsBZ9UNu57aImlfc3nYYptV\nkY+Vrw+jmxkgR1nBW+Dv\n=C/kh\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree d732bfafa208de71d28159fbf9ea250ad1b54571\nparent 62d3f36ea79fc0a10b514d4bbcc4ba3f21b3206e\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747165964 -0400\ncommitter GitHub <noreply@github.com> 1747165964 -0400\n\n[Fiber] Always flush Default priority in the microtask if a Transition was scheduled (#33186)\n\nStacked on #33160.\n\nThe purpose of this is to avoid calling `onDefaultTransitionIndicator`\nwhen a Default priority update acts as the loading indicator, but still\ncall it when unrelated Default updates happens nearby.\n\nWhen we schedule Default priority work that gets batched with other\nevents in the same frame more or less. This helps optimize by doing less\nwork. However, that batching means that we can't separate work from one\nsetState from another. If we would consider all Default priority work in\na frame when determining whether to show the default we might never show\nit in cases like when you have a recurring timer updating something.\n\nThis instead flushes the Default priority work eagerly along with the\nsync work at the end of the event, if this event scheduled any\nTransition work. This is then used to determine if the default indicator\nneeds to be shown.",
-                "verified_at": "2025-05-13T19:52:46Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/b480865db0babfcad602a1a1909775069b5779f9",
-        "html_url": "https://github.com/facebook/react/commit/b480865db0babfcad602a1a1909775069b5779f9",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/b480865db0babfcad602a1a1909775069b5779f9/comments",
-        "author": {
-            "login": "sebmarkbage",
-            "id": 63648,
-            "node_id": "MDQ6VXNlcjYzNjQ4",
-            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/sebmarkbage",
-            "html_url": "https://github.com/sebmarkbage",
-            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
-            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
-            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
-            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
-            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
-            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "62d3f36ea79fc0a10b514d4bbcc4ba3f21b3206e",
-                "url": "https://api.github.com/repos/facebook/react/commits/62d3f36ea79fc0a10b514d4bbcc4ba3f21b3206e",
-                "html_url": "https://github.com/facebook/react/commit/62d3f36ea79fc0a10b514d4bbcc4ba3f21b3206e"
             }
         ]
     }

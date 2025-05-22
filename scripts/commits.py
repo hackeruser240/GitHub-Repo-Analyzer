@@ -80,8 +80,9 @@ def commit_title_visualization(commits,filename):
             title = message.split('\n\n')[0].strip()
             clean_messages.append(title)
             
-    table = [(i + 1, msg) for i, msg in enumerate(clean_messages)]
+
     try:
+        table = [(i + 1, msg) for i, msg in enumerate(clean_messages)]
         print("Title of latest commits:")
         print(tabulate(table, headers=["#", "Commit Title"], tablefmt="fancy_grid"))
     except:
@@ -99,16 +100,22 @@ def commit_title_visualization(commits,filename):
 def save_to_PDF(commit_titles, save_path):
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     save_path=os.path.join( os.path.dirname(save_path) ,"Commit Titles.pdf")
-    
+
     c = canvas.Canvas(save_path, pagesize=letter)
     width, height = letter
+    maintitle=f"'{var.repo}' details"
+    c.setFont("Helvetica-Bold", 16)
+    main_title_width = c.stringWidth(maintitle, "Helvetica-Bold", 16)
+    c.drawString((width - main_title_width) / 2, height - 1 * inch, maintitle)
 
-    title = "Commit Titles"
+    sub_title = "Commit Titles:"
     c.setFont("Helvetica-Bold", 14)
-    c.drawString(1 * inch, height - 1 * inch, title)
+    c.stringWidth(sub_title, "Helvetica-Bold", 14)
+    #sub_title_width = c.stringWidth(sub_title, "Helvetica", 14)
+    c.drawString(1*inch, height - 1.3 * inch, sub_title)
 
     c.setFont("Helvetica", 10)
-    y = height - 1.2 * inch
+    y = height - 1.6 * inch
 
     for i, msg in enumerate(commit_titles, start=1):
         text = f"{i}. {msg}"
@@ -177,4 +184,4 @@ if __name__=='__main__':
     filepath=r'C:\Users\HP\OneDrive\Documents\GithubRepos\Data'
     filename=r'C:\Users\HP\OneDrive\Documents\GithubRepos\Data\commits.json'
 
-    extracting_authors(filename)
+    extracting_authors(filename,viz=True)
