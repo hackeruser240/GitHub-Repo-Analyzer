@@ -23,8 +23,13 @@ class Variables:
         authors: dict
         defined in commits.py
         extracts the the list of authors of the commits of the github repo and counts each of their respective commits
+
+        raw_authors: list
+        defined in commits.py
+        extracts the raw author names from commits.json and stores them in the list
         '''
         self.authors={}
+        self.raw_authors=[]
         
         '''
         defined in commits.py

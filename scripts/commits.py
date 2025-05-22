@@ -30,6 +30,10 @@ def printing_commit_authors():
     for key,value in var.authors.items():
         print(f"{key}:{value} commits")
 
+    print("Authors in order of timeline:")
+    for num,item in enumerate(var.raw_authors[:6],start=1) :
+        print(f"{num}. {item}")
+
 def commit_author_visualization():
 
     # Sort and prepare data
@@ -86,10 +90,14 @@ def commit_title_visualization(commits,commit_title_viz=False):
             print("Title of latest commits could NOT be populated")
 
 
+
+#===============================================================================================
+#===========================================main.py()===========================================
+#===============================================================================================
+
 def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
     commits=loading_json_file(filename)
-    #authors={}
-    raw_author=[]
+    
     if commits:
         #print("Extracting author logins:")
         for commit_dict in commits: 
@@ -97,7 +105,7 @@ def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
             if author and isinstance(author, dict):
                 
                 login = author.get('login') # Use .get() here too for safety
-                raw_author.append(login)
+                var.raw_authors.append(login)
 
                 if login not in var.authors: 
                     var.authors[login] = 1
@@ -110,10 +118,6 @@ def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
         try:
             #Printing the author dictionary
             printing_commit_authors()
-
-            print("Authors in order of timeline:")
-            for num,item in enumerate(raw_author[:6],start=1) :
-                print(f"{num}. {item}")
         except:
             print("Some error in commits.py -> printing_commit_authors()")
 
