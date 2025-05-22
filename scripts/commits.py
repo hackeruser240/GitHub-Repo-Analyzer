@@ -87,7 +87,6 @@ def commit_title_visualization(commits,commit_title_viz=False):
         except:
             print("Title of latest commits could NOT be populated")
 
-
 def save_to_PDF(commit_titles, save_path):
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     save_path=os.path.join( os.path.dirname(save_path) ,"Commit Titles.pdf")
@@ -122,7 +121,7 @@ def save_to_PDF(commit_titles, save_path):
     
     print(f"PDF saved at: {save_path}")
 
-def extracting_authors(filename,viz=False,commit_title_viz=False):
+def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
     commits=loading_json_file(filename)
     #authors={}
     raw_author=[]
@@ -146,25 +145,23 @@ def extracting_authors(filename,viz=False,commit_title_viz=False):
         try:
             #Printing the author dictionary
             printing_commit_authors()
+
+            print("Authors in order of timeline:")
+            for num,item in enumerate(raw_author[:6],start=1) :
+                print(f"{num}. {item}")
         except:
             print("Some error in commits.py -> printing_commit_authors()")
 
 
-        print("Authors in order of timeline:")
-        for num,item in enumerate(raw_author[:6],start=1) :
-            print(f"{num}. {item}")
-
-
         try:
-            if viz:
+            if commit_author_viz:
                 commit_author_visualization()
         except:
             print("Some error in commits.py -> commit_author_visualization()")
 
         
         try:
-            if viz:
-                commit_title_visualization(commits,commit_title_viz=False)
+            commit_title_visualization(commits,commit_title_viz=False)
         except Exception as e:
             print("Some error in commits.py -> commit_title_visualization()")
             print(f"Error: {e}")
