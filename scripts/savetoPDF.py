@@ -33,14 +33,14 @@ def commit_titles(var):
                 var.y = var.height - 1 * inch
             var.c.setFont("Helvetica", var.f3_font)
 
-def commit_authors(var):
+def commit_authorsNcounts(var):
     if var.raw_authors==[]:
         pass
     else:
         # Set up font
         var.c.setFont("Helvetica-Bold", var.f2_font)
         var.y -= 0.3 * inch
-        var.c.drawString(1 * inch, var.y, "Authors in order of greatest commits:")
+        var.c.drawString(1 * inch, var.y, "Commit authors in order of greatest commits:")
 
         # Switch to regular font
         var.c.setFont("Helvetica", var.f3_font)
@@ -52,8 +52,8 @@ def commit_authors(var):
         # Sort authors before printing
         sorted_authors = sorted(var.authors.items(), key=lambda x: x[1], reverse=True)
 
-        for author, count in sorted_authors:
-            line = f"{author}: {count} commits"
+        for i, (author, count) in enumerate(sorted_authors,start=1):
+            line = f"{i}. {author}: {count} commits"
             var.c.drawString(1 * inch, var.y, line)
             var.y -= 0.2 * inch  # space between lines
 
@@ -63,6 +63,31 @@ def commit_authors(var):
                 var.y = var.height - 1 * inch
                 var.c.setFont("Helvetica", var.f3_font)
 
+def commit_raw_authors(var):
+    if var.raw_authors==[]:
+        pass
+    else:
+        # Add some vertical space before this section
+        var.y -= 0.3 * inch
+
+        var.c.setFont("Helvetica-Bold", 12)
+        var.c.drawString(1 * inch, var.y, "Commit authors in order of timeline:")
+
+        # Move cursor down
+        var.y -= 0.2 * inch
+        var.c.setFont("Helvetica", 10)
+
+        # Print first 6 authors from var.raw_authors
+        for num, item in enumerate(var.raw_authors[:6], start=1):
+            line = f"{num}. {item}"
+            var.c.drawString(1 * inch, var.y, line)
+            var.y -= 0.2 * inch
+
+            # Handle page overflow
+            if var.y < 1 * inch:
+                var.c.showPage()
+                var.y = var.height - 1 * inch
+                var.c.setFont("Helvetica", 10)
 
 def save_to_PDF(var):
     os.makedirs(os.path.dirname(var.save_dir), exist_ok=True)
@@ -77,12 +102,16 @@ def save_to_PDF(var):
     
     title(var)
     commit_titles(var)
-    commit_authors(var)
+    commit_authorsNcounts(var)
+    commit_raw_authors(var)
 
     try:
         var.c.save()
         print(f"PDF saved at: {var.save_dir}")
     except PermissionError:
         print("⚠️ You forgot to close the PDF file!")
-    
-    
+
+if __name__=='__main__':
+    from variables import var
+    var.save_dir=r'Data\LL' #Just dummy address
+    save_to_PDF(var)
