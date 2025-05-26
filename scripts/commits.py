@@ -1,6 +1,7 @@
 import json
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 import sys,os
 # Add parent directory (project root) to sys.path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -14,7 +15,7 @@ def loading_json_file(filename):
 
     #filename=r'C:\Users\HP\OneDrive\Documents\GithubRepos\Data\commits.json'
     if os.path.isfile(filename) and filename.lower().endswith('.json') :
-        print(f" '{filename}' is a valid path! ")
+        print(f"'{filename}' is a valid path! ")
         with open(filename,'r') as f:
             commits=json.load(f)
         print('Length of commit.json :',len(commits))
@@ -24,6 +25,10 @@ def loading_json_file(filename):
         print(f" Please correct '{filename}' path")
         
 def printing_commit_authors():
+    '''
+    Printing the total commits per authors.
+    With respect to greatest number of commits and time
+    '''
     var.authors=dict(sorted(var.authors.items(), key=lambda item: item[1], reverse=True) )
     
     print(f"Authors in order of greatest commits:")
@@ -35,6 +40,8 @@ def printing_commit_authors():
         print(f"{num}. {item}")
 
 def commit_author_visualization():
+    plt.clf()  # Clear current figure
+    plt.cla()
 
     # Sort and prepare data
     sorted_authors = sorted(var.authors.items(), key=lambda x: x[1], reverse=True)
@@ -89,14 +96,41 @@ def commit_title_visualization(commits,commit_title_viz=False):
         except:
             print("Title of latest commits could NOT be populated")
 
+def commits_over_time(commits):
+    dates=[ commit.get('commit').get('author').get('date') for commit in commits]
+    df=pd.DataFrame( { 'dates':pd.to_datetime(dates) } )
+    df['Dates']=df['dates'].dt.date
+    commit_counts=df.groupby("Dates").size()
 
+    #Plotting:
+    plt.clf()  # Clear current figure
+    plt.cla()
+    
+    commit_counts.plot(kind='line', figsize=(12, 6), title="Commits Over Time")
+    plt.xlabel("Date")
+    plt.ylabel("Number of Commits")
+    plt.grid(True)
+    plt.tight_layout()
+    #plt.show()
+    try: 
+        path=r'Data\Images'
+        os.makedirs(path,exist_ok=True)
+
+        filepath=os.path.join( path, "Commits Over Time.png")
+        plt.savefig(filepath,dpi=300)
+        print(f"✅ Saved: Commits Over Time.png to '{os.path.dirname(filepath)}' ")
+    except:
+        print("❌Failed to save the Commits Over Time image")
 
 #===============================================================================================
 #===========================================main.py()===========================================
 #===============================================================================================
 
 def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
-    commits=loading_json_file(filename)
+    try:
+        commits=loading_json_file(filename)
+    except Exception as d:
+        print(f"Error in loading commits.json. Error: {d}")
     
     if commits:
         #print("Extracting author logins:")
@@ -134,7 +168,11 @@ def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
         except Exception as e:
             print("Some error in commits.py -> commit_title_visualization()")
             print(f"Error: {e}")
-    
+
+        try:
+            commits_over_time(commits)
+        except Exception as e:
+            print(f"Error in commits.py -> commit_over_time() \n Error:{e} ")
     else:
         print("No commit data loaded to process.")
 
@@ -146,7 +184,10 @@ if __name__=='__main__':
     filename=r'C:\Users\HP\OneDrive\Documents\GithubRepos\Data\commits.json'
     headers = {'Authorization': f'token {var.token}'}
     
-    print(f"Finding latest commits of {var.repo} repo")
+    if var.repo:
+        print(f"Finding latest commits of {var.repo} repo")
+    else:
+        pass
 
     commits= f'https://api.github.com/repos/{var.repo}/commits'
     response = requests.get(commits, headers=headers)
@@ -164,4 +205,4 @@ if __name__=='__main__':
         except:
             print('❌ Failed to save commits.json')
 
-    extracting_authors(filename,viz=True)
+    extracting_authors(filename)

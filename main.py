@@ -71,7 +71,7 @@ def contributors(repo,viz=False):
         print(f"❌ Failed to fetch data. Status Code: {response.status_code}")
         print("Reason:", response.json().get("message", "Unknown error"))
 
-def commits(var,viz=False):
+def commits(var):
     
     print(f"Finding latest commits of {var.repo} repo")
 
@@ -109,5 +109,5 @@ if __name__=="__main__":
     var.repo=args.repo
 
     #contributors(args.repo)
-    commits(var,viz=True)
+    commits(var)
     save_to_PDF(var)
