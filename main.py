@@ -75,7 +75,7 @@ def commits(var):
     
     print(f"Finding latest commits of {var.repo} repo")
 
-    commits= f'https://api.github.com/repos/{var.repo}/commits'
+    commits= f'https://api.github.com/repos/{var.repo}/commits?per_page=50'
     response = requests.get(commits, headers=headers)
     
     if response.status_code==200:
