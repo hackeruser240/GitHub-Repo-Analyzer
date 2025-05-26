@@ -89,6 +89,34 @@ def commit_raw_authors(var):
                 var.y = var.height - 1 * inch
                 var.c.setFont("Helvetica", 10)
 
+def top_contributors(var):
+    if var.top_contributors==[]:
+        pass
+    else:
+        # Add some vertical space before this section
+        var.y -= 0.3 * inch
+
+        var.c.setFont("Helvetica-Bold", 12)
+        var.c.drawString(1 * inch, var.y, "List of top contributors:")
+
+        # Move cursor down
+        var.y -= 0.2 * inch
+        var.c.setFont("Helvetica", 10)
+
+        n=var.numof_top_contributors
+
+        # Print first 6 authors from var.raw_authors
+        for i, user in enumerate(var.top_contributors[:n], start=1):
+            line = f"{i}. {user['login']} - {user['contributions']} contributions"
+            var.c.drawString(1 * inch, var.y, line)
+            var.y -= 0.2 * inch
+
+            # Handle page overflow
+            if var.y < 1 * inch:
+                var.c.showPage()
+                var.y = var.height - 1 * inch
+                var.c.setFont("Helvetica", 10)
+
 def save_to_PDF(var):
     os.makedirs(os.path.dirname(var.save_dir), exist_ok=True)
     var.save_dir=os.path.join( os.path.dirname(var.save_dir) ,"Commit Titles.pdf")
@@ -104,6 +132,7 @@ def save_to_PDF(var):
     commit_titles(var)
     commit_authorsNcounts(var)
     commit_raw_authors(var)
+    top_contributors(var)
 
     try:
         var.c.save()

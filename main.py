@@ -21,12 +21,12 @@ def contributors(repo,viz=False):
 
     if not repo.startswith('https://api.github.com/repos/'):
         print(f"Finding the contributors of {repo} repo")
-        contributors = f'https://api.github.com/repos/{repo}/contributors'
+        contributors = f'https://api.github.com/repos/{repo}/contributors?per_page=50'
     else:
         f=repo.split("/")
         repo=f[4]+'/'+f[5]
         print(f"Finding the contributors of repo: {repo}")
-        contributors = f'https://api.github.com/repos/{repo}/contributors'
+        contributors = f'https://api.github.com/repos/{repo}/contributors?per_page=50'
     
     response = requests.get(contributors, headers=headers)
     
@@ -108,6 +108,6 @@ if __name__=="__main__":
     args=parser.parse_args()
     var.repo=args.repo
 
-    #contributors(args.repo)
+    contributors(args.repo)
     commits(var)
     save_to_PDF(var)

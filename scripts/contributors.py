@@ -4,7 +4,6 @@ import os
 
 from scripts.variables import var
 
-
 def lowest_contributors(data,n=var.lowest_contributions):
     '''
     finding the lowest contributors with contributions<n.
@@ -68,14 +67,14 @@ def lowest_contributors_VIZ(data, n=var.lowest_contributions):
     except:
         print("❌Failed to save the lowest contributors image")
 
-def top_contributors(data,n=var.top_contributors):
+def top_contributors(data,n=var.numof_top_contributors):
     '''
     Using the response, printing the most contributors, 5 by default
     '''
     print(f"*****Finding top {n} contributors in '{var.repo}'*****")
-    top_contributors = sorted(data, key=lambda x: x['contributions'], reverse=True)
+    var.top_contributors = sorted(data, key=lambda x: x['contributions'], reverse=True)
 
-    for i, user in enumerate(top_contributors[:n], start=1):
+    for i, user in enumerate(var.top_contributors[:n], start=1):
         print(f"{i}. {user['login']} - {user['contributions']} contributions")
 
 def top_contributors_VIZ(data,n=var.top_contributors):

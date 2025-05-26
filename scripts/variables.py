@@ -17,7 +17,7 @@ class Variables:
         Give the top 'top_contributors' contributors
         '''
         self.lowest_contributions=100
-        self.top_contributors=10
+        self.numof_top_contributors=10
 
         '''
         authors: dict
@@ -44,4 +44,16 @@ class Variables:
         self.path=r'Data'
         self.save_dir=''
 
+
+        '''
+        defined in contributors.py
+        
+        used in top_contributors()
+        used to store the top contributors (by default, 100)
+
+        used in lowest_contributors()
+        used to store the lowest contribution (by default, <100)
+        '''
+        self.top_contributors=[]
+        self.lowest_contributors=[]
 var=Variables()
