@@ -113,5 +113,5 @@ def save_to_PDF(var):
 
 if __name__=='__main__':
     from variables import var
-    var.save_dir=r'Data\LL' #Just dummy address
+    var.save_dir=r'Data\LL' #Just a dummy address
     save_to_PDF(var)
