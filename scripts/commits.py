@@ -15,7 +15,7 @@ def loading_json_file(filename):
 
     #filename=r'C:\Users\HP\OneDrive\Documents\GithubRepos\Data\commits.json'
     if os.path.isfile(filename) and filename.lower().endswith('.json') :
-        print(f"'{filename}' is a valid path! ")
+        #print(f"'{filename}' is a valid path! ")
         with open(filename,'r') as f:
             commits=json.load(f)
         print('Length of commit.json :',len(commits))
@@ -232,14 +232,19 @@ if __name__=='__main__':
     if var.repo:
         print(f"Finding latest commits of {var.repo} repo")
     else:
-        pass
+        var.repo='facebook/react'
 
-    commits= f'https://api.github.com/repos/{var.repo}/commits?per_page=100'
+    per_page=100
+    commits= f'https://api.github.com/repos/{var.repo}/commits?per_page={per_page}'
     response = requests.get(commits, headers=headers)
     
     if response.status_code==200:
         data=response.json()
+        print("**************************************")
         print(f"Total {len(data)} commits found")
+        print(f"Per_page: {per_page}")
+        print("**************************************")
+
         try:
             path=r'Data'
             os.makedirs(path,exist_ok=True)
@@ -250,4 +255,10 @@ if __name__=='__main__':
         except:
             print('❌ Failed to save commits.json')
 
-    extracting_authors(filename)
+        try:
+            extracting_authors(filename)
+        except Exception as s:
+            print(f"Error: {s}")
+    
+    else:
+        print("Response code error")
