@@ -122,7 +122,7 @@ def commits_per_day(commits):
     except:
         print("❌Failed to save the Commits Per Day image")
 
-def commit_frequency_per_user(commits):
+def commits_perday_peruser(commits):
     # Extract author + commit date
     data = [
         {
@@ -143,7 +143,7 @@ def commit_frequency_per_user(commits):
     plt.cla()
 
     # Plot
-    freq.plot(kind='line', figsize=(14, 6), title='Commit Frequency per User Over Time')
+    freq.plot(kind='line', figsize=(14, 6), title='Commits/Day for Users')
     plt.xlabel("Date")
     plt.ylabel("Commits")
     plt.legend(title="User", bbox_to_anchor=(1.05, 1), loc='upper left')
@@ -155,9 +155,9 @@ def commit_frequency_per_user(commits):
         path=r'Data\Images'
         os.makedirs(path,exist_ok=True)
 
-        filepath=os.path.join( path, "Commits Frequnecy Over Time.png")
+        filepath=os.path.join( path, "Commits per Day per User.png")
         plt.savefig(filepath,dpi=300)
-        print(f"✅ Saved: Commits Frequnecy Over Time.png to '{os.path.dirname(filepath)}' ")
+        print(f"✅ Saved: Commits per Day per User.png to '{os.path.dirname(filepath)}' ")
     except Exception as o:
         print(f"Error in commtis.py -> commit_frequency_per_user \n{o}")
 
@@ -214,7 +214,7 @@ def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
             print(f"Error in commits.py -> commit_over_time() \n Error:{e} ")
 
         try:
-            commit_frequency_per_user(commits)
+            commits_perday_peruser(commits)
         except Exception as a:
             print(f"Error in commits.py -> commit_frequency_per_user()\nError:{e}")
     
