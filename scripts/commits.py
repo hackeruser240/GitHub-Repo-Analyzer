@@ -7,6 +7,7 @@ import sys,os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from tabulate import tabulate #used in commit_title_visualization()
+from wordcloud import WordCloud # used in commit_msg_wordcloud()
 
 from scripts.variables import var
 from scripts.savetoPDF import save_to_PDF
@@ -161,6 +162,52 @@ def commits_perday_peruser(commits):
     except Exception as o:
         print(f"Error in commtis.py -> commit_frequency_per_user \n{o}")
 
+def commit_msg_wordcloud(commits):
+    # Extract commit messages
+    messages = [
+        commit.get('commit', {}).get('message', '')
+        for commit in commits
+        if commit.get('commit')
+    ]
+
+    # Join all messages into one string
+    text = " ".join(messages).lower()
+
+    # Optional: remove common irrelevant words
+    common_stopwords = set(WordCloud().stopwords)
+    more_stopwords = {"merge", "pull", "request", "from", "branch"}
+    all_stopwords = common_stopwords.union(more_stopwords)
+
+    # Generate word cloud
+    wordcloud = WordCloud(
+        width=1000,
+        height=500,
+        background_color='white',
+        stopwords=all_stopwords,
+        collocations=True
+    ).generate(text)
+
+    # Plot
+    plt.clf()
+    plt.cla()
+    plt.figure(figsize=(12, 6))
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis('off')
+    plt.title("Common Terms in Commit Messages", fontsize=16)
+    plt.tight_layout()
+    #plt.show()
+
+    try:
+        path=r'Data\Images'
+        os.makedirs(path,exist_ok=True)
+
+        filepath=os.path.join( path, "Wordcloud.png")
+        plt.savefig(filepath,dpi=300)
+        print(f"✅ Saved: Wordcloud.png to '{os.path.dirname(filepath)}' ")
+    except Exception as o:
+        print(f"Error in commtis.py -> commit_frequency_per_user \n{o}")
+
+
 #===============================================================================================
 #===========================================main.py()===========================================
 #===============================================================================================
@@ -218,6 +265,10 @@ def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
         except Exception as a:
             print(f"Error in commits.py -> commit_frequency_per_user()\nError:{e}")
     
+        try:
+            commit_msg_wordcloud(commits)
+        except Exception as t:
+            print(f"Error in commits.py -> commit_msg_wordcloud()\nError:{t}")
     else:
         print("No commit data loaded to process.")
 
