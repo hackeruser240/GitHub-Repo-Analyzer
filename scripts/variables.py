@@ -10,13 +10,13 @@ class Variables:
         self.headers = {'Authorization': f'token {self.token}'}
 
         '''
-        lowest_contributions: int
+        numof_lowest_contributions: int
         Give me the number of users with commits < lowest_contributions
 
-        top_contributors: int
+        numof_top_contributors: int
         Give the top 'top_contributors' contributors
         '''
-        self.lowest_contributions=100
+        self.numof_lowest_contributions=100
         self.numof_top_contributors=10
 
         '''

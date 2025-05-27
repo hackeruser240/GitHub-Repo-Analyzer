@@ -4,7 +4,7 @@ import os
 
 from scripts.variables import var
 
-def lowest_contributors(data,n=var.lowest_contributions):
+def lowest_contributors(data,n=var.numof_lowest_contributions):
     '''
     finding the lowest contributors with contributions<n.
     by default n=100
@@ -13,11 +13,11 @@ def lowest_contributors(data,n=var.lowest_contributions):
     print(f"*****Finding lowest {n} contributors in '{var.repo}'*****")
     #low=sorted(data, key=lambda x:x['contributions'],reverse=False)
     
-    lowest=[user for user in data if user['contributions']<n]
+    var.lowest=[user for user in data if user['contributions']<n]
 
-    print(f"Users with ≤{n} contributions: {len(lowest)}")
+    print(f"Users with ≤{n} contributions: {len(var.lowest)}")
     x,y=[],[]
-    for user in lowest:
+    for user in var.lowest:
         if user['type'] == 'User':
             print(f"{user['login']} - {user['contributions']}")
             x.append(user['login'])
@@ -27,9 +27,9 @@ def lowest_contributors(data,n=var.lowest_contributions):
             #print('Bot detected! Ignoring!')
             pass
 
-    return lowest
+    return var.lowest
 
-def lowest_contributors_VIZ(data, n=var.lowest_contributions):            
+def lowest_contributors_VIZ(data, n=var.numof_lowest_contributions):            
     
     lowest=[user for user in data if user['contributions']<n]
 
@@ -77,7 +77,7 @@ def top_contributors(data,n=var.numof_top_contributors):
     for i, user in enumerate(var.top_contributors[:n], start=1):
         print(f"{i}. {user['login']} - {user['contributions']} contributions")
 
-def top_contributors_VIZ(data,n=var.top_contributors):
+def top_contributors_VIZ(data,n=var.numof_top_contributors):
     '''
     Gets the top n contributors and visualizes them
     '''
