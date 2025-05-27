@@ -55,5 +55,5 @@ class Variables:
         used to store the lowest contribution (by default, <100)
         '''
         self.top_contributors=[]
-        self.lowest_contributors=[]
+        self.lowest_contribution=[]
 var=Variables()

@@ -118,7 +118,7 @@ def top_contributors(var):
                 var.c.setFont("Helvetica", 10)
 
 def lowest_contributions(var):
-    if var.lowest_contributors==[]:
+    if var.lowest_contribution==[]:
         pass
     else:
         # Add some vertical space before this section
@@ -134,8 +134,8 @@ def lowest_contributions(var):
         n=var.numof_top_contributors
 
         # Print first 6 authors from var.raw_authors
-        for user in var.lowest:
-            line = f"{user['login']} - {user['contributions']}"
+        for i,user in enumerate(var.lowest_contribution,start=1):
+            line = f"{i}. {user['login']} - {user['contributions']}"
             var.c.drawString(1 * inch, var.y, line)
             var.y -= 0.2 * inch
 

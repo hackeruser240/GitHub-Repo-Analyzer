@@ -13,11 +13,11 @@ def lowest_contributors(data,n=var.numof_lowest_contributions):
     print(f"*****Finding lowest {n} contributors in '{var.repo}'*****")
     #low=sorted(data, key=lambda x:x['contributions'],reverse=False)
     
-    var.lowest=[user for user in data if user['contributions']<n]
+    var.lowest_contribution=[user for user in data if user['contributions']<n]
 
-    print(f"Users with ≤{n} contributions: {len(var.lowest)}")
+    print(f"Users with ≤{n} contributions: {len(var.lowest_contribution)}")
     x,y=[],[]
-    for user in var.lowest:
+    for user in var.lowest_contribution:
         if user['type'] == 'User':
             print(f"{user['login']} - {user['contributions']}")
             x.append(user['login'])
@@ -27,7 +27,7 @@ def lowest_contributors(data,n=var.numof_lowest_contributions):
             #print('Bot detected! Ignoring!')
             pass
 
-    return var.lowest
+    return var.lowest_contribution
 
 def lowest_contributors_VIZ(data, n=var.numof_lowest_contributions):            
     
