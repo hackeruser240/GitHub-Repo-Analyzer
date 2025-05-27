@@ -96,7 +96,7 @@ def commit_title_visualization(commits,commit_title_viz=False):
         except:
             print("Title of latest commits could NOT be populated")
 
-def commits_over_time(commits):
+def commits_per_day(commits):
     dates=[ commit.get('commit').get('author').get('date') for commit in commits]
     df=pd.DataFrame( { 'dates':pd.to_datetime(dates) } )
     df['Dates']=df['dates'].dt.date
@@ -106,7 +106,7 @@ def commits_over_time(commits):
     plt.clf()  # Clear current figure
     plt.cla()
     
-    commit_counts.plot(kind='line', figsize=(12, 6), title="Commits Over Time")
+    commit_counts.plot(kind='line', figsize=(12, 6), title="Commits/Day")
     plt.xlabel("Date")
     plt.ylabel("Number of Commits")
     plt.grid(True)
@@ -116,11 +116,11 @@ def commits_over_time(commits):
         path=r'Data\Images'
         os.makedirs(path,exist_ok=True)
 
-        filepath=os.path.join( path, "Commits Over Time.png")
+        filepath=os.path.join( path, "Commits per Day.png")
         plt.savefig(filepath,dpi=300)
-        print(f"✅ Saved: Commits Over Time.png to '{os.path.dirname(filepath)}' ")
+        print(f"✅ Saved: Commits Per Day.png to '{os.path.dirname(filepath)}' ")
     except:
-        print("❌Failed to save the Commits Over Time image")
+        print("❌Failed to save the Commits Per Day image")
 
 def commit_frequency_per_user(commits):
     # Extract author + commit date
@@ -209,7 +209,7 @@ def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
             print(f"Error: {e}")
 
         try:
-            commits_over_time(commits)
+            commits_per_day(commits)
         except Exception as e:
             print(f"Error in commits.py -> commit_over_time() \n Error:{e} ")
 
