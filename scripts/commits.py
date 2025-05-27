@@ -122,6 +122,45 @@ def commits_over_time(commits):
     except:
         print("❌Failed to save the Commits Over Time image")
 
+def commit_frequency_per_user(commits):
+    # Extract author + commit date
+    data = [
+        {
+            "author": commit.get('author', {}).get('login'),
+            "date": commit.get('commit', {}).get('author', {}).get('date')
+        }
+        for commit in commits
+        if commit.get('author') and commit.get('commit')
+    ]
+
+    df = pd.DataFrame(data)
+    df['date'] = pd.to_datetime(df['date']).dt.date
+
+    # Group by date and author
+    freq = df.groupby(['date', 'author']).size().unstack(fill_value=0)
+
+    plt.clf()  # Clear current figure
+    plt.cla()
+
+    # Plot
+    freq.plot(kind='line', figsize=(14, 6), title='Commit Frequency per User Over Time')
+    plt.xlabel("Date")
+    plt.ylabel("Commits")
+    plt.legend(title="User", bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.grid(True)
+    plt.tight_layout()
+    #plt.show()
+
+    try:
+        path=r'Data\Images'
+        os.makedirs(path,exist_ok=True)
+
+        filepath=os.path.join( path, "Commits Frequnecy Over Time.png")
+        plt.savefig(filepath,dpi=300)
+        print(f"✅ Saved: Commits Frequnecy Over Time.png to '{os.path.dirname(filepath)}' ")
+    except Exception as o:
+        print(f"Error in commtis.py -> commit_frequency_per_user \n{o}")
+
 #===============================================================================================
 #===========================================main.py()===========================================
 #===============================================================================================
@@ -173,6 +212,12 @@ def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
             commits_over_time(commits)
         except Exception as e:
             print(f"Error in commits.py -> commit_over_time() \n Error:{e} ")
+
+        try:
+            commit_frequency_per_user(commits)
+        except Exception as a:
+            print(f"Error in commits.py -> commit_frequency_per_user()\nError:{e}")
+    
     else:
         print("No commit data loaded to process.")
 
@@ -189,7 +234,7 @@ if __name__=='__main__':
     else:
         pass
 
-    commits= f'https://api.github.com/repos/{var.repo}/commits'
+    commits= f'https://api.github.com/repos/{var.repo}/commits?per_page=100'
     response = requests.get(commits, headers=headers)
     
     if response.status_code==200:

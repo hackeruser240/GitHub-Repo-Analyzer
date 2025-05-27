@@ -1,5 +1,251 @@
 [
     {
+        "sha": "283f87f083f285c060582e1096cebed794d4b748",
+        "node_id": "C_kwDOAJy2KtoAKDI4M2Y4N2YwODNmMjg1YzA2MDU4MmUxMDk2Y2ViZWQ3OTRkNGI3NDg",
+        "commit": {
+            "author": {
+                "name": "Jan Kassens",
+                "email": "jkassens@meta.com",
+                "date": "2025-05-27T21:17:45Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-27T21:17:45Z"
+            },
+            "message": "Revert \"enableViewTransition in www\" (#33362)\n\nWe need to do some more testing here.\n\nReverts facebook/react#33357",
+            "tree": {
+                "sha": "c3263de2a27e3a1899c3dfabdbbee619f5f0b489",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/c3263de2a27e3a1899c3dfabdbbee619f5f0b489"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/283f87f083f285c060582e1096cebed794d4b748",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoNiv5CRC1aQ7uu5UhlAAALVgQACgcUwWzI1Go8eS8G0OHswvS\niyxhlIYvHkDknxOK/sY786219DXaZYcuM5LZjsV6cwK25/Qun8//hx8i6gINxsvX\naca8RftOCsYUuuQWF1era+TrM1Oh0x2RZqjAHTmNoJ7pbzPJkHQ4UKAosMauw/NZ\n5UxURszccL8/sr3fs/gJyEfqGDdq5T4RfY5xYDwKRKIutejo8+amB0nO15DMfozz\nb4IhSsdH4dVo0N38Kwt4iL84xKTTFeHgaWyXaa4HK/pgLy0TtptcxZqPxVIwl3xp\nO3xwOUgvqbA2E7VUNS2XIJiO0/EKcrqXTQDIUsBVawgeSl37wf5/Jj98LnrxnfO9\n/+JJPRmIw4jsQAvxNiU+u44p0Tvj8Cobuc5KXwe0v6nAHT+2YQG5WzITNGWePf43\nS1/8XibhmBv3cZnXsYGGop/LOkdvHpbwEiUMa0lpgwrSjg00EFbZ8z04gDC4YfDl\n6t8vJz+qRqbcLbnFgOTeXvPlH+wpTMv4p5ZA4Vr/KCI4wqc9G5Q543/1CcHxzTjF\n1ySXW4qox5iRdEXFCOPMGASY44n69vXrCzssTrycEmP6oDDIJHuiyWDtCAmk+nfP\nselSLnp2xgRLy433R6UlwvzmYvTdu+/ZUwxAmpCvGqj1dBAoYBRYKGrgjAGgfykD\nutImQa63cvFD+BhtelzH\n=vobp\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree c3263de2a27e3a1899c3dfabdbbee619f5f0b489\nparent f9ae0a4c2edc9ad93507b550f2aeb60119955336\nauthor Jan Kassens <jkassens@meta.com> 1748380665 -0400\ncommitter GitHub <noreply@github.com> 1748380665 -0400\n\nRevert \"enableViewTransition in www\" (#33362)\n\nWe need to do some more testing here.\n\nReverts facebook/react#33357",
+                "verified_at": "2025-05-27T21:17:47Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/283f87f083f285c060582e1096cebed794d4b748",
+        "html_url": "https://github.com/facebook/react/commit/283f87f083f285c060582e1096cebed794d4b748",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/283f87f083f285c060582e1096cebed794d4b748/comments",
+        "author": {
+            "login": "kassens",
+            "id": 11849,
+            "node_id": "MDQ6VXNlcjExODQ5",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11849?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/kassens",
+            "html_url": "https://github.com/kassens",
+            "followers_url": "https://api.github.com/users/kassens/followers",
+            "following_url": "https://api.github.com/users/kassens/following{/other_user}",
+            "gists_url": "https://api.github.com/users/kassens/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/kassens/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/kassens/subscriptions",
+            "organizations_url": "https://api.github.com/users/kassens/orgs",
+            "repos_url": "https://api.github.com/users/kassens/repos",
+            "events_url": "https://api.github.com/users/kassens/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/kassens/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "f9ae0a4c2edc9ad93507b550f2aeb60119955336",
+                "url": "https://api.github.com/repos/facebook/react/commits/f9ae0a4c2edc9ad93507b550f2aeb60119955336",
+                "html_url": "https://github.com/facebook/react/commit/f9ae0a4c2edc9ad93507b550f2aeb60119955336"
+            }
+        ]
+    },
+    {
+        "sha": "f9ae0a4c2edc9ad93507b550f2aeb60119955336",
+        "node_id": "C_kwDOAJy2KtoAKGY5YWUwYTRjMmVkYzlhZDkzNTA3YjU1MGYyYWViNjAxMTk5NTUzMzY",
+        "commit": {
+            "author": {
+                "name": "mofeiZ",
+                "email": "34200447+mofeiZ@users.noreply.github.com",
+                "date": "2025-05-27T16:02:29Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-27T16:02:29Z"
+            },
+            "message": "[compiler][gating] Custom opt out directives (experimental option) (#33328)\n\nAdding an experimental / unstable compiler config to enable custom\nopt-out directives",
+            "tree": {
+                "sha": "32ed84af4cd581a3d317e7dfe7cc648c26ca678c",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/32ed84af4cd581a3d317e7dfe7cc648c26ca678c"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/f9ae0a4c2edc9ad93507b550f2aeb60119955336",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoNeIVCRC1aQ7uu5UhlAAAMfEQABo57nph91EGJo158VQ3Emic\nEHktQMP0hEprlA5A3xJAyiWb3Eo26DzcWEhn4rTik4nI6hXi8m5U463oTB5ryPyd\nXjdzJbsszsC7Xr3t2aA0ga3a+IjrcfzRmCyFJP3ZFQzmuXSqDx/KkvQJM+TSVvOS\ngS6hZgiUOVkhms4kdur2gOMGY34219jKek411FojwAyBbsIdWStKK14LTmbib6zw\nOqB+B0/r14LZrQr59LnMicQZ3AOEInIlmLwaUYAiR+FC5LNI7enNR4OmqQeQxZpS\nqFAuQQSf/6H57xirolJJk4FNjRhUqWLJP98Fa3EnHdA+bIqG2Y03XydjUVeufu5L\nVv1Upji5oKHEXVLDjlAiBj2cxWbej0FCXH/3AknFONIMFnVaJUeKfKejCrxl4Cwk\nWUsSiv3MztMrsusoT/9SyiN6v6gEhf7W13ecZiUahBL7tdyqJGxD2uMffZXSWoag\njVkE+BQ8u/x6ADfCP7HeTzK697uP1c010Wl9IsX4TRWFC88vyPxdW2YWDRbX4Ipd\ny6vzwXAb8plvHWrbo4pHoV/GHBht8R6If7mMi1/FdoK53b6t3cFK3WMC75ixeTcv\n9UA/jz0JJ0McoMxhIDjoFLRgJ3bTzIj1HH0mW36NIzP9DlgzsCkLUsxALV2te18L\n12C9GsA6iIgA9NvfLzwq\n=Fi77\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree 32ed84af4cd581a3d317e7dfe7cc648c26ca678c\nparent f702620cea32f59a101d4f60fbff7a7495df76f7\nauthor mofeiZ <34200447+mofeiZ@users.noreply.github.com> 1748361749 -0400\ncommitter GitHub <noreply@github.com> 1748361749 -0400\n\n[compiler][gating] Custom opt out directives (experimental option) (#33328)\n\nAdding an experimental / unstable compiler config to enable custom\nopt-out directives",
+                "verified_at": "2025-05-27T16:02:32Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/f9ae0a4c2edc9ad93507b550f2aeb60119955336",
+        "html_url": "https://github.com/facebook/react/commit/f9ae0a4c2edc9ad93507b550f2aeb60119955336",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/f9ae0a4c2edc9ad93507b550f2aeb60119955336/comments",
+        "author": {
+            "login": "mofeiZ",
+            "id": 34200447,
+            "node_id": "MDQ6VXNlcjM0MjAwNDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/34200447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mofeiZ",
+            "html_url": "https://github.com/mofeiZ",
+            "followers_url": "https://api.github.com/users/mofeiZ/followers",
+            "following_url": "https://api.github.com/users/mofeiZ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mofeiZ/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mofeiZ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mofeiZ/subscriptions",
+            "organizations_url": "https://api.github.com/users/mofeiZ/orgs",
+            "repos_url": "https://api.github.com/users/mofeiZ/repos",
+            "events_url": "https://api.github.com/users/mofeiZ/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mofeiZ/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "f702620cea32f59a101d4f60fbff7a7495df76f7",
+                "url": "https://api.github.com/repos/facebook/react/commits/f702620cea32f59a101d4f60fbff7a7495df76f7",
+                "html_url": "https://github.com/facebook/react/commit/f702620cea32f59a101d4f60fbff7a7495df76f7"
+            }
+        ]
+    },
+    {
+        "sha": "f702620cea32f59a101d4f60fbff7a7495df76f7",
+        "node_id": "C_kwDOAJy2KtoAKGY3MDI2MjBjZWEzMmY1OWExMDFkNGY2MGZiZmY3YTc0OTVkZjc2Zjc",
+        "commit": {
+            "author": {
+                "name": "Jan Kassens",
+                "email": "jkassens@meta.com",
+                "date": "2025-05-27T15:23:27Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-27T15:23:27Z"
+            },
+            "message": "[fb-www] ship enableViewTransition (#33357)",
+            "tree": {
+                "sha": "aee2bf65445d43495af10378a1ff5d49b6c1a8fa",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/aee2bf65445d43495af10378a1ff5d49b6c1a8fa"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/f702620cea32f59a101d4f60fbff7a7495df76f7",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoNdjvCRC1aQ7uu5UhlAAA2K4QAIJ+65IPAQU65nPPmgbV1vL4\nXFoByDwtzHIxBFOdptXAJjz4fUx+TT8v9JF6iudYW6neSu0bR4724uoRPHZiXzmx\nD41WO8dDl9BgkCs9cjm6xtZP7bRHjM6gmpRGrF7J82r6b7Fg35oBGsrNMpHCxXNS\n6+Ox9ybba8FBxJ4oca+z75VyZn9nS6n5+vi8ZoTabBYJ9/e0RUHzvHrtTdIeKy2l\nkjdGzaSz3bQJfkFn5AVUNGL2phWeNtgPcbDuSUCs1PNJFxYvk8wTLW4bcD8309b9\n0FuwHoofJDLGU4ZS+qeTxF570OYWMwwlUgJILGQGlMOFlkIMzQTnFtsFmaEqHIN5\nL+38GaoLxWKoScwWilDQAKysgr+UC2yPj6KvSconOc86T5XZ5QKkqt66QGbNhvRr\nNfxE4MBYzPnZ2By0GGwTV0dSP6Hgvgx0+u84gsCpDsMVOGzsoHVo47RUR63RNtJf\nIlLzdbmXapgR5S0YE/HFBIOqhhV30ND6Lt3jyBuDEI5xLDNBnoLL8y68/nP3zYGk\nq0Tn5jJ+BGtXoK7joxziuQMdvF1J0rwa7C8yvKwajU0P6S39L27Uv4VNm489s7Jn\nPInGW2ep8EAMTYHz3HFAiiP63gQjNVHTtxz+OC0rUjXy4pVEhLLEWvGng7PiIb5a\nd90AnsCjZN0025uivajN\n=uJ/6\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree aee2bf65445d43495af10378a1ff5d49b6c1a8fa\nparent c0464aedb16b1c970d717651bba8d1c66c578729\nauthor Jan Kassens <jkassens@meta.com> 1748359407 -0400\ncommitter GitHub <noreply@github.com> 1748359407 -0400\n\n[fb-www] ship enableViewTransition (#33357)\n\n",
+                "verified_at": "2025-05-27T15:23:27Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/f702620cea32f59a101d4f60fbff7a7495df76f7",
+        "html_url": "https://github.com/facebook/react/commit/f702620cea32f59a101d4f60fbff7a7495df76f7",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/f702620cea32f59a101d4f60fbff7a7495df76f7/comments",
+        "author": {
+            "login": "kassens",
+            "id": 11849,
+            "node_id": "MDQ6VXNlcjExODQ5",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11849?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/kassens",
+            "html_url": "https://github.com/kassens",
+            "followers_url": "https://api.github.com/users/kassens/followers",
+            "following_url": "https://api.github.com/users/kassens/following{/other_user}",
+            "gists_url": "https://api.github.com/users/kassens/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/kassens/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/kassens/subscriptions",
+            "organizations_url": "https://api.github.com/users/kassens/orgs",
+            "repos_url": "https://api.github.com/users/kassens/repos",
+            "events_url": "https://api.github.com/users/kassens/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/kassens/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "c0464aedb16b1c970d717651bba8d1c66c578729",
+                "url": "https://api.github.com/repos/facebook/react/commits/c0464aedb16b1c970d717651bba8d1c66c578729",
+                "html_url": "https://github.com/facebook/react/commit/c0464aedb16b1c970d717651bba8d1c66c578729"
+            }
+        ]
+    },
+    {
         "sha": "c0464aedb16b1c970d717651bba8d1c66c578729",
         "node_id": "C_kwDOAJy2KtoAKGMwNDY0YWVkYjE2YjFjOTcwZDcxNzY1MWJiYThkMWM2NmM1Nzg3Mjk",
         "commit": {
@@ -3850,252 +4096,6 @@
                 "sha": "2bcf06b69254cad6f7e702bf7d65c4f30478668c",
                 "url": "https://api.github.com/repos/facebook/react/commits/2bcf06b69254cad6f7e702bf7d65c4f30478668c",
                 "html_url": "https://github.com/facebook/react/commit/2bcf06b69254cad6f7e702bf7d65c4f30478668c"
-            }
-        ]
-    },
-    {
-        "sha": "2bcf06b69254cad6f7e702bf7d65c4f30478668c",
-        "node_id": "C_kwDOAJy2KtoAKDJiY2YwNmI2OTI1NGNhZDZmN2U3MDJiZjdkNjVjNGYzMDQ3ODY2OGM",
-        "commit": {
-            "author": {
-                "name": "Jenny Steele",
-                "email": "jenny@jennyscript.com",
-                "date": "2025-05-13T01:16:15Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-13T01:16:15Z"
-            },
-            "message": "[ReactFlightWebpackPlugin] Add support for .mjs file extension (#33028)\n\n## Summary\nOur builds generate files with a `.mjs` file extension. These are\ncurrently filtered out by `ReactFlightWebpackPlugin` so I am updating it\nto support this file extension.\n\nThis fixes https://github.com/facebook/react/issues/33155\n\n## How did you test this change?\nI built the plugin with this change and used `yalc` to test it in my\nproject. I confirmed the expected files now show up in\n`react-client-manifest.json`",
-            "tree": {
-                "sha": "2c099684e89eccf8c18cbe1746bfee0137bc41ad",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/2c099684e89eccf8c18cbe1746bfee0137bc41ad"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/2bcf06b69254cad6f7e702bf7d65c4f30478668c",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoIp1fCRC1aQ7uu5UhlAAAriAQAAgxWZkOelcsoWY/Emot+eig\nhWpBBP/nUchHHoWssZZzRJbeTFbvJfhsL6qjCcjwoaIoXvH+LP4GiJtAbvC+4uui\npLJICOSc5ymOZBXZ4jj0nqcPFSnEakfTXtjNWmszTriSgJmbiO3sx7/V9SiFkUU5\nRqaE+GUUD20i+quClrsk9noWAM923WrjmnPl1vo1Scz+KYfhArn8u5Gg8/DhN49u\n7GO6vVJt2QlKnhCpsyZMLnq/cLRrK8qDDO0RLX8Bf8TXWNmmSQg8C3EF6g12n0HS\nS2wVvY/XwT8JICjRxI+r7qSStixPEpAO/V0i7Klfte465/egskXbBe840Im5gxlY\naZZ23PCcNaPJCiy8z1pN5Mkw+UT3ujNKig7fiRPTM4/LhCofViLJKZfZv+zrPwPX\nKWKA/VcnxUzSYMsb8lLw5SE7+aHgXIEc2LBXbbzxdMf7ZR+q/ZPfwDEhQrKWHw3a\nT/gRSnSG37Wp+DH+7D26VVCevAd607wczRSN4/ISFPjsMX1oWJttF2YsZAuKLmGY\noK8DuxqNG89jF4CV7Htqzq5h7Mjpon9KeU6NYnwp8ZuK7DQMWBvNlSPch2m/aX8a\n2Ej7IUvSeD/sGeMaohSitaMAzneTTtBOE0TmJRneCybSUjtZXnbdk3p+E7OrJxaY\nYBOG8cb9Vp0vRY1L7DMl\n=SeSz\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree 2c099684e89eccf8c18cbe1746bfee0137bc41ad\nparent 5d04d73274a884ed53106677d56dd837ae668c45\nauthor Jenny Steele <jenny@jennyscript.com> 1747098975 -0700\ncommitter GitHub <noreply@github.com> 1747098975 -0400\n\n[ReactFlightWebpackPlugin] Add support for .mjs file extension (#33028)\n\n## Summary\nOur builds generate files with a `.mjs` file extension. These are\ncurrently filtered out by `ReactFlightWebpackPlugin` so I am updating it\nto support this file extension.\n\nThis fixes https://github.com/facebook/react/issues/33155\n\n## How did you test this change?\nI built the plugin with this change and used `yalc` to test it in my\nproject. I confirmed the expected files now show up in\n`react-client-manifest.json`",
-                "verified_at": "2025-05-13T01:16:17Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/2bcf06b69254cad6f7e702bf7d65c4f30478668c",
-        "html_url": "https://github.com/facebook/react/commit/2bcf06b69254cad6f7e702bf7d65c4f30478668c",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/2bcf06b69254cad6f7e702bf7d65c4f30478668c/comments",
-        "author": {
-            "login": "jennyscript",
-            "id": 1767822,
-            "node_id": "MDQ6VXNlcjE3Njc4MjI=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1767822?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/jennyscript",
-            "html_url": "https://github.com/jennyscript",
-            "followers_url": "https://api.github.com/users/jennyscript/followers",
-            "following_url": "https://api.github.com/users/jennyscript/following{/other_user}",
-            "gists_url": "https://api.github.com/users/jennyscript/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/jennyscript/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/jennyscript/subscriptions",
-            "organizations_url": "https://api.github.com/users/jennyscript/orgs",
-            "repos_url": "https://api.github.com/users/jennyscript/repos",
-            "events_url": "https://api.github.com/users/jennyscript/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/jennyscript/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "5d04d73274a884ed53106677d56dd837ae668c45",
-                "url": "https://api.github.com/repos/facebook/react/commits/5d04d73274a884ed53106677d56dd837ae668c45",
-                "html_url": "https://github.com/facebook/react/commit/5d04d73274a884ed53106677d56dd837ae668c45"
-            }
-        ]
-    },
-    {
-        "sha": "5d04d73274a884ed53106677d56dd837ae668c45",
-        "node_id": "C_kwDOAJy2KtoAKDVkMDRkNzMyNzRhODg0ZWQ1MzEwNjY3N2Q1NmRkODM3YWU2NjhjNDU",
-        "commit": {
-            "author": {
-                "name": "Samuel Susla",
-                "email": "samuel.susla@gmail.com",
-                "date": "2025-05-12T16:39:20Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-12T16:39:20Z"
-            },
-            "message": "Add eager alternate.stateNode cleanup (#33161)\n\nThis is a fix for a problem where React retains shadow nodes longer than\nit needs to. The behaviour is shown in React Native test:\nhttps://github.com/facebook/react-native/blob/main/packages/react-native/src/private/__tests__/utilities/__tests__/ShadowNodeReferenceCounter-itest.js#L169\n\n# Problem\nWhen React commits a new shadow tree, old shadow nodes are stored inside\n`fiber.alternate.stateNode`. This is not cleared up until React clones\nthe node again. This may be problematic if mutation deletes a subtree,\nin that case `fiber.alternate.stateNode` will retain entire subtree\nuntil next update. In case of image nodes, this means retaining entire\nimages.\n\nSo when React goes from revision A: `<View><View /></View>` to revision\nB: `<View />`, `fiber.alternate.stateNode` will be pointing to Shadow\nNode that represents revision A..\n\n\n![image](https://github.com/user-attachments/assets/076b677e-d152-4763-8c9d-4f923212b424)\n\n\n# Fix\nTo fix this, this PR adds a new feature flag\n`enableEagerAlternateStateNodeCleanup`. When enabled,\n`alternate.stateNode` is proactively pointed towards finishedWork's\nstateNode, releasing resources sooner.\n\nI have verified this fixes the issue [demonstrated by React Native\ntests](https://github.com/facebook/react-native/blob/main/packages/react-native/src/private/__tests__/utilities/__tests__/ShadowNodeReferenceCounter-itest.js#L169).\nAll existing React tests pass when the flag is enabled.",
-            "tree": {
-                "sha": "d940577787ab7ec39aefbf3d93ffe0ebc474f05f",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/d940577787ab7ec39aefbf3d93ffe0ebc474f05f"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/5d04d73274a884ed53106677d56dd837ae668c45",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoIiQ4CRC1aQ7uu5UhlAAAj9wQAG3iFkT09fAXhuz0vSEh2nEy\naAbMFZcLXQ0LO2DuGcBRKX8chVBfxhtpSSCF9imRSRO+eRVygiBNOKtQAc6r/+1i\nyCw274k7mxRbJ9//8CJDtP4Y3C9WBkTVYon3/lVgZMGqJFAJgaYDXvb1/b8dNul7\n84uiUud039VFbR6IcZPDUQmMLWy8T51tmhLXZ2McFi8FOtiIzdSfIISC/sge6q9n\nPNAp1sumKEK0MnGKohw7cvgNhhpbnk0maM7IsilZoUit/6m7SsP7b+fuTWQ/NntH\npcRvtm8zNyANwAN3lDVMkji7Qq8BHg0B0kYdEB9zV7Ybe8S6ac7wvZgCOFZ63p2U\nEspiVNXkxKnlNqdkYnMTl/aJhxpTTLDYbTm7Gy3q3N620dvNsnfygboSrcJr2+N0\nM3XfXzrrqz2Rgcrcx1NA+mnmjM+yaUY4uA0HCY94hFdR3bQC45N5llKlGx/sZrA3\nVIQ6jgb9OrJgNoOseadaD3blQwMYoHZ9KML+oL/xDG6pNW0pppDDZ1vNWrlxFnvZ\nOnOmoHC2i1cMVLh6sU4Qgi1+sUIUJ1XfEfM9EKF8KoKYUHx1ozYq0Jes2ypRnSQr\nPG6Rd8NjjWU2kHJfnE9HxB+0Kp6bBCxsdk1UFboZEHmjzDNCYASNozeeinPoL57k\nz3yg7dfgFGn9XlT3pZZy\n=mNQm\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree d940577787ab7ec39aefbf3d93ffe0ebc474f05f\nparent 3820740a7fbfc3b27a5127b43bdad44382ff3ce0\nauthor Samuel Susla <samuel.susla@gmail.com> 1747067960 +0100\ncommitter GitHub <noreply@github.com> 1747067960 +0100\n\nAdd eager alternate.stateNode cleanup (#33161)\n\nThis is a fix for a problem where React retains shadow nodes longer than\nit needs to. The behaviour is shown in React Native test:\nhttps://github.com/facebook/react-native/blob/main/packages/react-native/src/private/__tests__/utilities/__tests__/ShadowNodeReferenceCounter-itest.js#L169\n\n# Problem\nWhen React commits a new shadow tree, old shadow nodes are stored inside\n`fiber.alternate.stateNode`. This is not cleared up until React clones\nthe node again. This may be problematic if mutation deletes a subtree,\nin that case `fiber.alternate.stateNode` will retain entire subtree\nuntil next update. In case of image nodes, this means retaining entire\nimages.\n\nSo when React goes from revision A: `<View><View /></View>` to revision\nB: `<View />`, `fiber.alternate.stateNode` will be pointing to Shadow\nNode that represents revision A..\n\n\n![image](https://github.com/user-attachments/assets/076b677e-d152-4763-8c9d-4f923212b424)\n\n\n# Fix\nTo fix this, this PR adds a new feature flag\n`enableEagerAlternateStateNodeCleanup`. When enabled,\n`alternate.stateNode` is proactively pointed towards finishedWork's\nstateNode, releasing resources sooner.\n\nI have verified this fixes the issue [demonstrated by React Native\ntests](https://github.com/facebook/react-native/blob/main/packages/react-native/src/private/__tests__/utilities/__tests__/ShadowNodeReferenceCounter-itest.js#L169).\nAll existing React tests pass when the flag is enabled.",
-                "verified_at": "2025-05-12T16:39:22Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/5d04d73274a884ed53106677d56dd837ae668c45",
-        "html_url": "https://github.com/facebook/react/commit/5d04d73274a884ed53106677d56dd837ae668c45",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/5d04d73274a884ed53106677d56dd837ae668c45/comments",
-        "author": {
-            "login": "sammy-SC",
-            "id": 1733610,
-            "node_id": "MDQ6VXNlcjE3MzM2MTA=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1733610?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/sammy-SC",
-            "html_url": "https://github.com/sammy-SC",
-            "followers_url": "https://api.github.com/users/sammy-SC/followers",
-            "following_url": "https://api.github.com/users/sammy-SC/following{/other_user}",
-            "gists_url": "https://api.github.com/users/sammy-SC/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/sammy-SC/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/sammy-SC/subscriptions",
-            "organizations_url": "https://api.github.com/users/sammy-SC/orgs",
-            "repos_url": "https://api.github.com/users/sammy-SC/repos",
-            "events_url": "https://api.github.com/users/sammy-SC/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/sammy-SC/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "3820740a7fbfc3b27a5127b43bdad44382ff3ce0",
-                "url": "https://api.github.com/repos/facebook/react/commits/3820740a7fbfc3b27a5127b43bdad44382ff3ce0",
-                "html_url": "https://github.com/facebook/react/commit/3820740a7fbfc3b27a5127b43bdad44382ff3ce0"
-            }
-        ]
-    },
-    {
-        "sha": "3820740a7fbfc3b27a5127b43bdad44382ff3ce0",
-        "node_id": "C_kwDOAJy2KtoAKDM4MjA3NDBhN2ZiZmMzYjI3YTUxMjdiNDNiZGFkNDQzODJmZjNjZTA",
-        "commit": {
-            "author": {
-                "name": "mofeiZ",
-                "email": "34200447+mofeiZ@users.noreply.github.com",
-                "date": "2025-05-09T17:37:49Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-09T17:37:49Z"
-            },
-            "message": "[compiler][entrypoint] Fix edgecases for noEmit and opt-outs (#33148)\n\nTitle\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/33148).\n* #33149\n* __->__ #33148",
-            "tree": {
-                "sha": "738239755de08eee61054f72e98564f1217d889c",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/738239755de08eee61054f72e98564f1217d889c"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/3820740a7fbfc3b27a5127b43bdad44382ff3ce0",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoHj1tCRC1aQ7uu5UhlAAA3OsQAHbD1qk+1nbqBeK3bjL3g4Ir\nJ3z5LM4Mmr9HANtEOXfzaPh9tM/5fFy+Vs66Lv2j70rxHE3hHwAZCOw5oevRsQ/E\nO0fYcTrJEZrzhI1SEvBTl5Rb0l/mFRW0y331lhFVrHwtR3l23YW6M31UmDYO1MNn\nadInDHXfmvojaG2EWcvPLvfQHu2BD4x7qPEJ71u6zUymxadLBgEgylCkHZqGg8zJ\nvPWRv+SYDntXICdJI0v1/AS4aYqsKFNbNoZ4o7ykf66kQk+/XLdKhjqOFlu0tDAa\nXURbgKAKfasaJBRd9EAJnJOE/OBb7AZAgp0lCrXbIgYtM9AlPji+vT1NTV+KRJKi\nTAtB6qZVjMA/HgD2LsP2mcUcDy1LbzFoB64RGntlzRBefdBUs0PWrVSPr5D2pydN\nu/psBsQj4wGzCd2m0CEQj0T6hPjM1p2CdghnwgDjy9cUdNdls1Ht/7/12BCNjaSF\ne4R+cZ/pAVU/WsyRv6xCRvS70in1WY6Tv8WUyH3p/uA1Wg+7yXBDQCWQ9YUxae8R\neuC7UIh3xj+7iDgMSFi5/fPX25PylN2wt+XhZ4aq2ciz5DlmDWB6IiBgU1Iq1PW7\nLPwiFknPa12PmfmA9uSH1ylnYnzRpSkqlh24+DkbYZsFcqDWUE06JkiXerbh7458\nZYo1Kn6A8XzngBp/13gO\n=+dJk\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree 738239755de08eee61054f72e98564f1217d889c\nparent 5069e18060e00d7c07b2b04ebc8a3fa21e2d810a\nauthor mofeiZ <34200447+mofeiZ@users.noreply.github.com> 1746812269 -0400\ncommitter GitHub <noreply@github.com> 1746812269 -0400\n\n[compiler][entrypoint] Fix edgecases for noEmit and opt-outs (#33148)\n\nTitle\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/33148).\n* #33149\n* __->__ #33148",
-                "verified_at": "2025-05-09T17:37:52Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/3820740a7fbfc3b27a5127b43bdad44382ff3ce0",
-        "html_url": "https://github.com/facebook/react/commit/3820740a7fbfc3b27a5127b43bdad44382ff3ce0",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/3820740a7fbfc3b27a5127b43bdad44382ff3ce0/comments",
-        "author": {
-            "login": "mofeiZ",
-            "id": 34200447,
-            "node_id": "MDQ6VXNlcjM0MjAwNDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/34200447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/mofeiZ",
-            "html_url": "https://github.com/mofeiZ",
-            "followers_url": "https://api.github.com/users/mofeiZ/followers",
-            "following_url": "https://api.github.com/users/mofeiZ/following{/other_user}",
-            "gists_url": "https://api.github.com/users/mofeiZ/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/mofeiZ/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/mofeiZ/subscriptions",
-            "organizations_url": "https://api.github.com/users/mofeiZ/orgs",
-            "repos_url": "https://api.github.com/users/mofeiZ/repos",
-            "events_url": "https://api.github.com/users/mofeiZ/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/mofeiZ/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "5069e18060e00d7c07b2b04ebc8a3fa21e2d810a",
-                "url": "https://api.github.com/repos/facebook/react/commits/5069e18060e00d7c07b2b04ebc8a3fa21e2d810a",
-                "html_url": "https://github.com/facebook/react/commit/5069e18060e00d7c07b2b04ebc8a3fa21e2d810a"
             }
         ]
     }
