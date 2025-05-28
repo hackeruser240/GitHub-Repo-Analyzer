@@ -1,5 +1,169 @@
 [
     {
+        "sha": "5717f1933f2e8b10406fde1043c3047cbfbddc82",
+        "node_id": "C_kwDOAJy2KtoAKDU3MTdmMTkzM2YyZThiMTA0MDZmZGUxMDQzYzMwNDdjYmZiZGRjODI",
+        "commit": {
+            "author": {
+                "name": "Sebastian \"Sebbie\" Silbermann",
+                "email": "sebastian.silbermann@vercel.com",
+                "date": "2025-05-28T17:46:12Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-28T17:46:12Z"
+            },
+            "message": "[react-dom] Enforce small gap between completed navigation and default Transition indicator (#33354)",
+            "tree": {
+                "sha": "9e57338a012409324bb35caf5f03f7ce6bc8fce6",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/9e57338a012409324bb35caf5f03f7ce6bc8fce6"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/5717f1933f2e8b10406fde1043c3047cbfbddc82",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoN0vkCRC1aQ7uu5UhlAAABiYQAAzyihg3uX2tU/tA2OvAtY+g\nKd0SixpcK9wggyqgw0fYoVIsOA5SCs4hSEagq3L4ulZECz3JwP+x0Iu7g9+Pmtc2\ntH5vgQ8LlpAvKKL1BmgaVruhJaE1BY4R2tYp+XSBl3sAloNGxeegq7Xjndev7cqU\nkwdI0vlARggvzvh5F5qU7NB4t7nW9dP4Ge3jmVl1JvULM2BuacN/OvzCJ+splpS+\nuylDBxpgpkKL45ThRPdRShSqST2jOBEAUXr468hbQM4MWZ+ncTyKGfWZ1ToBZEfD\nLGXYYpTpmqtle4pQnO4F4RLx735rWvKwkisuoPIzCLjlWd77BtrtgTRgVjQhJVJR\n6dHuK1zTf0WewqmlcJbF9ySXmnggNOTNek+2g5mneVM/KkD2W/9w4ly/J0UpAdHg\nR0qRnLkwSMKyYAbn++nahOum4U51Avc9K6QVE76I/4PwYzBMA9HOaAuNGZT/dLhm\nh17MvPbqDHKHvwm6ZyYoj05wqLS+wtLQvrpwJodL2hrnrbeFLOFdNHGPR8Ugj8xi\ns9f8kQEALtxcI86oBuZuxtxkIfe/aycLfimwCiRnqHcIh485kDM9I/xMeM/CCD18\nHpJ1GA4X8VN25UQfIox27Ui/LrEstcALC4Bad9Jo7L/my36ZqD5DEuKRu1dyxnJ9\n5hSrlxoLRVuAazbDMJIw\n=YOjq\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree 9e57338a012409324bb35caf5f03f7ce6bc8fce6\nparent b07717d857422af5fb1c2ee0930e5a2a62df2b0e\nauthor Sebastian \"Sebbie\" Silbermann <sebastian.silbermann@vercel.com> 1748454372 +0200\ncommitter GitHub <noreply@github.com> 1748454372 +0200\n\n[react-dom] Enforce small gap between completed navigation and default Transition indicator (#33354)\n\n",
+                "verified_at": "2025-05-28T17:46:14Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/5717f1933f2e8b10406fde1043c3047cbfbddc82",
+        "html_url": "https://github.com/facebook/react/commit/5717f1933f2e8b10406fde1043c3047cbfbddc82",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/5717f1933f2e8b10406fde1043c3047cbfbddc82/comments",
+        "author": {
+            "login": "eps1lon",
+            "id": 12292047,
+            "node_id": "MDQ6VXNlcjEyMjkyMDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/12292047?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/eps1lon",
+            "html_url": "https://github.com/eps1lon",
+            "followers_url": "https://api.github.com/users/eps1lon/followers",
+            "following_url": "https://api.github.com/users/eps1lon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/eps1lon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/eps1lon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/eps1lon/subscriptions",
+            "organizations_url": "https://api.github.com/users/eps1lon/orgs",
+            "repos_url": "https://api.github.com/users/eps1lon/repos",
+            "events_url": "https://api.github.com/users/eps1lon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/eps1lon/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "b07717d857422af5fb1c2ee0930e5a2a62df2b0e",
+                "url": "https://api.github.com/repos/facebook/react/commits/b07717d857422af5fb1c2ee0930e5a2a62df2b0e",
+                "html_url": "https://github.com/facebook/react/commit/b07717d857422af5fb1c2ee0930e5a2a62df2b0e"
+            }
+        ]
+    },
+    {
+        "sha": "b07717d857422af5fb1c2ee0930e5a2a62df2b0e",
+        "node_id": "C_kwDOAJy2KtoAKGIwNzcxN2Q4NTc0MjJhZjVmYjFjMmVlMDkzMGU1YTJhNjJkZjJiMGU",
+        "commit": {
+            "author": {
+                "name": "Ricky",
+                "email": "rickhanlonii@gmail.com",
+                "date": "2025-05-28T14:31:09Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-28T14:31:09Z"
+            },
+            "message": "[devtools] upgrade json5 (#33358)",
+            "tree": {
+                "sha": "103aa9e6ac8de092684d3010fab0a661aaeb25b7",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/103aa9e6ac8de092684d3010fab0a661aaeb25b7"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/b07717d857422af5fb1c2ee0930e5a2a62df2b0e",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoNx4tCRC1aQ7uu5UhlAAA+gIQAJayvcTslDttldit7vIiv9NP\ncUzugAzgIwhwgUfxae9OiR8J9ptbZtqoxjKpBri+V55f6frR/+Ffn3HdI/BfiCPc\nrFUrOUt6yp+pfE2eH242ngSIx2YupKWbBcCrPoaWWHYidOr1HgptUzIjY+rkHOE+\nRwE3dkfzlq8Hl6O5Ve2wXhlqo1sNJ9+wnYvxxZjKeQ1kVQYpUqArmwNzE8UZP0Q3\ncHAvTl6Czf74ruVz+8FbhsnWOO7fhN+4Lv2Hoebo1T0Lwja3hIuphaJxKE4iF2/x\nxtbKYn8UDxeFsetPpmT9cP9beCWya7PetUewpWFjVcLJAuMihUer8dHuqarHn1Ls\nUrpuJg2usEKH6UdCRiWSrs8GCyo15FyjkkaQyHLnFDD9CM8+qi8F2qwOmOlX6dkz\nKRMDpkBeXsGkdqmJ5QlsI0+AMAHrBYkTxnovqank6ZJkSe6Sdr7vA74PwMro+xEn\n0lPdAFkXab+MxnXTcek47jADd92eCHJGR9fcHhFyINBbWWGVK77Z1VWwlmLTc43X\nfn92djE/Q1rmY9HZQD4VRssv4//N2bo9eEinG4ax1zLCplRvhD3aDmIfPMP2vpW+\n83FaT/sOG5S3YuOq9aln1GkPo8ejARyVJM0i+Z88DjTMFbCNaxJ7mRs9NFSqdWed\nii4LBV4220p9qHudhlpA\n=YWUc\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree 103aa9e6ac8de092684d3010fab0a661aaeb25b7\nparent 283f87f083f285c060582e1096cebed794d4b748\nauthor Ricky <rickhanlonii@gmail.com> 1748442669 -0400\ncommitter GitHub <noreply@github.com> 1748442669 -0400\n\n[devtools] upgrade json5 (#33358)\n\n",
+                "verified_at": "2025-05-28T14:31:13Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/b07717d857422af5fb1c2ee0930e5a2a62df2b0e",
+        "html_url": "https://github.com/facebook/react/commit/b07717d857422af5fb1c2ee0930e5a2a62df2b0e",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/b07717d857422af5fb1c2ee0930e5a2a62df2b0e/comments",
+        "author": {
+            "login": "rickhanlonii",
+            "id": 2440089,
+            "node_id": "MDQ6VXNlcjI0NDAwODk=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/2440089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/rickhanlonii",
+            "html_url": "https://github.com/rickhanlonii",
+            "followers_url": "https://api.github.com/users/rickhanlonii/followers",
+            "following_url": "https://api.github.com/users/rickhanlonii/following{/other_user}",
+            "gists_url": "https://api.github.com/users/rickhanlonii/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/rickhanlonii/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/rickhanlonii/subscriptions",
+            "organizations_url": "https://api.github.com/users/rickhanlonii/orgs",
+            "repos_url": "https://api.github.com/users/rickhanlonii/repos",
+            "events_url": "https://api.github.com/users/rickhanlonii/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/rickhanlonii/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "283f87f083f285c060582e1096cebed794d4b748",
+                "url": "https://api.github.com/repos/facebook/react/commits/283f87f083f285c060582e1096cebed794d4b748",
+                "html_url": "https://github.com/facebook/react/commit/283f87f083f285c060582e1096cebed794d4b748"
+            }
+        ]
+    },
+    {
         "sha": "283f87f083f285c060582e1096cebed794d4b748",
         "node_id": "C_kwDOAJy2KtoAKDI4M2Y4N2YwODNmMjg1YzA2MDU4MmUxMDk2Y2ViZWQ3OTRkNGI3NDg",
         "commit": {
@@ -8032,170 +8196,6 @@
                 "sha": "12b094d2f66b48c0b34cdfdf997fefac373d47a8",
                 "url": "https://api.github.com/repos/facebook/react/commits/12b094d2f66b48c0b34cdfdf997fefac373d47a8",
                 "html_url": "https://github.com/facebook/react/commit/12b094d2f66b48c0b34cdfdf997fefac373d47a8"
-            }
-        ]
-    },
-    {
-        "sha": "12b094d2f66b48c0b34cdfdf997fefac373d47a8",
-        "node_id": "C_kwDOAJy2KtoAKDEyYjA5NGQyZjY2YjQ4YzBiMzRjZGZkZjk5N2ZlZmFjMzczZDQ3YTg",
-        "commit": {
-            "author": {
-                "name": "lauren",
-                "email": "poteto@users.noreply.github.com",
-                "date": "2025-05-02T17:56:45Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-02T17:56:45Z"
-            },
-            "message": "[mcp] Update plugins (#33082)\n\nAdds typescript support.\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/33082).\n* #33085\n* #33084\n* #33083\n* __->__ #33082\n* #33101",
-            "tree": {
-                "sha": "aef97eda1047cdd7c60ba5544c34c2bd7bc123c1",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/aef97eda1047cdd7c60ba5544c34c2bd7bc123c1"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/12b094d2f66b48c0b34cdfdf997fefac373d47a8",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoFQddCRC1aQ7uu5UhlAAAHVEQAJDWv+bK3YBXppq9sPViCF3u\nYXh1W2PSawXkBceRQDis9Vtz/HYpqOmxuTuAAOxMtJYRRSvB/xDQi0aJi3vtP9Id\n3ZNNqfBXoNEX4zfjkNqGAgUl0JDHsmqn4co5SrnnOR/aKMTCUvgxY7iZzshLY/Ec\n3/8Uwe6eHYjUGjfeIq56TQcZmSo3H2BtoCqRFTSGOeoMKOe8id+ukGSEQy8iS7uF\nmREFDTRjfe/M1bdTJhb9+IzVbwLVWcQz6oGr/wtaDAB6N/K0XNMADYTbU8MTRbs+\nSwhKBPwVhDN1DcxVOzM6ZRKWTj+XKWpCle+hC3qYGBthV7z90rHsy9ZaVEGJLRvE\nC0/UXBFPkXYxz62UoTH/lLGj5sz9iCbnSCB2p2pSJz2XG2q6xSFhytayUvHdZsb3\nsFggPamqRYpXmhmScMvnjzNQRjI0lr3iTSowE+ITou8oY5b7DhnO72ev3lF2F0Va\nfUw2cUtuj6I0iOUu7hkCLUUoXyDOocXOd/8ovP/BVTPPtxYaXgzdbgcpyuCdojpM\nC7KjealxeKV65gwJR+AatDxiSov7oye1L9pk7d5SiEtcnja11AS3JSU+DDLqfBN3\nnNKkPr+vrt2uBWACChGTAkSATjLL2Yd6q+FkZlkpxQgtkXE7Tgi2B+mn66sjDARE\niWXyP6K5eoAfRmUrz64r\n=GB8S\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree aef97eda1047cdd7c60ba5544c34c2bd7bc123c1\nparent e5f0315efa60a76332b32f21e495e36b26bdd36e\nauthor lauren <poteto@users.noreply.github.com> 1746208605 -0400\ncommitter GitHub <noreply@github.com> 1746208605 -0400\n\n[mcp] Update plugins (#33082)\n\nAdds typescript support.\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/33082).\n* #33085\n* #33084\n* #33083\n* __->__ #33082\n* #33101",
-                "verified_at": "2025-05-02T17:56:48Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/12b094d2f66b48c0b34cdfdf997fefac373d47a8",
-        "html_url": "https://github.com/facebook/react/commit/12b094d2f66b48c0b34cdfdf997fefac373d47a8",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/12b094d2f66b48c0b34cdfdf997fefac373d47a8/comments",
-        "author": {
-            "login": "poteto",
-            "id": 1390709,
-            "node_id": "MDQ6VXNlcjEzOTA3MDk=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1390709?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/poteto",
-            "html_url": "https://github.com/poteto",
-            "followers_url": "https://api.github.com/users/poteto/followers",
-            "following_url": "https://api.github.com/users/poteto/following{/other_user}",
-            "gists_url": "https://api.github.com/users/poteto/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/poteto/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/poteto/subscriptions",
-            "organizations_url": "https://api.github.com/users/poteto/orgs",
-            "repos_url": "https://api.github.com/users/poteto/repos",
-            "events_url": "https://api.github.com/users/poteto/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/poteto/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "e5f0315efa60a76332b32f21e495e36b26bdd36e",
-                "url": "https://api.github.com/repos/facebook/react/commits/e5f0315efa60a76332b32f21e495e36b26bdd36e",
-                "html_url": "https://github.com/facebook/react/commit/e5f0315efa60a76332b32f21e495e36b26bdd36e"
-            }
-        ]
-    },
-    {
-        "sha": "e5f0315efa60a76332b32f21e495e36b26bdd36e",
-        "node_id": "C_kwDOAJy2KtoAKGU1ZjAzMTVlZmE2MGE3NjMzMmIzMmYyMWU0OTVlMzZiMjZiZGQzNmU",
-        "commit": {
-            "author": {
-                "name": "lauren",
-                "email": "poteto@users.noreply.github.com",
-                "date": "2025-05-02T17:56:01Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-02T17:56:01Z"
-            },
-            "message": "[mcp] Fix package.json (#33101)\n\nSince we use esbuild we need to correctly move dependencies that are\nrequired at runtime into `dependencies` and other packages that are only\nused in development in to `devDependencies`. This ensures the correct\npackages are included in the build.\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/33101).\n* #33085\n* #33084\n* #33083\n* #33082\n* __->__ #33101",
-            "tree": {
-                "sha": "355b608913b4a9c15bd87f8d101717b2585d8d47",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/355b608913b4a9c15bd87f8d101717b2585d8d47"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/e5f0315efa60a76332b32f21e495e36b26bdd36e",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoFQcxCRC1aQ7uu5UhlAAABwEQAA1GYfkY65HIE1GeHHBhaJ+X\nZZJ2lb1UB2gk9lclrBjE3ied+iJmmxd9UoIn95pSRc1oiw4yb5Sjfr/Nyr+xokZS\nQvAIJBEKzwx6y5vFayZrovTlkNZl/cDkPEERDVA8M6or56zElPeojajSLModT4NW\nZ4F10r/1rZfz7hgDAvzI9L9/zblQghdlMm9Q8stX7JSAzPGaK+HzLVohjOjvpB7H\n2TC9Ycxv83NM+g5diPeESWO+Nih7z+kSkA8OlmrImEELFDgZARMabK8PElzMdZp/\nK1DwKr0TzQDI5hi31g5A4vN48l4qi6MhUBdwRYAV8jY5oasYcR1ANVAeBFbaNQiO\nXCiuwG6+YgikIeGSQeWseWgzaCCxtf9T9G8jW5U3df3I1rQ/x3sQ4zWbB7Bnx5JN\nk8og0nQjxGuY9HVQdwK9cfxgoF1U4DF9tQpOG9vNElJp8a1JoNXHHfd5bFV75G4k\nPskUYeCarPFMc2/FhwfQkGbZ2npLWbS7nAAVUGwFr9DjF8xCKoPnJ2/7WdYCJ+MF\nkB5M9K+sMJfp/e6SIG1CNvteZMNcDCDH0A35fY3eURreUUjTyRgSc7By/f+otEhk\nZbRlErnYE6xv9kGiAEB7kXq5Q+2dXpIeA8NiXOkb6Ur69k2TozgbpVfToa4VDSKv\ntmqhA/POOLm3h9mqph5o\n=9rAZ\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree 355b608913b4a9c15bd87f8d101717b2585d8d47\nparent f739642745577a8e4dcb9753836ac3589b9c590a\nauthor lauren <poteto@users.noreply.github.com> 1746208561 -0400\ncommitter GitHub <noreply@github.com> 1746208561 -0400\n\n[mcp] Fix package.json (#33101)\n\nSince we use esbuild we need to correctly move dependencies that are\nrequired at runtime into `dependencies` and other packages that are only\nused in development in to `devDependencies`. This ensures the correct\npackages are included in the build.\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/33101).\n* #33085\n* #33084\n* #33083\n* #33082\n* __->__ #33101",
-                "verified_at": "2025-05-02T17:56:04Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/e5f0315efa60a76332b32f21e495e36b26bdd36e",
-        "html_url": "https://github.com/facebook/react/commit/e5f0315efa60a76332b32f21e495e36b26bdd36e",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/e5f0315efa60a76332b32f21e495e36b26bdd36e/comments",
-        "author": {
-            "login": "poteto",
-            "id": 1390709,
-            "node_id": "MDQ6VXNlcjEzOTA3MDk=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1390709?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/poteto",
-            "html_url": "https://github.com/poteto",
-            "followers_url": "https://api.github.com/users/poteto/followers",
-            "following_url": "https://api.github.com/users/poteto/following{/other_user}",
-            "gists_url": "https://api.github.com/users/poteto/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/poteto/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/poteto/subscriptions",
-            "organizations_url": "https://api.github.com/users/poteto/orgs",
-            "repos_url": "https://api.github.com/users/poteto/repos",
-            "events_url": "https://api.github.com/users/poteto/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/poteto/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "f739642745577a8e4dcb9753836ac3589b9c590a",
-                "url": "https://api.github.com/repos/facebook/react/commits/f739642745577a8e4dcb9753836ac3589b9c590a",
-                "html_url": "https://github.com/facebook/react/commit/f739642745577a8e4dcb9753836ac3589b9c590a"
             }
         ]
     }

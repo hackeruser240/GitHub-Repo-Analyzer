@@ -30,15 +30,24 @@ def printing_commit_authors():
     Printing the total commits per authors.
     With respect to greatest number of commits and time
     '''
-    var.authors=dict(sorted(var.authors.items(), key=lambda item: item[1], reverse=True) )
-    
-    print(f"Authors in order of greatest commits:")
-    for key,value in var.authors.items():
-        print(f"{key}:{value} commits")
+    def authors_by_greatest_commits():
+        print("=======================================")
+        print(f"Authors in order of greatest commits:")
+        print("=======================================")
+        for key,value in var.authors.items():
+            print(f"{key}:{value} commits")
 
-    print("Authors in order of timeline:")
-    for num,item in enumerate(var.raw_authors[:6],start=1) :
-        print(f"{num}. {item}")
+    def authors_by_timeline():
+        print("==============================")
+        print("Authors in order of timeline:")
+        print("==============================")
+        for num,item in enumerate(var.raw_authors[:6],start=1) :
+            print(f"{num}. {item}")
+    
+    var.authors=dict(sorted(var.authors.items(), key=lambda item: item[1], reverse=True) )
+
+    authors_by_greatest_commits()
+    authors_by_timeline()
 
 def commit_author_visualization():
     plt.clf()  # Clear current figure
@@ -79,7 +88,7 @@ def commit_author_visualization():
     except:
         print("❌Failed to save the authors by timeline image")
 
-def commit_title_visualization(commits,commit_title_viz=False):
+def commit_title_visualization(commits,title_inline=False):
 
     for commit in commits:
         commit_data = commit.get('commit')
@@ -89,7 +98,7 @@ def commit_title_visualization(commits,commit_title_viz=False):
             var.commit_titles.append(title)
 
     
-    if commit_title_viz:
+    if title_inline:
         try:
             table = [(i + 1, msg) for i, msg in enumerate(var.commit_titles)]
             print("Title of latest commits:")
@@ -212,7 +221,8 @@ def commit_msg_wordcloud(commits):
 #===========================================main.py()===========================================
 #===============================================================================================
 
-def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
+def extracting_authors(filename,author_inline=True,author_plot=True,title_inline=False):
+    
     try:
         commits=loading_json_file(filename)
     except Exception as d:
@@ -233,24 +243,23 @@ def extracting_authors(filename,commit_author_viz=False,commit_title_viz=False):
                     var.authors[login] += 1
             else:
                 print("Warning: 'author' key missing or not a dictionary for a commit.")
-        
-        
+               
         try:
-            #Printing the author dictionary
-            printing_commit_authors()
+            if author_inline:
+                printing_commit_authors()
         except:
             print("Some error in commits.py -> printing_commit_authors()")
 
 
         try:
-            if commit_author_viz:
+            if author_plot:
                 commit_author_visualization()
         except:
             print("Some error in commits.py -> commit_author_visualization()")
 
         
         try:
-            commit_title_visualization(commits,commit_title_viz=False)
+            commit_title_visualization(commits,title_inline)
         except Exception as e:
             print("Some error in commits.py -> commit_title_visualization()")
             print(f"Error: {e}")
@@ -284,6 +293,7 @@ if __name__=='__main__':
         print(f"Finding latest commits of {var.repo} repo")
     else:
         var.repo='facebook/react'
+        #pass
 
     per_page=100
     commits= f'https://api.github.com/repos/{var.repo}/commits?per_page={per_page}'
@@ -312,4 +322,4 @@ if __name__=='__main__':
             print(f"Error: {s}")
     
     else:
-        print("Response code error")
+        print(f"Response code error: {response.status_code}")
