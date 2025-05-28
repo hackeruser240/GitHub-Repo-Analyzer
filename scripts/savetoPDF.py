@@ -4,6 +4,8 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
 
+from scripts.helperFunctions import make_repo_folder
+
 def title(var):
     maintitle=f"'{var.repo}' details"
     var.c.setFont("Helvetica-Bold", var.f1_font)
@@ -150,8 +152,9 @@ def lowest_contributions(var):
 #===============================================================================================
 
 def save_to_PDF(var):
-    os.makedirs(os.path.dirname(var.save_dir), exist_ok=True)
-    var.save_dir=os.path.join( os.path.dirname(var.save_dir) ,"Commit Titles.pdf")
+    #os.makedirs(os.path.dirname(var.save_dir), exist_ok=True)
+    
+    var.save_dir=os.path.join( make_repo_folder() ,f"{make_repo_folder()} Data.pdf")
     var.c = canvas.Canvas(var.save_dir, pagesize=letter)
     var.width, var.height = letter
     var.y=var.height-1 * inch

@@ -13,9 +13,11 @@ from scripts.contributors import (
 )
 from scripts.commits import extracting_authors
 from scripts.savetoPDF import save_to_PDF
+from scripts.helperFunctions import make_repo_folder
 
 
-headers = {'Authorization': f'token {var.token}'}
+#headers = {'Authorization': f'token {var.token}'}
+
 
 def contributors(repo,viz=False):
 
@@ -28,13 +30,14 @@ def contributors(repo,viz=False):
         print(f"Finding the contributors of repo: {repo}")
         contributors = f'https://api.github.com/repos/{repo}/contributors?per_page=50'
     
-    response = requests.get(contributors, headers=headers)
+    response = requests.get(contributors, headers=var.headers)
     
     if response.status_code == 200:
         data = response.json()
 
         try:
-            path=r'Data'
+            #path= os.path.join(make_repo_folder(), 'Data')
+            path=make_repo_folder()
             os.makedirs(path,exist_ok=True)
 
             filepath=os.path.join(path,'contributions.json')
@@ -76,7 +79,7 @@ def commits(var):
     print(f"Finding latest commits of {var.repo} repo")
 
     commits= f'https://api.github.com/repos/{var.repo}/commits?per_page=50'
-    response = requests.get(commits, headers=headers)
+    response = requests.get(commits, headers=var.headers)
     
     if response.status_code==200:
         data=response.json()
@@ -109,5 +112,5 @@ if __name__=="__main__":
     var.repo=args.repo
 
     contributors(args.repo)
-    commits(var)
+    #commits(var)
     save_to_PDF(var)
