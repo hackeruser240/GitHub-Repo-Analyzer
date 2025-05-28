@@ -3,9 +3,13 @@ import sys
 
 from contextlib import contextmanager
 from scripts.variables import var
+import matplotlib.pyplot as plt
 
 '''
-Functions most probablt that will be used in main.py
+Used in:
+
+main.py
+savetoPDF.py
 '''
 def make_repo_folder():
     folder_name=var.repo.split("/")[0] + "-" + var.repo.split("/")[1]
@@ -28,3 +32,15 @@ def suppress_stdout(enabled=True):
                 yield
             finally:
                 sys.stdout = original_stdout
+
+'''
+Used in:
+commits.py
+contributors.py
+'''
+def save_fig(name):
+    if not name or isinstance(name,str):
+        folder = os.path.join(make_repo_folder(), var.path)
+        os.makedirs(folder, exist_ok=True)  # ✅ Creates just the folders
+        filepath = os.path.join(folder, name)
+        plt.savefig(filepath, dpi=300)

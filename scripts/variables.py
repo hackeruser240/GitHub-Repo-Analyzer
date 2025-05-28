@@ -41,7 +41,7 @@ class Variables:
         '''
         
         '''
-        self.path=r'Data'
+        self.path=r'images'
         self.save_dir=''
 
 

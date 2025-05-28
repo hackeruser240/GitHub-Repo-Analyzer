@@ -10,7 +10,7 @@ from tabulate import tabulate #used in commit_title_visualization()
 from wordcloud import WordCloud # used in commit_msg_wordcloud()
 
 from scripts.variables import var
-from scripts.savetoPDF import save_to_PDF
+from scripts.helperFunctions import save_fig
 
 def loading_json_file(filename):
 
@@ -79,11 +79,7 @@ def commit_author_visualization():
     plt.tight_layout()
     
     try: 
-        path=r'Data\Images'
-        os.makedirs(path,exist_ok=True)
-
-        filepath=os.path.join( path, "Authors by Commit Timeline.png")
-        plt.savefig(filepath,dpi=300)
+        save_fig(name="Authors by Commit Timeline.png")
         print("✅ Saved: Authors by Commit Timeline.png")
     except:
         print("❌Failed to save the authors by timeline image")
@@ -123,12 +119,8 @@ def commits_per_day(commits):
     plt.tight_layout()
     #plt.show()
     try: 
-        path=r'Data\Images'
-        os.makedirs(path,exist_ok=True)
-
-        filepath=os.path.join( path, "Commits per Day.png")
-        plt.savefig(filepath,dpi=300)
-        print(f"✅ Saved: Commits Per Day.png to '{os.path.dirname(filepath)}' ")
+        save_fig(name="Commits per Day.png")
+        print(f"✅ Saved: Commits Per Day.png ")
     except:
         print("❌Failed to save the Commits Per Day image")
 
@@ -162,14 +154,10 @@ def commits_perday_peruser(commits):
     #plt.show()
 
     try:
-        path=r'Data\Images'
-        os.makedirs(path,exist_ok=True)
-
-        filepath=os.path.join( path, "Commits per Day per User.png")
-        plt.savefig(filepath,dpi=300)
-        print(f"✅ Saved: Commits per Day per User.png to '{os.path.dirname(filepath)}' ")
+        save_fig(name="Commits per Day per User.png")
+        print(f"✅ Saved: Commits per Day per User.png")
     except Exception as o:
-        print(f"Error in commtis.py -> commit_frequency_per_user \n{o}")
+        print(f"Error in commits.py -> commit_perday_peruser()! \n{o}")
 
 def commit_msg_wordcloud(commits):
     # Extract commit messages
@@ -207,22 +195,22 @@ def commit_msg_wordcloud(commits):
     #plt.show()
 
     try:
-        path=r'Data\Images'
-        os.makedirs(path,exist_ok=True)
-
-        filepath=os.path.join( path, "Wordcloud.png")
-        plt.savefig(filepath,dpi=300)
-        print(f"✅ Saved: Wordcloud.png to '{os.path.dirname(filepath)}' ")
+        save_fig(name="Wordcloud.png")
+        print(f"✅ Saved: Wordcloud.png ")
     except Exception as o:
-        print(f"Error in commtis.py -> commit_frequency_per_user \n{o}")
+        print(f"Error in commits.py -> commit_msg_wordcloud() \n{o}")
 
 
 #===============================================================================================
 #===========================================main.py()===========================================
 #===============================================================================================
 
-def extracting_authors(filename,author_inline=True,author_plot=True,title_inline=False):
+def processing_commits(filename,author_inline=True,author_plot=True,title_inline=False):
     
+    print("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
+    print("Processing the Commits file")
+    print("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
+
     try:
         commits=loading_json_file(filename)
     except Exception as d:
@@ -317,7 +305,7 @@ if __name__=='__main__':
             print('❌ Failed to save commits.json')
 
         try:
-            extracting_authors(filename)
+            processing_commits(filename)
         except Exception as s:
             print(f"Error: {s}")
     

@@ -12,7 +12,7 @@ from scripts.contributors import (
     top_contributors_VIZ,
     top_contributors
 )
-from scripts.commits import extracting_authors
+from scripts.commits import processing_commits
 from scripts.savetoPDF import save_to_PDF
 from scripts.helperFunctions import (
     make_repo_folder,
@@ -104,8 +104,8 @@ def commits(var):
         print(f"Total {len(data)} commits found")
         try:
             #path=r'Data'
-            os.makedirs(var.path,exist_ok=True)
-            filepath=os.path.join(var.path,'commits.json')
+            os.makedirs(make_repo_folder(),exist_ok=True)
+            filepath=os.path.join(make_repo_folder(),'commits.json')
             
             var.save_dir=filepath
             
@@ -116,7 +116,7 @@ def commits(var):
             print('❌ Failed to save commits.json')
 
         try:
-            extracting_authors(filepath,commit_author_viz=True)
+            processing_commits(filepath,author_inline=False)
         except Exception as e:
             print(f"Couldn't process extracting_authors() as per error: \n {e}")
     else:
@@ -130,7 +130,7 @@ if __name__=="__main__":
     var.repo=args.repo
 
     contributors(args.repo)
-    #commits(var)
+    commits(var)
     print("=====================================")
     save_to_PDF(var)
     print("=====================================")

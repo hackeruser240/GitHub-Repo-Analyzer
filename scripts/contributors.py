@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import os
 
 from scripts.variables import var
+from scripts.helperFunctions import save_fig
+
 
 def user_contributions(data):
     print("=========================")
@@ -68,11 +70,7 @@ def lowest_contributors_VIZ(data, n=var.numof_lowest_contributions):
     plt.tight_layout()
 
     try: 
-        path=r'Data\Images'
-        os.makedirs(path,exist_ok=True)
-
-        filepath=os.path.join( path, "Least contributors.png")
-        plt.savefig(filepath,dpi=300) 
+        save_fig(name='Least contributors.png')
         print("✅ Saved: 'Least contributors.png' ")
     except:
         print("❌Failed to save the lowest contributors image")
@@ -120,12 +118,8 @@ def top_contributors_VIZ(data,n=var.numof_top_contributors):
     plt.xticks(rotation=45)
     plt.tight_layout()
 
-    try: 
-        path=r'Data\Images'
-        os.makedirs(path,exist_ok=True)
-
-        filepath=os.path.join( path, "Top 10 contributors.png")
-        plt.savefig(filepath,dpi=300)
-        print(f"✅ Saved: Top {n} contributors.png")
-    except:
-        print("❌Failed to save the highest contributors image")
+    try:
+        save_fig(name="Top 10 contributors.png")
+        print(f"✅ Saved: 'Top {n} contributors.png'")
+    except Exception as e:
+        print(f"❌Failed to save the highest contributors image. Error:\n{e}")
