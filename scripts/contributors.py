@@ -4,13 +4,22 @@ import os
 
 from scripts.variables import var
 
+def user_contributions(data):
+    print("=========================")
+    print("Contribution of each user")
+    print("=========================")
+    for i,contributor in enumerate(data,start=1):
+        print(f"{i}.", contributor['login'],':', contributor['contributions'])
+
 def lowest_contributors(data,n=var.numof_lowest_contributions):
     '''
     finding the lowest contributors with contributions<n.
     by default n=100
     '''
 
-    print(f"*****Finding lowest {n} contributors in '{var.repo}'*****")
+    print("==================================================")
+    print(f"Finding lowest {n} contributors in '{var.repo}'")
+    print("==================================================")
     #low=sorted(data, key=lambda x:x['contributions'],reverse=False)
     
     var.lowest_contribution=[user for user in data if user['contributions']<n]
@@ -33,7 +42,7 @@ def lowest_contributors_VIZ(data, n=var.numof_lowest_contributions):
     
     lowest=[user for user in data if user['contributions']<n]
 
-    print(f"Users with ≤{n} contributions: {len(lowest)}")
+    #print(f"Users with ≤{n} contributions: {len(lowest)}")
     x,y=[],[]
     for user in lowest:
         if user['type'] == 'User':
@@ -41,7 +50,8 @@ def lowest_contributors_VIZ(data, n=var.numof_lowest_contributions):
             y.append(user['contributions'])
         
         elif user['type'] == 'bot' or 'Bot':
-            print('Bot detected! Ignoring!')
+            #print('Bot detected! Ignoring!')
+            pass
 
     offset=0.5
     plt.figure(figsize=(10, 6))  # Width x Height in inches
@@ -63,7 +73,7 @@ def lowest_contributors_VIZ(data, n=var.numof_lowest_contributions):
 
         filepath=os.path.join( path, "Least contributors.png")
         plt.savefig(filepath,dpi=300) 
-        print("✅ Saved Least contributors.png")
+        print("✅ Saved: 'Least contributors.png' ")
     except:
         print("❌Failed to save the lowest contributors image")
 
@@ -71,7 +81,9 @@ def top_contributors(data,n=var.numof_top_contributors):
     '''
     Using the response, printing the most contributors, 5 by default
     '''
-    print(f"*****Finding top {n} contributors in '{var.repo}'*****")
+    print("=================================================")
+    print(f"Finding top {n} contributors in '{var.repo}'")
+    print("=================================================")
     var.top_contributors = sorted(data, key=lambda x: x['contributions'], reverse=True)
 
     for i, user in enumerate(var.top_contributors[:n], start=1):
@@ -82,7 +94,7 @@ def top_contributors_VIZ(data,n=var.numof_top_contributors):
     Gets the top n contributors and visualizes them
     '''
     
-    print(f"*****Visualizing top {n} contributors in '{var.repo}'*****")
+    #print(f"*****Visualizing top {n} contributors in '{var.repo}'*****")
 
     # Get top 10 contributors
     top=sorted(data, key=lambda x: x['contributions'], reverse=True)[:n]
@@ -114,7 +126,6 @@ def top_contributors_VIZ(data,n=var.numof_top_contributors):
 
         filepath=os.path.join( path, "Top 10 contributors.png")
         plt.savefig(filepath,dpi=300)
-        print("✅ Top 10 contributors.png")
+        print(f"✅ Saved: Top {n} contributors.png")
     except:
         print("❌Failed to save the highest contributors image")
-

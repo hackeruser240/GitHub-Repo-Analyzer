@@ -6,6 +6,7 @@ import argparse as ag
 
 from scripts.variables import var
 from scripts.contributors import (
+    user_contributions,
     lowest_contributors,
     lowest_contributors_VIZ,
     top_contributors_VIZ,
@@ -13,21 +14,28 @@ from scripts.contributors import (
 )
 from scripts.commits import extracting_authors
 from scripts.savetoPDF import save_to_PDF
-from scripts.helperFunctions import make_repo_folder
+from scripts.helperFunctions import (
+    make_repo_folder,
+    suppress_stdout
+)
 
 
 #headers = {'Authorization': f'token {var.token}'}
 
 
-def contributors(repo,viz=False):
+def contributors(repo,inline_display=False,viz=True):
 
     if not repo.startswith('https://api.github.com/repos/'):
+        print("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
         print(f"Finding the contributors of {repo} repo")
+        print("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
         contributors = f'https://api.github.com/repos/{repo}/contributors?per_page=50'
     else:
         f=repo.split("/")
         repo=f[4]+'/'+f[5]
+        print("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
         print(f"Finding the contributors of repo: {repo}")
+        print("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
         contributors = f'https://api.github.com/repos/{repo}/contributors?per_page=50'
     
     response = requests.get(contributors, headers=var.headers)
@@ -45,30 +53,40 @@ def contributors(repo,viz=False):
             with open(filepath,'w') as file:
                 json.dump(data, file, indent=4 )
 
-                print("✅ Saved contributions.json")
+                print(f"✅ Saved: {len(data)} users in contributions.json")
         except:
             print('❌ Failed to save contributions.json')
         
-        print(f"✅ Successfully fetched { len(data) } users in the JSON file")
+        #print(f"✅ Successfully fetched { len(data) } users in the JSON file")
         
-        print("***** Contribution of each user *****")
-        for i,contributor in enumerate(data,start=1):
-            print(f"{i}.", contributor['login'],':', contributor['contributions'])
+        with suppress_stdout(enabled=inline_display):
+            user_contributions(data)
+        
+        #print(f"Error in main.py -> user_contributions()\n{e}")
 
-        print("***** Searching for Bots *****")
-        for user in data:
-            if user['type'] != 'User':
-                print(user['login'])
+        def bots():
+            print("***** Searching for Bots *****")
+            for user in data:
+                if user['type'] != 'User':
+                    print(user['login'])
         
         #Printing data:
-
-        top_contributors(data)
-        if viz:
-            top_contributors_VIZ(data)
+        with suppress_stdout(enabled=inline_display):
+                top_contributors(data)
+        try:           
+            if viz:
+                top_contributors_VIZ(data)
+        except Exception as e:
+            print(f"Error in main.py -> contributors() -> Finding top contributors\n{e}")
         
-        lowest_contributors(data)
-        if viz:
-            lowest_contributors_VIZ(data)
+        with suppress_stdout(enabled=inline_display):
+                lowest_contributors(data)
+
+        try:
+            if viz:
+                lowest_contributors_VIZ(data)
+        except Exception as e:
+            print(f"Error in main.py -> contributors() -> Finding lowest contributors\n{e}")
 
     else:
         print(f"❌ Failed to fetch data. Status Code: {response.status_code}")
@@ -113,4 +131,6 @@ if __name__=="__main__":
 
     contributors(args.repo)
     #commits(var)
+    print("=====================================")
     save_to_PDF(var)
+    print("=====================================")
