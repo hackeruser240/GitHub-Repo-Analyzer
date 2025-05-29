@@ -44,3 +44,16 @@ def save_fig(name):
         os.makedirs(folder, exist_ok=True)  # ✅ Creates just the folders
         filepath = os.path.join(folder, name)
         plt.savefig(filepath, dpi=300)
+
+'''
+used in:
+
+'''
+
+def get_logger(use_streamlit=False, output_area=None):
+    def log(msg):
+        if use_streamlit and output_area is not None:
+            output_area.write(msg)
+        else:
+            print(msg)
+    return log

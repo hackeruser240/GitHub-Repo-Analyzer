@@ -1,6 +1,4 @@
-import argparse
 import matplotlib.pyplot as plt
-import os
 
 from scripts.variables import var
 from scripts.helperFunctions import save_fig
@@ -75,17 +73,17 @@ def lowest_contributors_VIZ(data, n=var.numof_lowest_contributions):
     except:
         print("❌Failed to save the lowest contributors image")
 
-def top_contributors(data,n=var.numof_top_contributors):
+def top_contributors(data,log,n=var.numof_top_contributors):
     '''
     Using the response, printing the most contributors, 5 by default
     '''
-    print("=================================================")
-    print(f"Finding top {n} contributors in '{var.repo}'")
-    print("=================================================")
+    log("=================================================")
+    log(f"Finding top {n} contributors in '{var.repo}'")
+    log("=================================================")
     var.top_contributors = sorted(data, key=lambda x: x['contributions'], reverse=True)
 
     for i, user in enumerate(var.top_contributors[:n], start=1):
-        print(f"{i}. {user['login']} - {user['contributions']} contributions")
+        log(f"{i}. {user['login']} - {user['contributions']} contributions")
 
 def top_contributors_VIZ(data,n=var.numof_top_contributors):
     '''

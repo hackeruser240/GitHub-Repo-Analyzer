@@ -4,9 +4,11 @@ import io
 from contextlib import redirect_stdout
 from scripts.variables import var
 from main import contributors, commits, save_to_PDF
+from scripts.helperFunctions import get_logger
 
-st.header("📊 GitHub Repo Analyzer",divider="white")
+st.header("📊 GitHub Repo Analyzer",divider="rainbow")
 repo_input = st.text_input("Enter GitHub repo:")
+log_output = st.empty()  # Streamlit output area
 
 # Initialize session state
 if "analyze_log" not in st.session_state:
@@ -24,8 +26,10 @@ if st.button("Analyze"):
 
         # Capture print logs
         f = io.StringIO()
-        with redirect_stdout(f):
-            contributors(repo_input,inline_display=True)
+        log = get_logger(use_streamlit=True, output_area=log_output)
+        
+        with redirect_stdout(f):            
+            contributors(repo_input,log=log,inline_display=False)
             commits(var)
             print("✅ Data collection complete.")
 

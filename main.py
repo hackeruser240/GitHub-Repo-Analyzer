@@ -16,14 +16,15 @@ from scripts.commits import processing_commits
 from scripts.savetoPDF import save_to_PDF
 from scripts.helperFunctions import (
     make_repo_folder,
-    suppress_stdout
+    suppress_stdout,
+    get_logger
 )
 
 
 #headers = {'Authorization': f'token {var.token}'}
 
 
-def contributors(repo,inline_display=False,viz=True):
+def contributors(repo,log,inline_display=False,viz=True):
 
     if not repo.startswith('https://api.github.com/repos/'):
         print("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
@@ -72,7 +73,7 @@ def contributors(repo,inline_display=False,viz=True):
         
         #Printing data:
         with suppress_stdout(enabled=inline_display):
-                top_contributors(data)
+                top_contributors(data,log)
         try:           
             if viz:
                 top_contributors_VIZ(data)
@@ -124,12 +125,13 @@ def commits(var):
         print("Reason:", response.json().get("message", "Unknown error"))
 
 if __name__=="__main__":
+    log=get_logger()
     parser=ag.ArgumentParser()
     parser.add_argument('--repo', required=True, help="Repo in the form 'owner/name' or full API URL")
     args=parser.parse_args()
     var.repo=args.repo
 
-    contributors(args.repo)
+    contributors(args.repo,log=log)
     commits(var)
     print("=====================================")
     save_to_PDF(var)
