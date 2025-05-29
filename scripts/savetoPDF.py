@@ -151,9 +151,9 @@ def lowest_contributions(var):
 #===========================================main.py()===========================================
 #===============================================================================================
 
-def save_to_PDF(var):
+def save_to_PDF(var,log):
     #os.makedirs(os.path.dirname(var.save_dir), exist_ok=True)
-    
+    #log=Logger()
     var.save_dir=os.path.join( make_repo_folder() ,f"{make_repo_folder()} Data.pdf")
     var.c = canvas.Canvas(var.save_dir, pagesize=letter)
     var.width, var.height = letter
@@ -172,9 +172,9 @@ def save_to_PDF(var):
 
     try:
         var.c.save()
-        print(f"PDF saved at: {var.save_dir}")
+        log(f"PDF saved at: {var.save_dir}")
     except PermissionError:
-        print("⚠️ You forgot to close the PDF file!")
+        log("⚠️ You forgot to close the PDF file!")
 
 if __name__=='__main__':
     from variables import var

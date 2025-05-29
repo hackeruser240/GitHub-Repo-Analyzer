@@ -3,8 +3,9 @@ import io
 
 from contextlib import redirect_stdout
 from scripts.variables import var
-from main import contributors, commits
+from main import contributors,commits
 from scripts.helperFunctions import Logger
+from scripts.savetoPDF import save_to_PDF
 
 st.header("📊 GitHub Repo Analyzer",divider="rainbow")
 repo_input = st.text_input("Enter GitHub repo:")
@@ -21,7 +22,7 @@ if "analyzed" not in st.session_state:
 # === LAYOUT ORDER ===
 subheader_placeholder = st.empty()       # For "📥 Analysis Output"
 analyze_button_placeholder = st.empty()  # For Analyze button
-log_output_container = st.container()    # For logs
+log_output_container = st.container(border=True)    # For logs
 
 # === STATIC UI ELEMENTS ===
 subheader_placeholder.subheader("📥 Analysis Output")
@@ -35,3 +36,19 @@ if analyze_clicked and repo_input:
     contributors(repo_input, log=logger, inline_display=False)
     commits(var)
     logger("✅ Data collection complete.")
+    st.session_state.analyzed = True
+
+elif analyze_clicked and not repo_input:
+    st.write("Please input a repo name")
+
+
+# === LAYOUT ORDER ===
+pdf_button_placeholder = st.empty()
+pdf_log_container = st.container(border=True)
+
+# === GENERATE PDF BUTTON ===
+if st.session_state.analyzed:
+    if pdf_button_placeholder.button("Generate PDF"):
+        logger = Logger(use_streamlit=True, output_area=pdf_log_container)
+        save_to_PDF(var, log=logger)
+        logger("📄 PDF generated and saved.")
