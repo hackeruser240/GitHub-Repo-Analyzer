@@ -1,5 +1,87 @@
 [
     {
+        "sha": "14094f80cbf52cad4024211080d8491f3334ef61",
+        "node_id": "C_kwDOAJy2KtoAKDE0MDk0ZjgwY2JmNTJjYWQ0MDI0MjExMDgwZDg0OTFmMzMzNGVmNjE",
+        "commit": {
+            "author": {
+                "name": "Mateusz Burzy\u0144ski",
+                "email": "mateuszburzynski@gmail.com",
+                "date": "2025-05-29T15:17:10Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-29T15:17:10Z"
+            },
+            "message": "Allow `nonce` to be used on hoistable styles (#32461)\n\nfixes https://github.com/facebook/react/issues/32449\n\nThis is my first time touching this code. There are multiple systems in\nplace here and I wouldn't be surprised to learn that this has to be\nhandled in some other areas too. I have found some other style-related\ncode areas but I had no time yet to double-check them.\n\ncc @gnoff",
+            "tree": {
+                "sha": "7ed86f6ca098b8e238703868cd3fe8be1df1a41f",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/7ed86f6ca098b8e238703868cd3fe8be1df1a41f"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/14094f80cbf52cad4024211080d8491f3334ef61",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoOHp2CRC1aQ7uu5UhlAAAeFMQADXWbS6vMAepgUEvVGo5VSWe\nB6tBVsYXxRA8zYzFg52u40Nm+nC/8mcL8WYeB022It0V9KGwGZghtHlBltTXbcwr\nAQZEfpmJz+ckfUlmcD4jIv097unOFe7WbGWA9OQNJ+p76jdLPWCVFcF5quGoTVU+\nykr1JFH3iwzCs0Ulh28jt649Hf4IAb0iFEtYOYyVSqkwBu1vOmosJ076cOEgcFsC\n054ZA9xQVsTGIDABtzLOa9NHaL0l/tpYbHiGusYnJDIyyLrOIUZRnl7o4JlvgRxg\nmGVbnQ0fAG1VWs91tTyUwO6Knc9X1+2o08TQi3SUcBA5R0L9uLHfNwysLegom+mm\n767XBDLATLgXRJ0+7RECED2bCCYBxD2RAOXp/SZUft+nlVu/vgeHW0bhELAk0MWb\n3vpAwmEKKpCl6MmQV9H0L1zZaPlYUvkFD0sFWhEPrVPxyoQweN0A1UPpeGXcFcVu\nXmnHg1/7AChfLIu3H/1kGlkNglg/LGxkTM+40qwTVv5l2bTJjQMraXQYLlJqE3lX\njrGyqJiM+aVzYhheZ/3czV7whL9itwmwLEKbU1+eugKt9ckrn9W1VWQ23D9xrF7H\nbiUEWFrVVJKse1tSgTofpUNhnmSCH8LfNLjEJUZrLWI/INyJ1xjGen4m6B5tuMEh\n/QwZ7TmIupTX1pjDjbC7\n=ID7z\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree 7ed86f6ca098b8e238703868cd3fe8be1df1a41f\nparent 5717f1933f2e8b10406fde1043c3047cbfbddc82\nauthor Mateusz Burzy\u0144ski <mateuszburzynski@gmail.com> 1748531830 +0200\ncommitter GitHub <noreply@github.com> 1748531830 -0700\n\nAllow `nonce` to be used on hoistable styles (#32461)\n\nfixes https://github.com/facebook/react/issues/32449\n\nThis is my first time touching this code. There are multiple systems in\nplace here and I wouldn't be surprised to learn that this has to be\nhandled in some other areas too. I have found some other style-related\ncode areas but I had no time yet to double-check them.\n\ncc @gnoff",
+                "verified_at": "2025-05-29T15:17:12Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/14094f80cbf52cad4024211080d8491f3334ef61",
+        "html_url": "https://github.com/facebook/react/commit/14094f80cbf52cad4024211080d8491f3334ef61",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/14094f80cbf52cad4024211080d8491f3334ef61/comments",
+        "author": {
+            "login": "Andarist",
+            "id": 9800850,
+            "node_id": "MDQ6VXNlcjk4MDA4NTA=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/9800850?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Andarist",
+            "html_url": "https://github.com/Andarist",
+            "followers_url": "https://api.github.com/users/Andarist/followers",
+            "following_url": "https://api.github.com/users/Andarist/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Andarist/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Andarist/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Andarist/subscriptions",
+            "organizations_url": "https://api.github.com/users/Andarist/orgs",
+            "repos_url": "https://api.github.com/users/Andarist/repos",
+            "events_url": "https://api.github.com/users/Andarist/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Andarist/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "5717f1933f2e8b10406fde1043c3047cbfbddc82",
+                "url": "https://api.github.com/repos/facebook/react/commits/5717f1933f2e8b10406fde1043c3047cbfbddc82",
+                "html_url": "https://github.com/facebook/react/commit/5717f1933f2e8b10406fde1043c3047cbfbddc82"
+            }
+        ]
+    },
+    {
         "sha": "5717f1933f2e8b10406fde1043c3047cbfbddc82",
         "node_id": "C_kwDOAJy2KtoAKDU3MTdmMTkzM2YyZThiMTA0MDZmZGUxMDQzYzMwNDdjYmZiZGRjODI",
         "commit": {
@@ -4014,88 +4096,6 @@
                 "sha": "676f0879f315130309262ff3532707029f0288bb",
                 "url": "https://api.github.com/repos/facebook/react/commits/676f0879f315130309262ff3532707029f0288bb",
                 "html_url": "https://github.com/facebook/react/commit/676f0879f315130309262ff3532707029f0288bb"
-            }
-        ]
-    },
-    {
-        "sha": "676f0879f315130309262ff3532707029f0288bb",
-        "node_id": "C_kwDOAJy2KtoAKDY3NmYwODc5ZjMxNTEzMDMwOTI2MmZmMzUzMjcwNzAyOWYwMjg4YmI",
-        "commit": {
-            "author": {
-                "name": "Sebastian Markb\u00e5ge",
-                "email": "sebastian@calyptus.eu",
-                "date": "2025-05-13T19:18:02Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-13T19:18:02Z"
-            },
-            "message": "Reset currentEventTransitionLane after flushing sync work (#33159)\n\nThis keeps track of the transition lane allocated for this event. I want\nto be able to use the current one within sync work flushing to know\nwhich lane needs its loading indicator cleared.\n\nIt's also a bit weird that transition work scheduled inside sync updates\nin the same event aren't entangled with other transitions in that event\nwhen `flushSync` is.\n\nTherefore this moves it to reset after flushing.\n\nIt should have no impact. Just splitting it out into a separate PR for\nan abundance of caution.\n\nThe only thing this might affect would be if the React internals throws\nand it doesn't reset after. But really it doesn't really have to reset\nand they're all entangled anyway.",
-            "tree": {
-                "sha": "f250b7dace79e695f595e3570b03decadd8045d7",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/f250b7dace79e695f595e3570b03decadd8045d7"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/676f0879f315130309262ff3532707029f0288bb",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoI5rqCRC1aQ7uu5UhlAAAmYsQAG0K4z9GPZjktltLTor9PvBq\nSxyRSmoOWGmHHwJyAlNHPCC3I5OookAlOfhAP/KjCx6Rf8ukEpW7lSDATPjGbyfg\nxkht+ntY+Ort/TriLYoZSKfu310l9YFua6zqGUQrnkFSomK5KGtUg8q0yVXQsnH9\nYd/Ii8w1uf8tEXVhaCX+FUiTJjNvf4koFINPDcDkEdodPuRwxQ0EiG4w6yBQDZyW\nsaw5Q4rZMkpjvx8zKzm6iYXRro/bMHJXF/vv/43thC9yWn67adGEsUTmZKYYMtBA\nyIpjHXFnu0hNqB6pkZQAosgFxKr7HdYyBTgqSrpHAjclD+7KvL7qYOl2WGvRPDCs\n/xUZlAT4HYrXQ+cmik6sg2l2Ei1YHHy0Wt9jkeFMV4Bq0DBYLbzsXhaV55OBru7z\nZ4omwtBubg9YZCy7AxefrGml0bvTAsXo41fF//z2Q4gvz11SSecO+YU/zejnRI+P\n0MOnI5bMNYOzhZRNRzmj1ae8AzR4tmFuwrA/8tsyBJxT3CVp3wBEWVrNpp4xEePt\nBManq8enV1uvky/oxMQXdDRoIMcPVp8FcwTiemcKmc5IjZxTb7bA986mKpr8Ridu\n8QgxY9SYCvb2C711X/Ou6OkJNCRt86M/cEA+PFgewhbik64plB93fyzXGpzfstHS\nkcxnckQJFScjoy7xhY+k\n=c8s3\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree f250b7dace79e695f595e3570b03decadd8045d7\nparent 997c7bc930304142b3af37bcb21599181124aeb4\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747163882 -0400\ncommitter GitHub <noreply@github.com> 1747163882 -0400\n\nReset currentEventTransitionLane after flushing sync work (#33159)\n\nThis keeps track of the transition lane allocated for this event. I want\nto be able to use the current one within sync work flushing to know\nwhich lane needs its loading indicator cleared.\n\nIt's also a bit weird that transition work scheduled inside sync updates\nin the same event aren't entangled with other transitions in that event\nwhen `flushSync` is.\n\nTherefore this moves it to reset after flushing.\n\nIt should have no impact. Just splitting it out into a separate PR for\nan abundance of caution.\n\nThe only thing this might affect would be if the React internals throws\nand it doesn't reset after. But really it doesn't really have to reset\nand they're all entangled anyway.",
-                "verified_at": "2025-05-13T19:18:04Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/676f0879f315130309262ff3532707029f0288bb",
-        "html_url": "https://github.com/facebook/react/commit/676f0879f315130309262ff3532707029f0288bb",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/676f0879f315130309262ff3532707029f0288bb/comments",
-        "author": {
-            "login": "sebmarkbage",
-            "id": 63648,
-            "node_id": "MDQ6VXNlcjYzNjQ4",
-            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/sebmarkbage",
-            "html_url": "https://github.com/sebmarkbage",
-            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
-            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
-            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
-            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
-            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
-            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "997c7bc930304142b3af37bcb21599181124aeb4",
-                "url": "https://api.github.com/repos/facebook/react/commits/997c7bc930304142b3af37bcb21599181124aeb4",
-                "html_url": "https://github.com/facebook/react/commit/997c7bc930304142b3af37bcb21599181124aeb4"
             }
         ]
     }

@@ -1,13 +1,12 @@
 import streamlit as st
 import io
-from contextlib import redirect_stdout
 
+from contextlib import redirect_stdout
 from scripts.variables import var
 from main import contributors, commits, save_to_PDF
 
-st.title("📊 GitHub Repo Analyzer")
-
-repo_input = st.text_input("Enter GitHub repo (e.g., facebook/react)")
+st.header("📊 GitHub Repo Analyzer",divider="white")
+repo_input = st.text_input("Enter GitHub repo:")
 
 # Initialize session state
 if "analyze_log" not in st.session_state:
@@ -26,7 +25,7 @@ if st.button("Analyze"):
         # Capture print logs
         f = io.StringIO()
         with redirect_stdout(f):
-            contributors(repo_input)
+            contributors(repo_input,inline_display=True)
             commits(var)
             print("✅ Data collection complete.")
 
