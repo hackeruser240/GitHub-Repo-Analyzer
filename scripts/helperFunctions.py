@@ -50,10 +50,18 @@ used in:
 
 '''
 
-def get_logger(use_streamlit=False, output_area=None):
-    def log(msg):
-        if use_streamlit and output_area is not None:
-            output_area.write(msg)
+class Logger:
+    def __init__(self, use_streamlit=False, output_area=None):
+        self.use_streamlit = use_streamlit
+        self.output_area = output_area
+        self.logs = []
+
+    def __call__(self, *args, **kwargs):
+        msg = " ".join(str(arg) for arg in args)
+        self.logs.append(msg)
+
+        if self.use_streamlit and self.output_area:
+            # Update Streamlit output area
+            self.output_area.text("\n".join(self.logs))
         else:
             print(msg)
-    return log

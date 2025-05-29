@@ -17,7 +17,7 @@ from scripts.savetoPDF import save_to_PDF
 from scripts.helperFunctions import (
     make_repo_folder,
     suppress_stdout,
-    get_logger
+    Logger
 )
 
 
@@ -125,13 +125,13 @@ def commits(var):
         print("Reason:", response.json().get("message", "Unknown error"))
 
 if __name__=="__main__":
-    log=get_logger()
+    log=Logger(use_streamlit=False)
     parser=ag.ArgumentParser()
     parser.add_argument('--repo', required=True, help="Repo in the form 'owner/name' or full API URL")
     args=parser.parse_args()
     var.repo=args.repo
 
-    contributors(args.repo,log=log)
+    contributors(args.repo,log=log,inline_display=True)
     commits(var)
     print("=====================================")
     save_to_PDF(var)

@@ -4,11 +4,11 @@ import io
 from contextlib import redirect_stdout
 from scripts.variables import var
 from main import contributors, commits, save_to_PDF
-from scripts.helperFunctions import get_logger
+from scripts.helperFunctions import Logger
 
 st.header("📊 GitHub Repo Analyzer",divider="rainbow")
 repo_input = st.text_input("Enter GitHub repo:")
-log_output = st.empty()  # Streamlit output area
+
 
 # Initialize session state
 if "analyze_log" not in st.session_state:
@@ -18,31 +18,22 @@ if "pdf_log" not in st.session_state:
 if "analyzed" not in st.session_state:
     st.session_state.analyzed = False
 
+log_output = st.empty()  # Streamlit output area
 
 # ---- ANALYZE BUTTON ----
-if st.button("Analyze"):
-    if repo_input:
+if st.button("Analyze") and repo_input:
         var.repo = repo_input
-
-        # Capture print logs
-        f = io.StringIO()
-        log = get_logger(use_streamlit=True, output_area=log_output)
         
-        with redirect_stdout(f):            
-            contributors(repo_input,log=log,inline_display=False)
-            commits(var)
-            print("✅ Data collection complete.")
+        logger = Logger(use_streamlit=True, output_area=log_output)
 
-        st.session_state.analyze_log = f.getvalue()
-        st.session_state.analyzed = True
+        #st.subheader("📥 Analysis Output")    
+        
+            
+        contributors(repo_input,log=logger,inline_display=False)
+        commits(var)
+        logger("✅ Data collection complete.")
 
-
-# ---- SHOW ANALYZE OUTPUT ----
-if st.session_state.analyze_log:
-    st.subheader("📥 Analysis Output")
-    st.code(st.session_state.analyze_log, language="text")
-
-
+'''
 # ---- GENERATE PDF BUTTON ----
 if st.session_state.analyzed:
     if st.button("Generate PDF"):
@@ -58,3 +49,6 @@ if st.session_state.analyzed:
 if st.session_state.pdf_log:
     st.subheader("📄 PDF Generation Output")
     st.code(st.session_state.pdf_log, language="text")
+'''
+
+

@@ -1,0 +1,2789 @@
+[
+    {
+        "sha": "bd9cbf02e169e5e2c9540474fe3622d7f609ab31",
+        "node_id": "C_kwDOOtgnmNoAKGJkOWNiZjAyZTE2OWU1ZTJjOTU0MDQ3NGZlMzYyMmQ3ZjYwOWFiMzE",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-29T20:04:14Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-29T20:04:14Z"
+            },
+            "message": "add: get_logger() that:\n1. prints normally\n2. redirects prints() to st.write() when invoked in streamlit app",
+            "tree": {
+                "sha": "cb042dce72e9779544a2bda70451fc895b90cd4f",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/cb042dce72e9779544a2bda70451fc895b90cd4f"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/bd9cbf02e169e5e2c9540474fe3622d7f609ab31",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/bd9cbf02e169e5e2c9540474fe3622d7f609ab31",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/bd9cbf02e169e5e2c9540474fe3622d7f609ab31",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/bd9cbf02e169e5e2c9540474fe3622d7f609ab31/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "fe12e6269f8c8cde3c0c287ef0dfd3589747f50a",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/fe12e6269f8c8cde3c0c287ef0dfd3589747f50a",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/fe12e6269f8c8cde3c0c287ef0dfd3589747f50a"
+            }
+        ]
+    },
+    {
+        "sha": "fe12e6269f8c8cde3c0c287ef0dfd3589747f50a",
+        "node_id": "C_kwDOOtgnmNoAKGZlMTJlNjI2OWY4YzhjZGUzYzBjMjg3ZWYwZGZkMzU4OTc0N2Y1MGE",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-29T19:10:42Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-29T19:10:42Z"
+            },
+            "message": "add: inline_display param in contributors()",
+            "tree": {
+                "sha": "f29732fee89d15b8bc24e6f811f076033bccd249",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/f29732fee89d15b8bc24e6f811f076033bccd249"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/fe12e6269f8c8cde3c0c287ef0dfd3589747f50a",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/fe12e6269f8c8cde3c0c287ef0dfd3589747f50a",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/fe12e6269f8c8cde3c0c287ef0dfd3589747f50a",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/fe12e6269f8c8cde3c0c287ef0dfd3589747f50a/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "7b8b36b3341ef4000cc3dd84b488fb7856b8a99c",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/7b8b36b3341ef4000cc3dd84b488fb7856b8a99c",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/7b8b36b3341ef4000cc3dd84b488fb7856b8a99c"
+            }
+        ]
+    },
+    {
+        "sha": "7b8b36b3341ef4000cc3dd84b488fb7856b8a99c",
+        "node_id": "C_kwDOOtgnmNoAKDdiOGIzNmIzMzQxZWY0MDAwY2MzZGQ4NGI0ODhmYjc4NTZiOGE5OWM",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-29T12:54:50Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-29T12:54:50Z"
+            },
+            "message": "[Fix] resizing of print() logs in 643b7ac701bc588a4199be3f939570e3db03024e",
+            "tree": {
+                "sha": "9ce4553bf33e41f159e5067dd203102ea314e735",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/9ce4553bf33e41f159e5067dd203102ea314e735"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/7b8b36b3341ef4000cc3dd84b488fb7856b8a99c",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/7b8b36b3341ef4000cc3dd84b488fb7856b8a99c",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/7b8b36b3341ef4000cc3dd84b488fb7856b8a99c",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/7b8b36b3341ef4000cc3dd84b488fb7856b8a99c/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "643b7ac701bc588a4199be3f939570e3db03024e",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/643b7ac701bc588a4199be3f939570e3db03024e",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/643b7ac701bc588a4199be3f939570e3db03024e"
+            }
+        ]
+    },
+    {
+        "sha": "643b7ac701bc588a4199be3f939570e3db03024e",
+        "node_id": "C_kwDOOtgnmNoAKDY0M2I3YWM3MDFiYzU4OGE0MTk5YmUzZjkzOTU3MGUzZGIwMzAyNGU",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-29T12:46:29Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-29T12:46:29Z"
+            },
+            "message": "redirecting print() to streamlit",
+            "tree": {
+                "sha": "0a3185beb25ae24ab70b0573aaa509ade61b2f5f",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/0a3185beb25ae24ab70b0573aaa509ade61b2f5f"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/643b7ac701bc588a4199be3f939570e3db03024e",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/643b7ac701bc588a4199be3f939570e3db03024e",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/643b7ac701bc588a4199be3f939570e3db03024e",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/643b7ac701bc588a4199be3f939570e3db03024e/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "d4b5a530e0ce78d320fc7a904dbb86da535d08a1",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/d4b5a530e0ce78d320fc7a904dbb86da535d08a1",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/d4b5a530e0ce78d320fc7a904dbb86da535d08a1"
+            }
+        ]
+    },
+    {
+        "sha": "d4b5a530e0ce78d320fc7a904dbb86da535d08a1",
+        "node_id": "C_kwDOOtgnmNoAKGQ0YjVhNTMwZTBjZTc4ZDMyMGZjN2E5MDRkYmI4NmRhNTM1ZDA4YTE",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-29T12:38:30Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-29T12:38:30Z"
+            },
+            "message": "Added streamlit project on localhost",
+            "tree": {
+                "sha": "9fa2055f95fb5e277dd2000c8daa11e14dad0aff",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/9fa2055f95fb5e277dd2000c8daa11e14dad0aff"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/d4b5a530e0ce78d320fc7a904dbb86da535d08a1",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/d4b5a530e0ce78d320fc7a904dbb86da535d08a1",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/d4b5a530e0ce78d320fc7a904dbb86da535d08a1",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/d4b5a530e0ce78d320fc7a904dbb86da535d08a1/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "f69ef8798039290e41fa9f900cde6bf022b5de43",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/f69ef8798039290e41fa9f900cde6bf022b5de43",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/f69ef8798039290e41fa9f900cde6bf022b5de43"
+            }
+        ]
+    },
+    {
+        "sha": "f69ef8798039290e41fa9f900cde6bf022b5de43",
+        "node_id": "C_kwDOOtgnmNoAKGY2OWVmODc5ODAzOTI5MGU0MWZhOWY5MDBjZGU2YmYwMjJiNWRlNDM",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-28T23:00:30Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-28T23:00:30Z"
+            },
+            "message": "[Fixes]\n1.Create a folder with name of repo\n2. Save every file/pic in the new folder",
+            "tree": {
+                "sha": "228e0766dc9fc87bf33cebfc92132dd121cd7630",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/228e0766dc9fc87bf33cebfc92132dd121cd7630"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/f69ef8798039290e41fa9f900cde6bf022b5de43",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/f69ef8798039290e41fa9f900cde6bf022b5de43",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/f69ef8798039290e41fa9f900cde6bf022b5de43",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/f69ef8798039290e41fa9f900cde6bf022b5de43/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "d2fea3c3ab1cfc46b164d1185070c65ab993c64b",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/d2fea3c3ab1cfc46b164d1185070c65ab993c64b",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/d2fea3c3ab1cfc46b164d1185070c65ab993c64b"
+            }
+        ]
+    },
+    {
+        "sha": "d2fea3c3ab1cfc46b164d1185070c65ab993c64b",
+        "node_id": "C_kwDOOtgnmNoAKGQyZmVhM2MzYWIxY2ZjNDZiMTY0ZDExODUwNzBjNjVhYjk5M2M2NGI",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-28T21:52:43Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-28T21:52:43Z"
+            },
+            "message": "Feature: added inline_display to suppress output of contributors.py",
+            "tree": {
+                "sha": "be4241bd906ef2549ae591ed3040e2919df1a828",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/be4241bd906ef2549ae591ed3040e2919df1a828"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/d2fea3c3ab1cfc46b164d1185070c65ab993c64b",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/d2fea3c3ab1cfc46b164d1185070c65ab993c64b",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/d2fea3c3ab1cfc46b164d1185070c65ab993c64b",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/d2fea3c3ab1cfc46b164d1185070c65ab993c64b/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "9a9ea7dca21f1fa4cb58e672547c384b3073a03f",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/9a9ea7dca21f1fa4cb58e672547c384b3073a03f",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/9a9ea7dca21f1fa4cb58e672547c384b3073a03f"
+            }
+        ]
+    },
+    {
+        "sha": "9a9ea7dca21f1fa4cb58e672547c384b3073a03f",
+        "node_id": "C_kwDOOtgnmNoAKDlhOWVhN2RjYTIxZjFmYTRjYjU4ZTY3MjU0N2MzODRiMzA3M2EwM2Y",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "71189056+hackeruser240@users.noreply.github.com",
+                "date": "2025-05-28T19:35:14Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-28T19:35:14Z"
+            },
+            "message": "Merge pull request #1 from hackeruser240/adjusting-commits.py\n\nAdjusting commits.py",
+            "tree": {
+                "sha": "5281f18d053a32c6ce3085fa88922f990c5bf6ee",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/5281f18d053a32c6ce3085fa88922f990c5bf6ee"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/9a9ea7dca21f1fa4cb58e672547c384b3073a03f",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoN2VyCRC1aQ7uu5UhlAAAidoQAFjBT/DUhGocLFxnpVfa1jmm\neagkbb9LRmBfpFe0DVp03hA0c3iDF5tbRW3qOk9f3X04+OIOa6dUlu1mhodHQFdE\nUvS8fOkrPVngPm5jwQBezBsVtvc0bQZsG/TzNXH0mKiozqVLxs1qSOlZWVK9Vhah\nS5f1B3msRwNIlQeLiK4qX0qj0znQ67ZZ0TMnF73diH4sTXzrgUcJ+YzqGY/oGcBf\nq7tZUplFJUv830oLRDgnjuA1vkoZ4mWHHCqWXfM61Cq2MJfaTQR0qsUMUrA9n1bH\nqUcFJR64q/aI/qw6K7i9xidUWdG+6ABwn4GMzLKSXdkSCJOc9dTYvZLBSvEccCea\nVNnrOvWOKa9ORcdC0ssZd2ZBcPF24hQDR1ixFz2Xylj0ZSCLYkyx9sKteFs0UCAh\n3L1R2jkyykIpymC6Cc6OTZfXkIOT1AhGr5TnUg4KZU1qp+uubFI7DXHlh7mws5IL\nuUCF6sFL3W1tXFiXdXyWoAVcJ0NQN4ZW4Qoz9cDmFUjmNfBCNiumV1mZhX0wXqAh\nFNCYWmk6DGNzxinCu2kpRxvZpmLKctMr+NTlng0eZZiFrZcJlP56WoZ+IzILh/Bp\n8C8njgf5hrZ3zFzJwM1p/4gc3anCpNgzwcR8BDWBfzUSCHQ/AWvXqiq8VCXz2lGC\n7RDHGOwsUIFRQV/y0iFR\n=SOFa\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree 5281f18d053a32c6ce3085fa88922f990c5bf6ee\nparent 171defc9e150c43d1964b89f16eb3d34b6ec3f08\nparent 6f386b45402913fa880705ce7483550d5d0e2b74\nauthor hackeruser240 <71189056+hackeruser240@users.noreply.github.com> 1748460914 +0500\ncommitter GitHub <noreply@github.com> 1748460914 +0500\n\nMerge pull request #1 from hackeruser240/adjusting-commits.py\n\nAdjusting commits.py",
+                "verified_at": "2025-05-28T19:35:47Z"
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/9a9ea7dca21f1fa4cb58e672547c384b3073a03f",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/9a9ea7dca21f1fa4cb58e672547c384b3073a03f",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/9a9ea7dca21f1fa4cb58e672547c384b3073a03f/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "171defc9e150c43d1964b89f16eb3d34b6ec3f08",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/171defc9e150c43d1964b89f16eb3d34b6ec3f08",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/171defc9e150c43d1964b89f16eb3d34b6ec3f08"
+            },
+            {
+                "sha": "6f386b45402913fa880705ce7483550d5d0e2b74",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/6f386b45402913fa880705ce7483550d5d0e2b74",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/6f386b45402913fa880705ce7483550d5d0e2b74"
+            }
+        ]
+    },
+    {
+        "sha": "6f386b45402913fa880705ce7483550d5d0e2b74",
+        "node_id": "C_kwDOOtgnmNoAKDZmMzg2YjQ1NDAyOTEzZmE4ODA3MDVjZTc0ODM1NTBkNWQwZTJiNzQ",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-28T19:30:34Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-28T19:30:34Z"
+            },
+            "message": "[Fix/Features] added make_repo_folder() in helperFunctions.py",
+            "tree": {
+                "sha": "5281f18d053a32c6ce3085fa88922f990c5bf6ee",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/5281f18d053a32c6ce3085fa88922f990c5bf6ee"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/6f386b45402913fa880705ce7483550d5d0e2b74",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/6f386b45402913fa880705ce7483550d5d0e2b74",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/6f386b45402913fa880705ce7483550d5d0e2b74",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/6f386b45402913fa880705ce7483550d5d0e2b74/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "50af0ab1b4ce0bbc4c4c95b016c72d991b4105fa",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/50af0ab1b4ce0bbc4c4c95b016c72d991b4105fa",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/50af0ab1b4ce0bbc4c4c95b016c72d991b4105fa"
+            }
+        ]
+    },
+    {
+        "sha": "50af0ab1b4ce0bbc4c4c95b016c72d991b4105fa",
+        "node_id": "C_kwDOOtgnmNoAKDUwYWYwYWIxYjRjZTBiYmM0YzRjOTViMDE2YzcyZDk5MWI0MTA1ZmE",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-28T18:26:34Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-28T18:26:34Z"
+            },
+            "message": "[Fix] renaming variables in commit.py",
+            "tree": {
+                "sha": "41f01915036d713099944213665e7e2d461a986b",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/41f01915036d713099944213665e7e2d461a986b"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/50af0ab1b4ce0bbc4c4c95b016c72d991b4105fa",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/50af0ab1b4ce0bbc4c4c95b016c72d991b4105fa",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/50af0ab1b4ce0bbc4c4c95b016c72d991b4105fa",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/50af0ab1b4ce0bbc4c4c95b016c72d991b4105fa/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "171defc9e150c43d1964b89f16eb3d34b6ec3f08",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/171defc9e150c43d1964b89f16eb3d34b6ec3f08",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/171defc9e150c43d1964b89f16eb3d34b6ec3f08"
+            }
+        ]
+    },
+    {
+        "sha": "171defc9e150c43d1964b89f16eb3d34b6ec3f08",
+        "node_id": "C_kwDOOtgnmNoAKDE3MWRlZmM5ZTE1MGM0M2QxOTY0Yjg5ZjE2ZWIzZDM0YjZlYzNmMDg",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T23:21:50Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T23:21:50Z"
+            },
+            "message": "feature: added wordcloud to commits.py",
+            "tree": {
+                "sha": "901971f78ecc0427574f904d85107aa98d16cfd5",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/901971f78ecc0427574f904d85107aa98d16cfd5"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/171defc9e150c43d1964b89f16eb3d34b6ec3f08",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/171defc9e150c43d1964b89f16eb3d34b6ec3f08",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/171defc9e150c43d1964b89f16eb3d34b6ec3f08",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/171defc9e150c43d1964b89f16eb3d34b6ec3f08/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2912cb9f6da262b2f4445f9ce7e9f4b36d0f33cd",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/2912cb9f6da262b2f4445f9ce7e9f4b36d0f33cd",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/2912cb9f6da262b2f4445f9ce7e9f4b36d0f33cd"
+            }
+        ]
+    },
+    {
+        "sha": "2912cb9f6da262b2f4445f9ce7e9f4b36d0f33cd",
+        "node_id": "C_kwDOOtgnmNoAKDI5MTJjYjlmNmRhMjYyYjJmNDQ0NWY5Y2U3ZTlmNGIzNmQwZjMzY2Q",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T23:05:40Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T23:05:40Z"
+            },
+            "message": "Troubleshooting in commits.py",
+            "tree": {
+                "sha": "77d56c8a40110fe502ea27a5c72f55fab7504be0",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/77d56c8a40110fe502ea27a5c72f55fab7504be0"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/2912cb9f6da262b2f4445f9ce7e9f4b36d0f33cd",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/2912cb9f6da262b2f4445f9ce7e9f4b36d0f33cd",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/2912cb9f6da262b2f4445f9ce7e9f4b36d0f33cd",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/2912cb9f6da262b2f4445f9ce7e9f4b36d0f33cd/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "ae795a994c588655af53c0b7e1e905dce653e64a",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/ae795a994c588655af53c0b7e1e905dce653e64a",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/ae795a994c588655af53c0b7e1e905dce653e64a"
+            }
+        ]
+    },
+    {
+        "sha": "ae795a994c588655af53c0b7e1e905dce653e64a",
+        "node_id": "C_kwDOOtgnmNoAKGFlNzk1YTk5NGM1ODg2NTVhZjUzYzBiN2UxZTkwNWRjZTY1M2U2NGE",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T22:37:39Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T22:37:39Z"
+            },
+            "message": "[Rename]: commits_perday_peruser()",
+            "tree": {
+                "sha": "74cfe2304210fe51c5457ccafb0c5776bf80e88c",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/74cfe2304210fe51c5457ccafb0c5776bf80e88c"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/ae795a994c588655af53c0b7e1e905dce653e64a",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/ae795a994c588655af53c0b7e1e905dce653e64a",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/ae795a994c588655af53c0b7e1e905dce653e64a",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/ae795a994c588655af53c0b7e1e905dce653e64a/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "cb4a0cf0b062a8145aa430bb7fb6ba0274d94fac",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/cb4a0cf0b062a8145aa430bb7fb6ba0274d94fac",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/cb4a0cf0b062a8145aa430bb7fb6ba0274d94fac"
+            }
+        ]
+    },
+    {
+        "sha": "cb4a0cf0b062a8145aa430bb7fb6ba0274d94fac",
+        "node_id": "C_kwDOOtgnmNoAKGNiNGEwY2YwYjA2MmE4MTQ1YWE0MzBiYjdmYjZiYTAyNzRkOTRmYWM",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T22:33:34Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T22:33:34Z"
+            },
+            "message": "[Rename] commits_per_day()",
+            "tree": {
+                "sha": "979877bd128fdf5b6d3fd988ef15d0ef8115c7f4",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/979877bd128fdf5b6d3fd988ef15d0ef8115c7f4"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/cb4a0cf0b062a8145aa430bb7fb6ba0274d94fac",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/cb4a0cf0b062a8145aa430bb7fb6ba0274d94fac",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/cb4a0cf0b062a8145aa430bb7fb6ba0274d94fac",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/cb4a0cf0b062a8145aa430bb7fb6ba0274d94fac/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "289a3862d05bd159a1e605bd0e36ea51ea9e42fb",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/289a3862d05bd159a1e605bd0e36ea51ea9e42fb",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/289a3862d05bd159a1e605bd0e36ea51ea9e42fb"
+            }
+        ]
+    },
+    {
+        "sha": "289a3862d05bd159a1e605bd0e36ea51ea9e42fb",
+        "node_id": "C_kwDOOtgnmNoAKDI4OWEzODYyZDA1YmQxNTlhMWU2MDViZDBlMzZlYTUxZWE5ZTQyZmI",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T22:23:40Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T22:23:40Z"
+            },
+            "message": "Feature: adding commits per day for users",
+            "tree": {
+                "sha": "d0bb75b3ec34374f75eb83ea91ec3f1a64d6a0a2",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/d0bb75b3ec34374f75eb83ea91ec3f1a64d6a0a2"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/289a3862d05bd159a1e605bd0e36ea51ea9e42fb",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/289a3862d05bd159a1e605bd0e36ea51ea9e42fb",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/289a3862d05bd159a1e605bd0e36ea51ea9e42fb",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/289a3862d05bd159a1e605bd0e36ea51ea9e42fb/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "6df14ba3f4f946aca279223ceffff194f7cd9d86",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/6df14ba3f4f946aca279223ceffff194f7cd9d86",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/6df14ba3f4f946aca279223ceffff194f7cd9d86"
+            }
+        ]
+    },
+    {
+        "sha": "6df14ba3f4f946aca279223ceffff194f7cd9d86",
+        "node_id": "C_kwDOOtgnmNoAKDZkZjE0YmEzZjRmOTQ2YWNhMjc5MjIzY2VmZmZmMTk0ZjdjZDlkODY",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T20:21:41Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T20:21:41Z"
+            },
+            "message": "Add: VS Code workspace",
+            "tree": {
+                "sha": "639ad48b7fc35c185d66152a292a375395066d4e",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/639ad48b7fc35c185d66152a292a375395066d4e"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/6df14ba3f4f946aca279223ceffff194f7cd9d86",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/6df14ba3f4f946aca279223ceffff194f7cd9d86",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/6df14ba3f4f946aca279223ceffff194f7cd9d86",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/6df14ba3f4f946aca279223ceffff194f7cd9d86/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "a3dc24a0c0f7dcf998b6a99267abf67587fe9c11",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/a3dc24a0c0f7dcf998b6a99267abf67587fe9c11",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/a3dc24a0c0f7dcf998b6a99267abf67587fe9c11"
+            }
+        ]
+    },
+    {
+        "sha": "a3dc24a0c0f7dcf998b6a99267abf67587fe9c11",
+        "node_id": "C_kwDOOtgnmNoAKGEzZGMyNGEwYzBmN2RjZjk5OGI2YTk5MjY3YWJmNjc1ODdmZTljMTE",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T00:13:48Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T00:13:48Z"
+            },
+            "message": "[Bug Fix] remaing variables in variables.py for consistency",
+            "tree": {
+                "sha": "5de83f44c5caa437f9eeef925382f180cbc858cb",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/5de83f44c5caa437f9eeef925382f180cbc858cb"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/a3dc24a0c0f7dcf998b6a99267abf67587fe9c11",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/a3dc24a0c0f7dcf998b6a99267abf67587fe9c11",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/a3dc24a0c0f7dcf998b6a99267abf67587fe9c11",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/a3dc24a0c0f7dcf998b6a99267abf67587fe9c11/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "415813fcd0cf2064752ec97b80411458578e90a5",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/415813fcd0cf2064752ec97b80411458578e90a5",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/415813fcd0cf2064752ec97b80411458578e90a5"
+            }
+        ]
+    },
+    {
+        "sha": "415813fcd0cf2064752ec97b80411458578e90a5",
+        "node_id": "C_kwDOOtgnmNoAKDQxNTgxM2ZjZDBjZjIwNjQ3NTJlYzk3YjgwNDExNDU4NTc4ZTkwYTU",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T00:06:21Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-27T00:06:21Z"
+            },
+            "message": "Feature: added Least contributions to savetoPDF()",
+            "tree": {
+                "sha": "0564b5b567ffe711c3484a1bf08ec9c585a58ea9",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/0564b5b567ffe711c3484a1bf08ec9c585a58ea9"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/415813fcd0cf2064752ec97b80411458578e90a5",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/415813fcd0cf2064752ec97b80411458578e90a5",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/415813fcd0cf2064752ec97b80411458578e90a5",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/415813fcd0cf2064752ec97b80411458578e90a5/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "c28d14b2d32888fb773890d13719b13f2cfae5d9",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/c28d14b2d32888fb773890d13719b13f2cfae5d9",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/c28d14b2d32888fb773890d13719b13f2cfae5d9"
+            }
+        ]
+    },
+    {
+        "sha": "c28d14b2d32888fb773890d13719b13f2cfae5d9",
+        "node_id": "C_kwDOOtgnmNoAKGMyOGQxNGIyZDMyODg4ZmI3NzM4OTBkMTM3MTliMTNmMmNmYWU1ZDk",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-26T23:53:35Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-26T23:53:35Z"
+            },
+            "message": "Feature: added Top contributors list to savetoPDF()",
+            "tree": {
+                "sha": "a2bac44a78fe69f047083c08c2deae87fca159e5",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/a2bac44a78fe69f047083c08c2deae87fca159e5"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/c28d14b2d32888fb773890d13719b13f2cfae5d9",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/c28d14b2d32888fb773890d13719b13f2cfae5d9",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/c28d14b2d32888fb773890d13719b13f2cfae5d9",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/c28d14b2d32888fb773890d13719b13f2cfae5d9/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "b5dd7d16b858b447075feacfddead8ec08fd9e08",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/b5dd7d16b858b447075feacfddead8ec08fd9e08",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/b5dd7d16b858b447075feacfddead8ec08fd9e08"
+            }
+        ]
+    },
+    {
+        "sha": "b5dd7d16b858b447075feacfddead8ec08fd9e08",
+        "node_id": "C_kwDOOtgnmNoAKGI1ZGQ3ZDE2Yjg1OGI0NDcwNzVmZWFjZmRkZWFkOGVjMDhmZDllMDg",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-26T22:54:52Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-26T22:54:52Z"
+            },
+            "message": "Feature: adding per_page param to control number of commits",
+            "tree": {
+                "sha": "f38d20282d1a4d6ecbd9b6acaeb6f5e8341fbdc7",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/f38d20282d1a4d6ecbd9b6acaeb6f5e8341fbdc7"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/b5dd7d16b858b447075feacfddead8ec08fd9e08",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/b5dd7d16b858b447075feacfddead8ec08fd9e08",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/b5dd7d16b858b447075feacfddead8ec08fd9e08",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/b5dd7d16b858b447075feacfddead8ec08fd9e08/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "a2f08fb0e56b920f5a4a237e3ccdd8f3d61c0091",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/a2f08fb0e56b920f5a4a237e3ccdd8f3d61c0091",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/a2f08fb0e56b920f5a4a237e3ccdd8f3d61c0091"
+            }
+        ]
+    },
+    {
+        "sha": "a2f08fb0e56b920f5a4a237e3ccdd8f3d61c0091",
+        "node_id": "C_kwDOOtgnmNoAKGEyZjA4ZmIwZTU2YjkyMGY1YTRhMjM3ZTNjY2RkOGYzZDYxYzAwOTE",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-26T22:31:15Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-26T22:31:15Z"
+            },
+            "message": "Feature: adding commits over time",
+            "tree": {
+                "sha": "9113b4719fc13a43f76b3fa8022e1ac484e0c529",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/9113b4719fc13a43f76b3fa8022e1ac484e0c529"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/a2f08fb0e56b920f5a4a237e3ccdd8f3d61c0091",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/a2f08fb0e56b920f5a4a237e3ccdd8f3d61c0091",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/a2f08fb0e56b920f5a4a237e3ccdd8f3d61c0091",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/a2f08fb0e56b920f5a4a237e3ccdd8f3d61c0091/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "762b03a9bbc883d2a3851cefb7f3dae1528d42cd",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/762b03a9bbc883d2a3851cefb7f3dae1528d42cd",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/762b03a9bbc883d2a3851cefb7f3dae1528d42cd"
+            }
+        ]
+    },
+    {
+        "sha": "762b03a9bbc883d2a3851cefb7f3dae1528d42cd",
+        "node_id": "C_kwDOOtgnmNoAKDc2MmIwM2E5YmJjODgzZDJhMzg1MWNlZmI3ZjNkYWUxNTI4ZDQyY2Q",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-26T17:06:10Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-26T17:06:10Z"
+            },
+            "message": "savetoPDF(): adding a dummy add",
+            "tree": {
+                "sha": "fe03e6fc75b4ca62bdb3100b8afcc6563e87021a",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/fe03e6fc75b4ca62bdb3100b8afcc6563e87021a"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/762b03a9bbc883d2a3851cefb7f3dae1528d42cd",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/762b03a9bbc883d2a3851cefb7f3dae1528d42cd",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/762b03a9bbc883d2a3851cefb7f3dae1528d42cd",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/762b03a9bbc883d2a3851cefb7f3dae1528d42cd/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "8334732f082c4c545f0b8146aab95a332a2262c1",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/8334732f082c4c545f0b8146aab95a332a2262c1",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/8334732f082c4c545f0b8146aab95a332a2262c1"
+            }
+        ]
+    },
+    {
+        "sha": "8334732f082c4c545f0b8146aab95a332a2262c1",
+        "node_id": "C_kwDOOtgnmNoAKDgzMzQ3MzJmMDgyYzRjNTQ1ZjBiODE0NmFhYjk1YTMzMmEyMjYyYzE",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-23T00:00:33Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-23T00:00:33Z"
+            },
+            "message": "Add: 'Commit authors in order of timeline' to savePDF()",
+            "tree": {
+                "sha": "387a06aa73d3ca42cff33a0f50410b5a3a004551",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/387a06aa73d3ca42cff33a0f50410b5a3a004551"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/8334732f082c4c545f0b8146aab95a332a2262c1",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/8334732f082c4c545f0b8146aab95a332a2262c1",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/8334732f082c4c545f0b8146aab95a332a2262c1",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/8334732f082c4c545f0b8146aab95a332a2262c1/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "00d507e1b47afa635fde6ed7ddc945403e15c080",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/00d507e1b47afa635fde6ed7ddc945403e15c080",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/00d507e1b47afa635fde6ed7ddc945403e15c080"
+            }
+        ]
+    },
+    {
+        "sha": "00d507e1b47afa635fde6ed7ddc945403e15c080",
+        "node_id": "C_kwDOOtgnmNoAKDAwZDUwN2UxYjQ3YWZhNjM1ZmRlNmVkN2RkYzk0NTQwM2UxNWMwODA",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T23:45:05Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T23:45:05Z"
+            },
+            "message": "Added 'Authors in order of greatest commits' to savetoPDF()",
+            "tree": {
+                "sha": "7333c6c7cc2367a8c3869b307ba6ebe73fd48187",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/7333c6c7cc2367a8c3869b307ba6ebe73fd48187"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/00d507e1b47afa635fde6ed7ddc945403e15c080",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/00d507e1b47afa635fde6ed7ddc945403e15c080",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/00d507e1b47afa635fde6ed7ddc945403e15c080",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/00d507e1b47afa635fde6ed7ddc945403e15c080/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "a9a51a73d0efa0dd14d3a40d9c2286ec0966ff17",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/a9a51a73d0efa0dd14d3a40d9c2286ec0966ff17",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/a9a51a73d0efa0dd14d3a40d9c2286ec0966ff17"
+            }
+        ]
+    },
+    {
+        "sha": "a9a51a73d0efa0dd14d3a40d9c2286ec0966ff17",
+        "node_id": "C_kwDOOtgnmNoAKGE5YTUxYTczZDBlZmEwZGQxNGQzYTQwZDljMjI4NmVjMDk2NmZmMTc",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T22:24:47Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T22:24:47Z"
+            },
+            "message": "divided savetoPDF() into subfunctions for easy control",
+            "tree": {
+                "sha": "852a1a82528ae49ac2d3a98821130a26d27bcbc8",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/852a1a82528ae49ac2d3a98821130a26d27bcbc8"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/a9a51a73d0efa0dd14d3a40d9c2286ec0966ff17",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/a9a51a73d0efa0dd14d3a40d9c2286ec0966ff17",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/a9a51a73d0efa0dd14d3a40d9c2286ec0966ff17",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/a9a51a73d0efa0dd14d3a40d9c2286ec0966ff17/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2e1e8a45b7507075877abf122716a6e9cca8ad8e",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/2e1e8a45b7507075877abf122716a6e9cca8ad8e",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/2e1e8a45b7507075877abf122716a6e9cca8ad8e"
+            }
+        ]
+    },
+    {
+        "sha": "2e1e8a45b7507075877abf122716a6e9cca8ad8e",
+        "node_id": "C_kwDOOtgnmNoAKDJlMWU4YTQ1Yjc1MDcwNzU4NzdhYmYxMjI3MTZhNmU5Y2NhOGFkOGU",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T21:54:27Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T21:54:27Z"
+            },
+            "message": "New file:  savetoPDF()\nAdjustments made to allow proper access of varibales to the savetoPDF() func",
+            "tree": {
+                "sha": "f3e5de50d352c77b6b6cfdf7c60ac6329dee8fd1",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/f3e5de50d352c77b6b6cfdf7c60ac6329dee8fd1"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/2e1e8a45b7507075877abf122716a6e9cca8ad8e",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/2e1e8a45b7507075877abf122716a6e9cca8ad8e",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/2e1e8a45b7507075877abf122716a6e9cca8ad8e",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/2e1e8a45b7507075877abf122716a6e9cca8ad8e/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "ad39f5e56a22629b5e97ecd06842197525044296",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/ad39f5e56a22629b5e97ecd06842197525044296",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/ad39f5e56a22629b5e97ecd06842197525044296"
+            }
+        ]
+    },
+    {
+        "sha": "ad39f5e56a22629b5e97ecd06842197525044296",
+        "node_id": "C_kwDOOtgnmNoAKGFkMzlmNWU1NmEyMjYyOWI1ZTk3ZWNkMDY4NDIxOTc1MjUwNDQyOTY",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T20:59:10Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T20:59:10Z"
+            },
+            "message": "Changes:\n1. Separated the viz keyword for commit_authors & commit_titles\n2. A positional change",
+            "tree": {
+                "sha": "0c9fe76c8c242bd23a0fdb293d1da5b6097c10a1",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/0c9fe76c8c242bd23a0fdb293d1da5b6097c10a1"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/ad39f5e56a22629b5e97ecd06842197525044296",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/ad39f5e56a22629b5e97ecd06842197525044296",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/ad39f5e56a22629b5e97ecd06842197525044296",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/ad39f5e56a22629b5e97ecd06842197525044296/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "da60bb42b10e053aedf999d9a73c9166b6d0edb7",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/da60bb42b10e053aedf999d9a73c9166b6d0edb7",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/da60bb42b10e053aedf999d9a73c9166b6d0edb7"
+            }
+        ]
+    },
+    {
+        "sha": "da60bb42b10e053aedf999d9a73c9166b6d0edb7",
+        "node_id": "C_kwDOOtgnmNoAKGRhNjBiYjQyYjEwZTA1M2FlZGY5OTlkOWE3M2M5MTY2YjZkMGVkYjc",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T20:50:19Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T20:50:19Z"
+            },
+            "message": "Added the var.commit_titles\n\nRea: It can be used by main.py and commits.py combined and independently",
+            "tree": {
+                "sha": "b8cdf0a18d1c34188abb7c8ed67c3f93d7616689",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/b8cdf0a18d1c34188abb7c8ed67c3f93d7616689"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/da60bb42b10e053aedf999d9a73c9166b6d0edb7",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/da60bb42b10e053aedf999d9a73c9166b6d0edb7",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/da60bb42b10e053aedf999d9a73c9166b6d0edb7",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/da60bb42b10e053aedf999d9a73c9166b6d0edb7/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "3b4f6f5474f39eb20eb39c9ddfbeb04a9da15b08",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/3b4f6f5474f39eb20eb39c9ddfbeb04a9da15b08",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/3b4f6f5474f39eb20eb39c9ddfbeb04a9da15b08"
+            }
+        ]
+    },
+    {
+        "sha": "3b4f6f5474f39eb20eb39c9ddfbeb04a9da15b08",
+        "node_id": "C_kwDOOtgnmNoAKDNiNGY2ZjU0NzRmMzllYjIwZWIzOWM5ZGRmYmViMDRhOWRhMTViMDg",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T19:50:27Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T19:50:27Z"
+            },
+            "message": "Features: Adjsuting format of PDF for commit titles",
+            "tree": {
+                "sha": "7fb71c39810c328ec8b9ab40e32a1927616257c0",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/7fb71c39810c328ec8b9ab40e32a1927616257c0"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/3b4f6f5474f39eb20eb39c9ddfbeb04a9da15b08",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/3b4f6f5474f39eb20eb39c9ddfbeb04a9da15b08",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/3b4f6f5474f39eb20eb39c9ddfbeb04a9da15b08",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/3b4f6f5474f39eb20eb39c9ddfbeb04a9da15b08/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "096e49cb4edd90c451574d9b9e571b57b3a128c0",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/096e49cb4edd90c451574d9b9e571b57b3a128c0",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/096e49cb4edd90c451574d9b9e571b57b3a128c0"
+            }
+        ]
+    },
+    {
+        "sha": "096e49cb4edd90c451574d9b9e571b57b3a128c0",
+        "node_id": "C_kwDOOtgnmNoAKDA5NmU0OWNiNGVkZDkwYzQ1MTU3NGQ5YjllNTcxYjU3YjNhMTI4YzA",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T00:12:15Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-22T00:12:15Z"
+            },
+            "message": "Features: adding PDF suppor of commit titles",
+            "tree": {
+                "sha": "6ffcfcd47900357fd8cb4428402a88502b313be1",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/6ffcfcd47900357fd8cb4428402a88502b313be1"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/096e49cb4edd90c451574d9b9e571b57b3a128c0",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/096e49cb4edd90c451574d9b9e571b57b3a128c0",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/096e49cb4edd90c451574d9b9e571b57b3a128c0",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/096e49cb4edd90c451574d9b9e571b57b3a128c0/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2e7adaa39d81859cf47caa61ab1c0af2523bdf0b",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/2e7adaa39d81859cf47caa61ab1c0af2523bdf0b",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/2e7adaa39d81859cf47caa61ab1c0af2523bdf0b"
+            }
+        ]
+    },
+    {
+        "sha": "2e7adaa39d81859cf47caa61ab1c0af2523bdf0b",
+        "node_id": "C_kwDOOtgnmNoAKDJlN2FkYWEzOWQ4MTg1OWNmNDdjYWE2MWFiMWMwYWYyNTIzYmRmMGI",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-21T22:54:41Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-21T22:54:41Z"
+            },
+            "message": "Features: adding viz of commits()",
+            "tree": {
+                "sha": "5c75a08fec04709bcb5705709e4116caef673955",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/5c75a08fec04709bcb5705709e4116caef673955"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/2e7adaa39d81859cf47caa61ab1c0af2523bdf0b",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/2e7adaa39d81859cf47caa61ab1c0af2523bdf0b",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/2e7adaa39d81859cf47caa61ab1c0af2523bdf0b",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/2e7adaa39d81859cf47caa61ab1c0af2523bdf0b/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "378fd64bbcd931bb2511e3ca1f0ce3fde6c9794d",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/378fd64bbcd931bb2511e3ca1f0ce3fde6c9794d",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/378fd64bbcd931bb2511e3ca1f0ce3fde6c9794d"
+            }
+        ]
+    },
+    {
+        "sha": "378fd64bbcd931bb2511e3ca1f0ce3fde6c9794d",
+        "node_id": "C_kwDOOtgnmNoAKDM3OGZkNjRiYmNkOTMxYmIyNTExZTNjYTFmMGNlM2ZkZTZjOTc5NGQ",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-21T21:00:14Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-21T21:00:14Z"
+            },
+            "message": "working: commits() function",
+            "tree": {
+                "sha": "e2f6ce48387caa8fb7e56aa137746a129130e8ad",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/e2f6ce48387caa8fb7e56aa137746a129130e8ad"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/378fd64bbcd931bb2511e3ca1f0ce3fde6c9794d",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/378fd64bbcd931bb2511e3ca1f0ce3fde6c9794d",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/378fd64bbcd931bb2511e3ca1f0ce3fde6c9794d",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/378fd64bbcd931bb2511e3ca1f0ce3fde6c9794d/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "3e0ba535f12081126bf0c70f462f290db06d843c",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/3e0ba535f12081126bf0c70f462f290db06d843c",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/3e0ba535f12081126bf0c70f462f290db06d843c"
+            }
+        ]
+    },
+    {
+        "sha": "3e0ba535f12081126bf0c70f462f290db06d843c",
+        "node_id": "C_kwDOOtgnmNoAKDNlMGJhNTM1ZjEyMDgxMTI2YmYwYzcwZjQ2MmYyOTBkYjA2ZDg0M2M",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-20T21:55:21Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-20T21:55:21Z"
+            },
+            "message": "contributors() with visualizations",
+            "tree": {
+                "sha": "e7f68e256176ef1de86f0fa72bd221291543a745",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/e7f68e256176ef1de86f0fa72bd221291543a745"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/3e0ba535f12081126bf0c70f462f290db06d843c",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/3e0ba535f12081126bf0c70f462f290db06d843c",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/3e0ba535f12081126bf0c70f462f290db06d843c",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/3e0ba535f12081126bf0c70f462f290db06d843c/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "fb6f1876d2b89f2c30496f1386ab2fee91ecb2f1",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/fb6f1876d2b89f2c30496f1386ab2fee91ecb2f1",
+                "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/fb6f1876d2b89f2c30496f1386ab2fee91ecb2f1"
+            }
+        ]
+    },
+    {
+        "sha": "fb6f1876d2b89f2c30496f1386ab2fee91ecb2f1",
+        "node_id": "C_kwDOOtgnmNoAKGZiNmYxODc2ZDJiODlmMmMzMDQ5NmYxMzg2YWIyZmVlOTFlY2IyZjE",
+        "commit": {
+            "author": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-20T20:12:41Z"
+            },
+            "committer": {
+                "name": "hackeruser240",
+                "email": "afaqahmad240@yahoo.com",
+                "date": "2025-05-20T20:12:41Z"
+            },
+            "message": "initialing the repo",
+            "tree": {
+                "sha": "4c897a1e7e420b98d0d6392402542ca6d987ccab",
+                "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/trees/4c897a1e7e420b98d0d6392402542ca6d987ccab"
+            },
+            "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/git/commits/fb6f1876d2b89f2c30496f1386ab2fee91ecb2f1",
+            "comment_count": 0,
+            "verification": {
+                "verified": false,
+                "reason": "unsigned",
+                "signature": null,
+                "payload": null,
+                "verified_at": null
+            }
+        },
+        "url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/fb6f1876d2b89f2c30496f1386ab2fee91ecb2f1",
+        "html_url": "https://github.com/hackeruser240/GitHub-Repo-Analyzer/commit/fb6f1876d2b89f2c30496f1386ab2fee91ecb2f1",
+        "comments_url": "https://api.github.com/repos/hackeruser240/GitHub-Repo-Analyzer/commits/fb6f1876d2b89f2c30496f1386ab2fee91ecb2f1/comments",
+        "author": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "hackeruser240",
+            "id": 71189056,
+            "node_id": "MDQ6VXNlcjcxMTg5MDU2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71189056?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/hackeruser240",
+            "html_url": "https://github.com/hackeruser240",
+            "followers_url": "https://api.github.com/users/hackeruser240/followers",
+            "following_url": "https://api.github.com/users/hackeruser240/following{/other_user}",
+            "gists_url": "https://api.github.com/users/hackeruser240/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/hackeruser240/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/hackeruser240/subscriptions",
+            "organizations_url": "https://api.github.com/users/hackeruser240/orgs",
+            "repos_url": "https://api.github.com/users/hackeruser240/repos",
+            "events_url": "https://api.github.com/users/hackeruser240/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/hackeruser240/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": []
+    }
+]
