@@ -55,13 +55,12 @@ class Logger:
         self.use_streamlit = use_streamlit
         self.output_area = output_area
         self.logs = []
+        self.placeholders = []
 
-    def __call__(self, *args, **kwargs):
-        msg = " ".join(str(arg) for arg in args)
-        self.logs.append(msg)
-
+    def __call__(self, message):
         if self.use_streamlit and self.output_area:
-            # Update Streamlit output area
-            self.output_area.text("\n".join(self.logs))
+            placeholder = self.output_area.empty()
+            placeholder.markdown(message)
+            #self.placeholders.append(placeholder)
         else:
-            print(msg)
+            print(message)

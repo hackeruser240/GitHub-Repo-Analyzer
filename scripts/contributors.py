@@ -11,24 +11,24 @@ def user_contributions(data):
     for i,contributor in enumerate(data,start=1):
         print(f"{i}.", contributor['login'],':', contributor['contributions'])
 
-def lowest_contributors(data,n=var.numof_lowest_contributions):
+def lowest_contributors(data,log,n=var.numof_lowest_contributions):
     '''
     finding the lowest contributors with contributions<n.
     by default n=100
     '''
 
-    print("==================================================")
-    print(f"Finding lowest {n} contributors in '{var.repo}'")
-    print("==================================================")
+    log("==================================================")
+    log(f"Finding lowest {n} contributors in '{var.repo}'")
+    log("==================================================")
     #low=sorted(data, key=lambda x:x['contributions'],reverse=False)
     
     var.lowest_contribution=[user for user in data if user['contributions']<n]
 
-    print(f"Users with ≤{n} contributions: {len(var.lowest_contribution)}")
+    log(f"Users with ≤{n} contributions: {len(var.lowest_contribution)}")
     x,y=[],[]
-    for user in var.lowest_contribution:
+    for i,user in enumerate(var.lowest_contribution,start=1):
         if user['type'] == 'User':
-            print(f"{user['login']} - {user['contributions']}")
+            log(f"{i}. {user['login']} - {user['contributions']}")
             x.append(user['login'])
             y.append(user['contributions'])
         

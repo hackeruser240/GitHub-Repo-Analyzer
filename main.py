@@ -72,8 +72,8 @@ def contributors(repo,log,inline_display=False,viz=True):
                     print(user['login'])
         
         #Printing data:
-        with suppress_stdout(enabled=inline_display):
-                top_contributors(data,log)
+        #with suppress_stdout(enabled=inline_display):
+        top_contributors(data,log)
         try:           
             if viz:
                 top_contributors_VIZ(data)
@@ -81,7 +81,7 @@ def contributors(repo,log,inline_display=False,viz=True):
             print(f"Error in main.py -> contributors() -> Finding top contributors\n{e}")
         
         with suppress_stdout(enabled=inline_display):
-                lowest_contributors(data)
+                lowest_contributors(data,log)
 
         try:
             if viz:
