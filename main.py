@@ -43,6 +43,7 @@ def contributors(repo,log,inline_display=False,viz=True):
     
     if response.status_code == 200:
         data = response.json()
+        var.contributors_data=data
 
         try:
             #path= os.path.join(make_repo_folder(), 'Data')
@@ -134,5 +135,5 @@ if __name__=="__main__":
     contributors(args.repo,log=log,inline_display=True)
     commits(var)
     print("=====================================")
-    save_to_PDF(var)
+    save_to_PDF(var,log)
     print("=====================================")

@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import streamlit as st
 
 from scripts.variables import var
 from scripts.helperFunctions import save_fig
@@ -85,39 +86,55 @@ def top_contributors(data,log,n=var.numof_top_contributors):
     for i, user in enumerate(var.top_contributors[:n], start=1):
         log(f"{i}. {user['login']} - {user['contributions']} contributions")
 
-def top_contributors_VIZ(data,n=var.numof_top_contributors):
-    '''
-    Gets the top n contributors and visualizes them
-    '''
-    
-    #print(f"*****Visualizing top {n} contributors in '{var.repo}'*****")
 
-    # Get top 10 contributors
-    top=sorted(data, key=lambda x: x['contributions'], reverse=True)[:n]
+def top_contributors_VIZ(data, n=var.numof_top_contributors, use_streamlit=False, st_output_area=None):
+    """
+    Visualizes the top `n` contributors using matplotlib.
+    If `use_streamlit` is True, displays the plot in Streamlit.
+    Otherwise, saves the figure locally.
 
+    Parameters:
+    - data: List of contributor dicts.
+    - n: Number of top contributors to show.
+    - use_streamlit: Whether to display in Streamlit.
+    - st_output_area: Optional Streamlit container to show the plot in.
+    """
+
+    # Sort and select top contributors
+    top = sorted(data, key=lambda x: x['contributions'], reverse=True)[:n]
     names = [user['login'] for user in top]
     contribs = [user['contributions'] for user in top]
 
-    plt.figure(figsize=(10, 6))
-    bars = plt.bar(names, contribs, color='skyblue')
+    # Create plot
+    fig, ax = plt.subplots(figsize=(10, 6))
+    bars = ax.bar(names, contribs, color='skyblue')
 
     for bar in bars:
         height = bar.get_height()
-        plt.text(
-            bar.get_x() + bar.get_width() / 2,  # X: center of bar
-            height,                             # Y: top of bar
-            str(height),                        # Label text
-            ha='center', va='bottom'            # Align center/bottom
+        ax.text(
+            bar.get_x() + bar.get_width() / 2,
+            height,
+            str(height),
+            ha='center', va='bottom'
         )
 
-    plt.title("Top 10 Contributors")
-    plt.xlabel("Username")
-    plt.ylabel("Contributions")
+    ax.set_title(f"Top {n} Contributors")
+    ax.set_xlabel("Username")
+    ax.set_ylabel("Contributions")
     plt.xticks(rotation=45)
     plt.tight_layout()
 
-    try:
-        save_fig(name="Top 10 contributors.png")
-        print(f"✅ Saved: 'Top {n} contributors.png'")
-    except Exception as e:
-        print(f"❌Failed to save the highest contributors image. Error:\n{e}")
+    if use_streamlit:
+        if st_output_area:
+            with st_output_area:
+                st.pyplot(fig)
+        else:
+            st.pyplot(fig)
+    else:
+        try:
+            save_fig(name="Top 10 contributors.png")
+            print(f"✅ Saved: 'Top {n} contributors.png'")
+        except Exception as e:
+            print(f"❌ Failed to save the highest contributors image. Error:\n{e}")
+    
+    plt.close(fig)  # Avoid memory issues in Streamlit

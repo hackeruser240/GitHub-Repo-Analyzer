@@ -1,5 +1,87 @@
 [
     {
+        "sha": "8b55eb4e724271206bd5dec7dba0a35aedc74493",
+        "node_id": "C_kwDOAJy2KtoAKDhiNTVlYjRlNzI0MjcxMjA2YmQ1ZGVjN2RiYTBhMzVhZWRjNzQ0OTM",
+        "commit": {
+            "author": {
+                "name": "Pieter De Baets",
+                "email": "pieterdb@meta.com",
+                "date": "2025-05-30T16:17:59Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2025-05-30T16:17:59Z"
+            },
+            "message": "Cleanup props diffing experiments (#33381)\n\n## Summary\n\nWe completed testing on these internally, so can cleanup the separate\nfast and slow paths and remove the `enableShallowPropDiffing` flag which\nwe're not pursuing.\n\n## How did you test this change?\n\n```\nyarn test ReactNativeAttributePayloadFabric\n```",
+            "tree": {
+                "sha": "f3e97f9c47e97517724f8d2215112cac8f0d4f17",
+                "url": "https://api.github.com/repos/facebook/react/git/trees/f3e97f9c47e97517724f8d2215112cac8f0d4f17"
+            },
+            "url": "https://api.github.com/repos/facebook/react/git/commits/8b55eb4e724271206bd5dec7dba0a35aedc74493",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoOdo3CRC1aQ7uu5UhlAAAYPkQAHFv67PELWIWkEOipx5G2Tgk\nz5IVVPbJBI/8x/QYH1qg/FGclBSZLPavZu/+8jXnJ8SbcKvzSpp83HKGBWTBy+os\n85PuL4JOb/Ru6HxL0UsNYtnnL+NmpyrYyaH4YkQTGQmwAO4s6CBPMtDlVzkizSYT\nhunYQOQkbBLNCuAYgzxPNXemQkIMjG1q9np1ZNVy+rHpYXnAQpnXsnFoweFYCX06\nhzSpyW6HqrIfWzg0Q2CVBrslr8OewQg8bUcYqCktlRcRU9zhC5VxOeMli8MdNiH/\n6hKLj6kyKu+PdnbVCCWcF2mvb4fVo3X3KzIK3ZFA5foFyLLnBTyDQk4sLpZtI1wg\nkOmPNazOas1FXSfmUc7gxChKlI8R/4GwT3d7HudnGsXySkSnf/4+Rg3YeTmiHQlH\nH+Pn1n3zwQOC9MEIMJ/vUfzuH59qcYNYr78bMAHGaCtxBcfqeLrFuBsm0iOlpQV5\nMzd+nkRKCDHXeUb6Q3M2IuRGTw0PX9RIbIVskwbngMdJ4FpxOC4Fa/T/U/AvKYMh\n+99sOamJnDFktdOFeAP4r/mxrwSKRZibA0hAhRqaxmpqZrEZWdAVwKhZ0tHg5Gs3\nveYRw2YXkeaR+Cx4LRi9cPpvFcxZPpIK1SYgwPHzJ8DDtWx5WB8XlEO25g2P2rFJ\nfIIPbmmcyffT/FyJFKJO\n=besx\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree f3e97f9c47e97517724f8d2215112cac8f0d4f17\nparent 14094f80cbf52cad4024211080d8491f3334ef61\nauthor Pieter De Baets <pieterdb@meta.com> 1748621879 +0100\ncommitter GitHub <noreply@github.com> 1748621879 +0100\n\nCleanup props diffing experiments (#33381)\n\n## Summary\n\nWe completed testing on these internally, so can cleanup the separate\nfast and slow paths and remove the `enableShallowPropDiffing` flag which\nwe're not pursuing.\n\n## How did you test this change?\n\n```\nyarn test ReactNativeAttributePayloadFabric\n```",
+                "verified_at": "2025-05-30T16:18:02Z"
+            }
+        },
+        "url": "https://api.github.com/repos/facebook/react/commits/8b55eb4e724271206bd5dec7dba0a35aedc74493",
+        "html_url": "https://github.com/facebook/react/commit/8b55eb4e724271206bd5dec7dba0a35aedc74493",
+        "comments_url": "https://api.github.com/repos/facebook/react/commits/8b55eb4e724271206bd5dec7dba0a35aedc74493/comments",
+        "author": {
+            "login": "javache",
+            "id": 5676,
+            "node_id": "MDQ6VXNlcjU2NzY=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/5676?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/javache",
+            "html_url": "https://github.com/javache",
+            "followers_url": "https://api.github.com/users/javache/followers",
+            "following_url": "https://api.github.com/users/javache/following{/other_user}",
+            "gists_url": "https://api.github.com/users/javache/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/javache/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/javache/subscriptions",
+            "organizations_url": "https://api.github.com/users/javache/orgs",
+            "repos_url": "https://api.github.com/users/javache/repos",
+            "events_url": "https://api.github.com/users/javache/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/javache/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "14094f80cbf52cad4024211080d8491f3334ef61",
+                "url": "https://api.github.com/repos/facebook/react/commits/14094f80cbf52cad4024211080d8491f3334ef61",
+                "html_url": "https://github.com/facebook/react/commit/14094f80cbf52cad4024211080d8491f3334ef61"
+            }
+        ]
+    },
+    {
         "sha": "14094f80cbf52cad4024211080d8491f3334ef61",
         "node_id": "C_kwDOAJy2KtoAKDE0MDk0ZjgwY2JmNTJjYWQ0MDI0MjExMDgwZDg0OTFmMzMzNGVmNjE",
         "commit": {
@@ -4014,88 +4096,6 @@
                 "sha": "0cac32d60dd4482b27fe8a54dffbabceb22c6272",
                 "url": "https://api.github.com/repos/facebook/react/commits/0cac32d60dd4482b27fe8a54dffbabceb22c6272",
                 "html_url": "https://github.com/facebook/react/commit/0cac32d60dd4482b27fe8a54dffbabceb22c6272"
-            }
-        ]
-    },
-    {
-        "sha": "0cac32d60dd4482b27fe8a54dffbabceb22c6272",
-        "node_id": "C_kwDOAJy2KtoAKDBjYWMzMmQ2MGRkNDQ4MmIyN2ZlOGE1NGRmZmJhYmNlYjIyYzYyNzI",
-        "commit": {
-            "author": {
-                "name": "Sebastian Markb\u00e5ge",
-                "email": "sebastian@calyptus.eu",
-                "date": "2025-05-13T19:20:59Z"
-            },
-            "committer": {
-                "name": "GitHub",
-                "email": "noreply@github.com",
-                "date": "2025-05-13T19:20:59Z"
-            },
-            "message": "[Fiber] Stash the entangled async action lane on currentEventTransitionLane (#33188)\n\nWhen we're entangled with an async action lane we use that lane instead\nof the currentEventTransitionLane. Conversely, if we start a new async\naction lane we reuse the currentEventTransitionLane.\n\nSo they're basically supposed to be in sync but they're not if you\nresolve the async action and then schedule new stuff in the same event.\nThen you end up with two transitions in the same event with different\nlanes.\n\nBy stashing it like this we fix that but it also gives us an opportunity\nto check just the currentEventTransitionLane to see if this event\nscheduled any regular Transition updates or Async Transitions.",
-            "tree": {
-                "sha": "a8cef58d67b86755432c7f6f1e17b916eab74bed",
-                "url": "https://api.github.com/repos/facebook/react/git/trees/a8cef58d67b86755432c7f6f1e17b916eab74bed"
-            },
-            "url": "https://api.github.com/repos/facebook/react/git/commits/0cac32d60dd4482b27fe8a54dffbabceb22c6272",
-            "comment_count": 0,
-            "verification": {
-                "verified": true,
-                "reason": "valid",
-                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoI5ubCRC1aQ7uu5UhlAAAfhEQAAGmygsjzxgSbFzwfumuRzgi\nN1PDGljev/KXXoAw+25YF8+dDWFmDPlVhNVJVPq18IoDCgwKLp3LfGKiT8qnn99O\n5qlo2Kn58j1iDDQWZdIhNuJP0mpi5eUotQSz2hkpyzVkIDLC7IKV8TcVOwabn8Ld\nB9Gzmqa3I5j+V4/0qOeCrP2emL+wliredRcFRnYZ82GXvAe4F4QIwmjbh6JTHxA2\nFd+XBKJ57n1moSM7K1hWOcZphHPvzMalzXKgSGNVYoWqvakyUEcC02pQv+8pt+z5\nDcrC3H43pzu7FS2f2zFOHPwHIbTPP3nyvO2FI2Fw7pfTyhI0yuTQZnVrCFBveHd7\n0qo5sEZadjqrGPQ7u4ywsmbOYGxAnLxTYsVhGzrA3lqf9WDZgeZRCTya0DTQx85F\nVUBXnnkm5SKBubCw/Z5n6movi+QAqEl0OkDpIznbQoGPeX06KPtGNlqwjPzh0bMM\nzoJ/jc9/KdcvkS1XPm6IqZnxv1fZtW4w1t6wexlbjSd6FF1M5OQ9T8whX9HpGzMH\nw9lt2NuClJT9bIvpbIupydDA2rJ043Zr/IeRqLi92RmH0rskTY/7YXozNL9jwUd2\nFlRxGpe6qPuuoeqKMXVsF6j9NgksuCQz/ddk7QqciuiVo1HRYqi0EgBrcuTvoEWO\no50vd/cP+1dIARDOQsrI\n=Hnm5\n-----END PGP SIGNATURE-----\n",
-                "payload": "tree a8cef58d67b86755432c7f6f1e17b916eab74bed\nparent 676f0879f315130309262ff3532707029f0288bb\nauthor Sebastian Markb\u00e5ge <sebastian@calyptus.eu> 1747164059 -0400\ncommitter GitHub <noreply@github.com> 1747164059 -0400\n\n[Fiber] Stash the entangled async action lane on currentEventTransitionLane (#33188)\n\nWhen we're entangled with an async action lane we use that lane instead\nof the currentEventTransitionLane. Conversely, if we start a new async\naction lane we reuse the currentEventTransitionLane.\n\nSo they're basically supposed to be in sync but they're not if you\nresolve the async action and then schedule new stuff in the same event.\nThen you end up with two transitions in the same event with different\nlanes.\n\nBy stashing it like this we fix that but it also gives us an opportunity\nto check just the currentEventTransitionLane to see if this event\nscheduled any regular Transition updates or Async Transitions.",
-                "verified_at": "2025-05-13T19:21:02Z"
-            }
-        },
-        "url": "https://api.github.com/repos/facebook/react/commits/0cac32d60dd4482b27fe8a54dffbabceb22c6272",
-        "html_url": "https://github.com/facebook/react/commit/0cac32d60dd4482b27fe8a54dffbabceb22c6272",
-        "comments_url": "https://api.github.com/repos/facebook/react/commits/0cac32d60dd4482b27fe8a54dffbabceb22c6272/comments",
-        "author": {
-            "login": "sebmarkbage",
-            "id": 63648,
-            "node_id": "MDQ6VXNlcjYzNjQ4",
-            "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/sebmarkbage",
-            "html_url": "https://github.com/sebmarkbage",
-            "followers_url": "https://api.github.com/users/sebmarkbage/followers",
-            "following_url": "https://api.github.com/users/sebmarkbage/following{/other_user}",
-            "gists_url": "https://api.github.com/users/sebmarkbage/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/sebmarkbage/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/sebmarkbage/subscriptions",
-            "organizations_url": "https://api.github.com/users/sebmarkbage/orgs",
-            "repos_url": "https://api.github.com/users/sebmarkbage/repos",
-            "events_url": "https://api.github.com/users/sebmarkbage/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/sebmarkbage/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "committer": {
-            "login": "web-flow",
-            "id": 19864447,
-            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/web-flow",
-            "html_url": "https://github.com/web-flow",
-            "followers_url": "https://api.github.com/users/web-flow/followers",
-            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-            "organizations_url": "https://api.github.com/users/web-flow/orgs",
-            "repos_url": "https://api.github.com/users/web-flow/repos",
-            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/web-flow/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-        },
-        "parents": [
-            {
-                "sha": "676f0879f315130309262ff3532707029f0288bb",
-                "url": "https://api.github.com/repos/facebook/react/commits/676f0879f315130309262ff3532707029f0288bb",
-                "html_url": "https://github.com/facebook/react/commit/676f0879f315130309262ff3532707029f0288bb"
             }
         ]
     }

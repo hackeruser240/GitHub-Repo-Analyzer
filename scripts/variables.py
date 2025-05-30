@@ -56,4 +56,10 @@ class Variables:
         '''
         self.top_contributors=[]
         self.lowest_contribution=[]
+
+        '''
+        Used in main.py
+        An empty container used to store the response.json
+        '''
+        self.contributors_data=[]
 var=Variables()

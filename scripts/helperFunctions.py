@@ -60,6 +60,8 @@ class Logger:
         self.logs.append(message)  # Always collect
         if self.use_streamlit and self.output_area:
             self.output_area.markdown(message)
+        else:
+            print(message)
     
     def get_logs(self):
         return self.logs

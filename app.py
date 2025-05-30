@@ -6,6 +6,7 @@ from scripts.variables import var
 from main import contributors,commits
 from scripts.helperFunctions import Logger
 from scripts.savetoPDF import save_to_PDF
+from scripts.contributors import top_contributors_VIZ
 
 st.header("📊 GitHub Repo Analyzer",divider="rainbow")
 repo_input = st.text_input("Enter GitHub repo:")
@@ -39,11 +40,17 @@ if analyze_clicked and repo_input:
     commits(var)
     logger("✅ Data collection complete.")
 
+
     st.session_state.analyze_log = logger.get_logs()  # Persist logs
     st.session_state.analyzed = True
 
 elif analyze_clicked and not repo_input:
     st.warning("Please input a repo name")
+
+# === SHOW PLOT AFTER ANALYSIS ===
+if st.session_state.analyzed:
+    with st.container():
+        top_contributors_VIZ(var.contributors_data, use_streamlit=True, st_output_area=None)
 
 # === RENDER ANALYZE LOG (ALWAYS SHOW)
 with log_output_container:
