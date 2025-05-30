@@ -5,8 +5,16 @@ load_dotenv()
 
 class Variables:
     def __init__(self):
-        self.repo=None
-        self.token=os.getenv("GITHUB_TOKEN")
+        
+        try:
+            import streamlit as st
+            self.token=st.secrets("GITHUB_TOKEN")
+        except (ImportError,KeyError):
+            from dotenv import load_dotenv
+            load_dotenv()
+            self.token=os.getenv("GITHUB_TOKEN")
+
+        self.repo=None        
         self.headers = {'Authorization': f'token {self.token}'}
 
         '''
