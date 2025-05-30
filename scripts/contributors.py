@@ -3,7 +3,7 @@ import streamlit as st
 
 from scripts.variables import var
 from scripts.helperFunctions import save_fig
-
+from io import BytesIO
 
 def user_contributions(data):
     print("=========================")
@@ -39,40 +39,73 @@ def lowest_contributors(data,log,n=var.numof_lowest_contributions):
 
     return var.lowest_contribution
 
-def lowest_contributors_VIZ(data, n=var.numof_lowest_contributions):            
-    
-    lowest=[user for user in data if user['contributions']<n]
+def lowest_contributors_VIZ(data, n=var.numof_lowest_contributions, use_streamlit=False, st_output_area=None):
+    """
+    Generates a plot of users with contributions < n.
+    Can be rendered in Streamlit or standalone.
 
-    #print(f"Users with ≤{n} contributions: {len(lowest)}")
-    x,y=[],[]
+    Args:
+        data (list): GitHub user data.
+        n (int): Contribution threshold.
+        use_streamlit (bool): Enable Streamlit output.
+        st_output_area: Optional Streamlit container (e.g., st.container()).
+    """
+    lowest = [user for user in data if user.get('contributions', 0) < n]
+
+    x, y = [], []
     for user in lowest:
-        if user['type'] == 'User':
-            x.append(user['login'])
-            y.append(user['contributions'])
-        
-        elif user['type'] == 'bot' or 'Bot':
-            #print('Bot detected! Ignoring!')
-            pass
+        if user.get('type') == 'User':
+            x.append(user.get('login'))
+            y.append(user.get('contributions'))
+        elif user.get('type') in ['bot', 'Bot']:
+            continue  # Skip bots
 
-    offset=0.5
-    plt.figure(figsize=(10, 6))  # Width x Height in inches
-    for i, (xi, yi) in enumerate(zip(x, y)):
-        plt.text(xi, yi+offset, str(yi), ha='center', va='bottom', fontsize=9)
-    plt.plot(x, y, marker='o', linestyle='-', color='tab:blue')
-    plt.title(f"Least {n} Contributions", fontsize=16)
-    plt.xlabel("Username", fontsize=12)
-    plt.ylabel("# of Contributions", fontsize=12)
-    plt.xticks(fontsize=10)
-    plt.yticks(fontsize=10)
-    plt.grid(True, linestyle='--', alpha=0.6)
-    #plt.legend(loc='best')
+    if not x:
+        msg = f"No users found with less than {n} contributions."
+        if use_streamlit and st_output_area:
+            st_output_area.warning(msg)
+        elif use_streamlit:
+            import streamlit as st
+            st.warning(msg)
+        else:
+            print(msg)
+        return
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.plot(x, y, marker='o', linestyle='-', color='tab:blue')
+
+    for xi, yi in zip(x, y):
+        ax.text(xi, yi + 0.5, str(yi), ha='center', va='bottom', fontsize=9)
+
+    ax.set_title(f"Users with < {n} Contributions", fontsize=16)
+    ax.set_xlabel("Username", fontsize=12)
+    ax.set_ylabel("# of Contributions", fontsize=12)
+    ax.tick_params(axis='x', rotation=45)
+    ax.grid(True, linestyle='--', alpha=0.6)
     plt.tight_layout()
 
-    try: 
-        save_fig(name='Least contributors.png')
-        print("✅ Saved: 'Least contributors.png' ")
-    except:
-        print("❌Failed to save the lowest contributors image")
+    if use_streamlit:
+        '''
+        buf = BytesIO()
+        fig.savefig(buf, format="png")
+        if st_output_area:
+            st_output_area.image(buf.getvalue(), caption="Least Contributors", use_column_width=True)
+        else:
+            st.image(buf.getvalue(), caption="Least Contributors", use_column_width=True)
+        '''
+        import streamlit as st
+        if st_output_area:
+            with st_output_area:
+                st.pyplot(fig)
+        else:
+            st.pyplot(fig)
+    else:
+        try:
+            save_fig(name="Least contributors.png")
+            print("✅ Saved: 'Least contributors.png'")
+        except Exception as e:
+            print(f"❌ Failed to save the image: {e}")
+        plt.show()
 
 def top_contributors(data,log,n=var.numof_top_contributors):
     '''
@@ -85,7 +118,6 @@ def top_contributors(data,log,n=var.numof_top_contributors):
 
     for i, user in enumerate(var.top_contributors[:n], start=1):
         log(f"{i}. {user['login']} - {user['contributions']} contributions")
-
 
 def top_contributors_VIZ(data, n=var.numof_top_contributors, use_streamlit=False, st_output_area=None):
     """
@@ -125,6 +157,7 @@ def top_contributors_VIZ(data, n=var.numof_top_contributors, use_streamlit=False
     plt.tight_layout()
 
     if use_streamlit:
+        import streamlit as st
         if st_output_area:
             with st_output_area:
                 st.pyplot(fig)
