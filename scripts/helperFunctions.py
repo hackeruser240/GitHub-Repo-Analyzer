@@ -55,12 +55,11 @@ class Logger:
         self.use_streamlit = use_streamlit
         self.output_area = output_area
         self.logs = []
-        self.placeholders = []
 
     def __call__(self, message):
+        self.logs.append(message)  # Always collect
         if self.use_streamlit and self.output_area:
-            placeholder = self.output_area.empty()
-            placeholder.markdown(message)
-            #self.placeholders.append(placeholder)
-        else:
-            print(message)
+            self.output_area.markdown(message)
+    
+    def get_logs(self):
+        return self.logs
