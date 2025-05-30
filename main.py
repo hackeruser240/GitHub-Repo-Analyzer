@@ -73,8 +73,8 @@ def contributors(repo,log,inline_display=False,viz=True):
                     print(user['login'])
         
         #Printing data:
-        #with suppress_stdout(enabled=inline_display):
-        top_contributors(data,log)
+        with suppress_stdout(enabled=inline_display):
+            top_contributors(data,log)
         try:           
             if viz:
                 top_contributors_VIZ(data)
