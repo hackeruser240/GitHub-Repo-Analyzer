@@ -1,0 +1,7 @@
+dotenv
+matplotlib.pyplot
+requests
+io
+os
+json
+argparse
