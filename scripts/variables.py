@@ -8,7 +8,7 @@ class Variables:
         
         try:
             import streamlit as st
-            self.token=st.secrets("GITHUB_TOKEN")
+            self.token=st.secrets["GITHUB_TOKEN"]
         except (ImportError,KeyError):
             from dotenv import load_dotenv
             load_dotenv()
