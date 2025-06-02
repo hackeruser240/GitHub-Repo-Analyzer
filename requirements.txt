@@ -1,5 +1,5 @@
 dotenv
-matplotlib.pyplot
+matplotlib
 requests
 io
 os
