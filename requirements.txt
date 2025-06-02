@@ -3,3 +3,4 @@ python-dotenv
 matplotlib
 requests
 contextlib
+tabulate
