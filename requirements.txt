@@ -1,7 +1,4 @@
-dotenv
+streamlit
+python-dotenv
 matplotlib
 requests
-io
-os
-json
-argparse
