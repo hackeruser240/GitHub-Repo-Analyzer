@@ -2,5 +2,4 @@ streamlit
 python-dotenv
 matplotlib
 requests
-contextlib
 tabulate
