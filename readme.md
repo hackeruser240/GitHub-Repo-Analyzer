@@ -5,22 +5,28 @@ This project collects data from any public GitHub repository and gives the healt
 1. History of commits
 2. Most active users
 
-### How it works:
+### <u>How it works</u>:
 
-It collects data from two open-source links like:
+It collects data from two open-source links:
 
 - Contributors: https://api.github.com/repos/facebook/react/contributors
 - Commits: https://api.github.com/repos/facebook/react/commits
 
-consolidates that (JSON) information and presents it in the form of:
+and consolidates that (JSON) information and presents it in the form of:
 
 1. Streamlit deployed app at [link](https://gh-app-repo-analyzer.streamlit.app/). *The link can be down, Please email if you want it to be active*.
 2. Generated PDF
 3. Supported images
 
-### File(s) explanation:
+Additional points:
+1. The PDF and supported will be saved in your local computer when run through argparse.
+2. When run on streamlit, the PDF will be saved only when using the 'Generate PDF' button.
+3. The figures will be displayed on and when run on streamlit.
+
+### <u>File(s) explanation</u>:
 
 1. `main.py`: the file gluing different parts of the program
+Files located in `scripts/`:
 2. `app.py`: contains `streamlit` app logic
 3. `contributors.py`: collects info revolving aroung the contributors
     - top and lowest contributors
@@ -34,7 +40,7 @@ consolidates that (JSON) information and presents it in the form of:
         * commit wordcloud
 5. `varibales.py`: file containing all the global variables and their docs
 
-### How to run:
+### <u>How to run</u>:
 
 1. Fork the repo locally, run it using `streamlit run app.py`. Make sure you have streamlit installed on your system\environment.
 
