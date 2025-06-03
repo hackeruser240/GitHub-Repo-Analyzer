@@ -32,7 +32,17 @@ consolidates that (JSON) information and presents it in the form of:
         * commits per day
         * commits per day per user
         * commit wordcloud
+5. `varibales.py`: file containing all the global variables and their docs
 
+### How to run:
+
+1. Fork the repo locally, run it using `streamlit run app.py`. Make sure you have streamlit installed on your system\environment.
+
+2. You can deploy the app using [Streamlit Community Cloud](https://streamlit.io/cloud).
+
+3. Using argparse.
+    * You have to run `python main.py -h` for help. It takes repo name as an argument.
+    * You can run it two ways: `python main.py --repo facebook/react` or `python main.py --repo https://github.com/facebook/react`. Both will work
 ## Possible Future update(s):
 
 1. Deploy using docker
