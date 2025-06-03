@@ -1,1 +1,39 @@
-a readme file
+# GitHub Repository Analyzer
+
+This project collects data from any public GitHub repository and gives the health status of any open-source project. Basically, it explores the following:
+
+1. History of commits
+2. Most active users
+
+### How it works
+
+It collects data from two open-source links like:
+
+•	Contributors: GET https://api.github.com/repos/facebook/react/contributors
+•	Commits: GET https://api.github.com/repos/facebook/react/commits
+
+consolidates that (JSON) information and presents it in the form of:
+
+1. Streamlit deployed app at (link)[https://gh-app-repo-analyzer.streamlit.app/]. *The link can be down, Please email if you want it to be active*.
+2. Generated PDF
+3. Supported images
+
+### File(s) explanation
+
+1. `main.py`: the file gluing different parts of the program
+2. `app.py`: contains `streamlit` app logic
+3. `contributors.py`: collects info revolving aroung the contributors
+    - top and lowest contributors
+    - their respective bar-plot visualizations
+4. `commits.py`: collects info regarding the repo's commit data.
+    - prints author by greatest commit & timeline →
+    - allows in-line (CMD) visualization using python's `tabulate` module
+    - produces visualizations:
+        * commits per day
+        * commits per day per user
+        * commit wordcloud
+
+## Possible Future update(s):
+
+1. Deploy using docker
+2. Deploy on a free-hosted cloud service
