@@ -5,20 +5,20 @@ This project collects data from any public GitHub repository and gives the healt
 1. History of commits
 2. Most active users
 
-### How it works
+### How it works:
 
 It collects data from two open-source links like:
 
-•	Contributors: GET https://api.github.com/repos/facebook/react/contributors
-•	Commits: GET https://api.github.com/repos/facebook/react/commits
+- Contributors: https://api.github.com/repos/facebook/react/contributors
+- Commits: https://api.github.com/repos/facebook/react/commits
 
 consolidates that (JSON) information and presents it in the form of:
 
-1. Streamlit deployed app at (link)[https://gh-app-repo-analyzer.streamlit.app/]. *The link can be down, Please email if you want it to be active*.
+1. Streamlit deployed app at [link](https://gh-app-repo-analyzer.streamlit.app/). *The link can be down, Please email if you want it to be active*.
 2. Generated PDF
 3. Supported images
 
-### File(s) explanation
+### File(s) explanation:
 
 1. `main.py`: the file gluing different parts of the program
 2. `app.py`: contains `streamlit` app logic
