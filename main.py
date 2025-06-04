@@ -19,10 +19,10 @@ from scripts.helperFunctions import (
     suppress_stdout,
     Logger
 )
-
-
-#headers = {'Authorization': f'token {var.token}'}
-
+from scripts.issues import (
+    get_total_issues,
+    get_new_issues_by_period
+)
 
 def contributors(repo,log,inline_display=False,viz=True):
 
@@ -125,6 +125,42 @@ def commits(var):
         print(f"❌ Failed to fetch data. Status Code: {response.status_code}")
         print("Reason:", response.json().get("message", "Unknown error"))
 
+def issues(var):
+    print("==============================================")
+    print(f" Finding latest issues of {var.repo} repo ")
+    print("==============================================")
+
+    commits= f"https://api.github.com/repos/{var.repo}/issues"
+    issue_response = requests.get(commits, headers=var.headers)
+
+    try:
+        os.makedirs(make_repo_folder(),exist_ok=True)
+        filepath=os.path.join(make_repo_folder(),'issues.json')
+        
+        var.save_dir=filepath
+        
+        with open(filepath,'w') as file:
+            json.dump(issue_response.json(), file, indent=4 )
+            print("✅ Saved issues.json")
+    except Exception as e:
+        print(f'❌ Failed to save issues.json:\n{e}')
+
+    try:
+        issue_count=get_total_issues(var)
+        print("")
+        print(f"Open issues: {issue_count['open']}")
+        print(f"Closed issues: {issue_count['closed']}")
+    except Exception as e:
+        print(f"Error in issues():\n{e}")
+
+    try:
+        weekly_counts=get_new_issues_by_period(var)
+        weekly_counts=dict(sorted(weekly_counts.items()))
+        for key,value in weekly_counts.items():
+            print(f"{key}:{value} issues")
+    except Exception as e:
+        print(f"Exception at get_new_issues_by_period():\n{e}")
+
 if __name__=="__main__":
     log=Logger(use_streamlit=False)
     parser=ag.ArgumentParser()
@@ -132,8 +168,10 @@ if __name__=="__main__":
     args=parser.parse_args()
     var.repo=args.repo
 
-    contributors(args.repo,log=log,inline_display=True)
-    commits(var)
+    #contributors(args.repo,log=log,inline_display=True)
+    #commits(var)
+    issues(var)
+    
     print("=====================================")
-    save_to_PDF(var,log)
+    #save_to_PDF(var,log)
     print("=====================================")

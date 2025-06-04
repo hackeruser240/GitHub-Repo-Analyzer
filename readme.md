@@ -26,6 +26,7 @@ Additional points:
 ### <u>File(s) explanation</u>:
 
 1. `main.py`: the file gluing different parts of the program
+
 Files located in `scripts/`:
 2. `app.py`: contains `streamlit` app logic
 3. `contributors.py`: collects info revolving aroung the contributors
@@ -53,3 +54,4 @@ Files located in `scripts/`:
 
 1. Deploy using docker
 2. Deploy on a free-hosted cloud service
+3. Adjusting more API endpoints
