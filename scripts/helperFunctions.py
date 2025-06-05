@@ -39,11 +39,15 @@ commits.py
 contributors.py
 '''
 def save_fig(name):
-    if not name or isinstance(name,str):
-        folder = os.path.join(make_repo_folder(), var.path)
-        os.makedirs(folder, exist_ok=True)  # ✅ Creates just the folders
-        filepath = os.path.join(folder, name)
-        plt.savefig(filepath, dpi=300)
+    try:
+        if not name or isinstance(name,str):
+            folder = os.path.join(make_repo_folder(), var.path)
+            os.makedirs(folder, exist_ok=True)  # ✅ Creates just the folders
+            filepath = os.path.join(folder, name)
+            plt.savefig(filepath, dpi=300)
+            print(f"✅ Saved {name}!")
+    except Exception as e:
+        print(f"❌ Failed to save {name}.")
 
 '''
 used in:

@@ -22,7 +22,9 @@ from scripts.helperFunctions import (
 )
 from scripts.issues import (
     get_total_issues,
-    get_new_issues_by_period
+    get_new_issues_by_period,
+    print_weekly_issue_summary,
+    plot
 )
 
 def contributors(repo,log,inline_display=False,viz=True):
@@ -152,6 +154,7 @@ def issues(var):
         var.open_issues=issue_count['open']
         var.closed_issues=issue_count['closed']
 
+        print("***********************************")
         print(f"Open issues: {issue_count['open']}")
         print(f"Closed issues: {issue_count['closed']}")
     except Exception as e:
@@ -159,9 +162,8 @@ def issues(var):
 
     try:
         weekly_counts=get_new_issues_by_period(var)
-        weekly_counts=dict(sorted(weekly_counts.items()))
-        for key,value in weekly_counts.items():
-            print(f"{key}:{value} issues")
+        print_weekly_issue_summary(weekly_counts)
+        plot(weekly_counts)    
     except Exception as e:
         print(f"Exception at get_new_issues_by_period():\n{e}")
 
