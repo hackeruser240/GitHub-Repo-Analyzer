@@ -3,6 +3,7 @@ import os
 import json
 import matplotlib.pyplot as plt
 import argparse as ag
+import time
 
 from scripts.variables import var
 from scripts.contributors import (
@@ -147,7 +148,10 @@ def issues(var):
 
     try:
         issue_count=get_total_issues(var)
-        print("")
+        
+        var.open_issues=issue_count['open']
+        var.closed_issues=issue_count['closed']
+
         print(f"Open issues: {issue_count['open']}")
         print(f"Closed issues: {issue_count['closed']}")
     except Exception as e:
@@ -168,10 +172,23 @@ if __name__=="__main__":
     args=parser.parse_args()
     var.repo=args.repo
 
-    #contributors(args.repo,log=log,inline_display=True)
-    #commits(var)
-    issues(var)
+    start=time.time()
     
-    print("=====================================")
-    #save_to_PDF(var,log)
-    print("=====================================")
+    try:
+        #contributors(args.repo,log=log,inline_display=True)
+        #commits(var)
+        issues(var)
+    except Exception as e:
+        print(f"Some error!")
+    
+    try:
+        print("=====================================")
+        save_to_PDF(var,log)
+        print("=====================================")
+    except Exception as e:
+        print("=====================================")
+        print(f"Error in creating PDF:\n{e}")
+        print("=====================================")
+    
+    end=time.time()
+    print(f"Total execution time: {(end-start):.2f} seconds")

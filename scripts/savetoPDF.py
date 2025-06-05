@@ -126,16 +126,15 @@ def lowest_contributions(var):
         # Add some vertical space before this section
         var.y -= 0.3 * inch
 
-        var.c.setFont("Helvetica-Bold", 12)
+        var.c.setFont("Helvetica-Bold", var.f2_font)
         var.c.drawString(1 * inch, var.y, f"List of contributors with ≤{var.numof_lowest_contributions} contributions:")
 
         # Move cursor down
         var.y -= 0.2 * inch
-        var.c.setFont("Helvetica", 10)
+        var.c.setFont("Helvetica", var.f3_font)
 
         n=var.numof_top_contributors
 
-        # Print first 6 authors from var.raw_authors
         for i,user in enumerate(var.lowest_contribution,start=1):
             line = f"{i}. {user['login']} - {user['contributions']}"
             var.c.drawString(1 * inch, var.y, line)
@@ -145,8 +144,34 @@ def lowest_contributions(var):
             if var.y < 1 * inch:
                 var.c.showPage()
                 var.y = var.height - 1 * inch
-                var.c.setFont("Helvetica", 10)
+                var.c.setFont("Helvetica", var.f3_font)
 
+def total_issues(var):
+    if var.open_issues==None and var.closed_issues==None:
+        pass
+    else:
+        # Add some vertical space before this section
+        var.y -= 0.3 * inch
+
+        var.c.setFont("Helvetica-Bold", 12)
+        var.c.drawString(1 * inch, var.y, f"# of Open & Closed Issues")
+
+        # Move cursor down
+        var.y -= 0.2 * inch
+        var.c.setFont("Helvetica", 10)
+
+
+        var.c.drawString(1 * inch, var.y, f"Open issues: {var.open_issues}")
+        var.y -= 0.2 * inch
+        
+        var.c.drawString(1 * inch, var.y, f"Closed issues: {var.closed_issues}")
+        var.y -= 0.2 * inch
+
+        # Handle page overflow
+        if var.y < 1 * inch:
+            var.c.showPage()
+            var.y = var.height - 1 * inch
+            var.c.setFont("Helvetica", 10)
 #===============================================================================================
 #===========================================main.py()===========================================
 #===============================================================================================
@@ -162,13 +187,18 @@ def save_to_PDF(var,log):
     var.f2_font=12
     var.f3_font=10
 
-    
-    title(var)
-    commit_titles(var)
-    commit_authorsNcounts(var)
-    commit_raw_authors(var)
-    top_contributors(var)
-    lowest_contributions(var)
+    try:
+        title(var)
+        '''
+        commit_titles(var)
+        commit_authorsNcounts(var)
+        commit_raw_authors(var)
+        top_contributors(var)
+        lowest_contributions(var)
+        '''
+        total_issues(var)
+    except Exception as e:
+        print(f"Error in save_to_PDF():\n{e}")
 
     try:
         var.c.save()

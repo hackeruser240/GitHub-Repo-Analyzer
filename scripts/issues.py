@@ -2,14 +2,20 @@ import requests
 
 from datetime import datetime, timedelta
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 
 def get_total_issues(var):
+    def fetch_issues(state):
+        url = f"https://api.github.com/search/issues?q=repo:{var.repo}+is:issue+is:{state}"
+        response = requests.get(url, headers=var.headers)
+        return response.json()['total_count']
 
-    open_issues = requests.get(f"https://api.github.com/search/issues?q=repo:{var.repo}+is:issue+is:open", headers=var.headers).json()['total_count']
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        future_open = executor.submit(fetch_issues, "open")
+        future_closed = executor.submit(fetch_issues, "closed")
 
-
-    closed_issues = requests.get(f"https://api.github.com/search/issues?q=repo:{var.repo}+is:issue+is:closed", headers=var.headers
-    ).json()['total_count']
+        open_issues = future_open.result()
+        closed_issues = future_closed.result()
 
     return {"open": open_issues, "closed": closed_issues}
 

@@ -72,4 +72,10 @@ class Variables:
         An empty container used to store the response.json
         '''
         self.contributors_data=[]
+
+        '''
+        used in main.py to store open and closed issues respectively
+        '''
+        self.open_issues=None
+        self.closed_issues=None
 var=Variables()
