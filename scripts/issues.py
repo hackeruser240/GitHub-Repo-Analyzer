@@ -64,7 +64,7 @@ def print_weekly_issue_summary(weekly_counts, year=2025):
         # Print in desired format
         print(f"Week {week_num} ({date_range}): {count} issue{'s' if count != 1 else ''}")
 
-def plot(weekly_counts):
+def plot_issues(weekly_counts):
     weeks = sorted(weekly_counts.keys())
     issues = [weekly_counts[week] for week in weeks]
 

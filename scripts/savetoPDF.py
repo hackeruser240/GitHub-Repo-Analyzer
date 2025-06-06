@@ -189,13 +189,11 @@ def save_to_PDF(var,log):
 
     try:
         title(var)
-        '''
-        commit_titles(var)
-        commit_authorsNcounts(var)
-        commit_raw_authors(var)
         top_contributors(var)
         lowest_contributions(var)
-        '''
+        commit_titles(var)
+        commit_authorsNcounts(var)
+        commit_raw_authors(var)        
         total_issues(var)
     except Exception as e:
         print(f"Error in save_to_PDF():\n{e}")

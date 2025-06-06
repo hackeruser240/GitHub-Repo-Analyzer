@@ -24,7 +24,7 @@ from scripts.issues import (
     get_total_issues,
     get_new_issues_by_period,
     print_weekly_issue_summary,
-    plot
+    plot_issues
 )
 
 def contributors(repo,log,inline_display=False,viz=True):
@@ -99,7 +99,10 @@ def contributors(repo,log,inline_display=False,viz=True):
 
 def commits(var):
     
-    print(f"Finding latest commits of {var.repo} repo")
+    print("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
+    print(f"Processing Commits of {var.repo} repo")
+    print("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
+
 
     commits= f'https://api.github.com/repos/{var.repo}/commits?per_page=50'
     response = requests.get(commits, headers=var.headers)
@@ -128,10 +131,10 @@ def commits(var):
         print(f"❌ Failed to fetch data. Status Code: {response.status_code}")
         print("Reason:", response.json().get("message", "Unknown error"))
 
-def issues(var):
-    print("==============================================")
+def issues(var,inline_display=False):
+    print("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
     print(f" Finding latest issues of {var.repo} repo ")
-    print("==============================================")
+    print("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
 
     commits= f"https://api.github.com/repos/{var.repo}/issues"
     issue_response = requests.get(commits, headers=var.headers)
@@ -162,8 +165,9 @@ def issues(var):
 
     try:
         weekly_counts=get_new_issues_by_period(var)
-        print_weekly_issue_summary(weekly_counts)
-        plot(weekly_counts)    
+        if inline_display:
+            print_weekly_issue_summary(weekly_counts)
+        plot_issues(weekly_counts)    
     except Exception as e:
         print(f"Exception at get_new_issues_by_period():\n{e}")
 
@@ -177,9 +181,12 @@ if __name__=="__main__":
     start=time.time()
     
     try:
-        #contributors(args.repo,log=log,inline_display=True)
-        #commits(var)
-        issues(var)
+        contributors(args.repo,log=log,inline_display=False)
+        commits(var)
+        issues(var,inline_display=False)
+    
+    except requests.ConnectionError:
+        print("❌ Network connection error")
     except Exception as e:
         print(f"Some error!")
     
@@ -193,4 +200,4 @@ if __name__=="__main__":
         print("=====================================")
     
     end=time.time()
-    print(f"Total execution time: {(end-start):.2f} seconds")
+    print(f"Total execution time: {(end - start):.2f} seconds ( {(end - start)/60:.2f} minutes )")

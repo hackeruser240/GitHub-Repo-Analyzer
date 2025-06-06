@@ -102,10 +102,8 @@ def lowest_contributors_VIZ(data, n=var.numof_lowest_contributions, use_streamli
     else:
         try:
             save_fig(name="Least contributors.png")
-            print("✅ Saved: 'Least contributors.png'")
         except Exception as e:
             print(f"❌ Failed to save the image: {e}")
-        plt.show()
 
 def top_contributors(data,log,n=var.numof_top_contributors):
     '''
@@ -166,7 +164,6 @@ def top_contributors_VIZ(data, n=var.numof_top_contributors, use_streamlit=False
     else:
         try:
             save_fig(name="Top 10 contributors.png")
-            print(f"✅ Saved: 'Top {n} contributors.png'")
         except Exception as e:
             print(f"❌ Failed to save the highest contributors image. Error:\n{e}")
     

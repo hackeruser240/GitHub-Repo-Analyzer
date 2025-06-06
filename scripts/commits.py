@@ -80,7 +80,6 @@ def commit_author_visualization():
     
     try: 
         save_fig(name="Authors by Commit Timeline.png")
-        print("✅ Saved: Authors by Commit Timeline.png")
     except:
         print("❌Failed to save the authors by timeline image")
 
@@ -120,7 +119,6 @@ def commits_per_day(commits):
     #plt.show()
     try: 
         save_fig(name="Commits per Day.png")
-        print(f"✅ Saved: Commits Per Day.png ")
     except:
         print("❌Failed to save the Commits Per Day image")
 
@@ -155,7 +153,6 @@ def commits_perday_peruser(commits):
 
     try:
         save_fig(name="Commits per Day per User.png")
-        print(f"✅ Saved: Commits per Day per User.png")
     except Exception as o:
         print(f"Error in commits.py -> commit_perday_peruser()! \n{o}")
 
@@ -196,7 +193,6 @@ def commit_msg_wordcloud(commits):
 
     try:
         save_fig(name="Wordcloud.png")
-        print(f"✅ Saved: Wordcloud.png ")
     except Exception as o:
         print(f"Error in commits.py -> commit_msg_wordcloud() \n{o}")
 
@@ -207,10 +203,6 @@ def commit_msg_wordcloud(commits):
 
 def processing_commits(filename,author_inline=True,author_plot=True,title_inline=False):
     
-    print("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
-    print("Processing the Commits file")
-    print("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
-
     try:
         commits=loading_json_file(filename)
     except Exception as d:
@@ -282,6 +274,11 @@ if __name__=='__main__':
     else:
         var.repo='facebook/react'
         #pass
+
+    print("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
+    print("Processing the Commits file")
+    print("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
+
 
     per_page=100
     commits= f'https://api.github.com/repos/{var.repo}/commits?per_page={per_page}'
