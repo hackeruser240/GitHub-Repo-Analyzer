@@ -188,7 +188,7 @@ if __name__=="__main__":
     except requests.ConnectionError:
         print("❌ Network connection error")
     except Exception as e:
-        print(f"Some error!")
+        print(f"Some other error!")
     
     try:
         print("=====================================")
