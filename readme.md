@@ -28,6 +28,7 @@ Additional points:
 1. `main.py`: the file gluing different parts of the program
 
 Files located in `scripts/`:
+
 2. `app.py`: contains `streamlit` app logic
 3. `contributors.py`: collects info revolving aroung the contributors
     - top and lowest contributors
