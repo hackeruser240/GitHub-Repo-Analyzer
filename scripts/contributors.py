@@ -108,6 +108,11 @@ def lowest_contributors_VIZ(data, n=var.numof_lowest_contributions, use_streamli
 def top_contributors(data,log,n=var.numof_top_contributors):
     '''
     Using the response, printing the most contributors, 5 by default
+
+    Parameters:
+    - data: List of contributors data
+    - log: toggles the output between the streamlit app and console
+    - n: number of the top contributors to operate. Can be changed in "variables.py
     '''
     log("=================================================")
     log(f"Finding top {n} contributors in '{var.repo}'")

@@ -49,7 +49,8 @@ class Variables:
         self.commit_titles=[]
 
         '''
-        
+        used in:
+        initializes the respective variables
         '''
         self.path=r'images'
         self.save_dir=''
