@@ -94,8 +94,8 @@ def contributors(repo,log,inline_display=False,viz=True):
             print(f"Error in main.py -> contributors() -> Finding lowest contributors\n{e}")
 
     else:
-        print(f"❌ Failed to fetch data. Status Code: {response.status_code}")
-        print("Reason:", response.json().get("message", "Unknown error"))
+        log(f"❌ Failed to fetch data. Status Code: {response.status_code}")
+        log("Reason:", response.json().get("message", "Unknown error"))
 
 def commits(var):
     
