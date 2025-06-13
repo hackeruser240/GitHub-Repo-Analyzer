@@ -36,9 +36,12 @@ if analyze_clicked and repo_input:
     var.repo = repo_input
     logger = Logger(use_streamlit=True, output_area=log_output_container)
 
-    contributors(repo_input, log=logger, inline_display=False)
-    commits(var)
-    logger("✅ Data collection complete.")
+    try:
+        contributors(repo_input, log=logger, inline_display=False)
+        commits(var)
+        logger("✅ Data collection complete.")
+    except Exception as e:
+        print(f"Error @ Point 1:\n{e}")
 
 
     st.session_state.analyze_log = logger.get_logs()  # Persist logs
