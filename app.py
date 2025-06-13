@@ -39,7 +39,7 @@ if analyze_clicked and repo_input:
     try:
         contributors(repo_input, log=logger, inline_display=False)
         commits(var)
-        logger("✅ Data collection complete.")
+        logger("✅ Data collection complete.!")
     except Exception as e:
         print(f"Error @ Point 1:\n{e}")
 
