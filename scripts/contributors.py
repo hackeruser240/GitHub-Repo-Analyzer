@@ -141,7 +141,7 @@ def top_contributors_VIZ(data, n=var.numof_top_contributors, use_streamlit=False
     contribs = [user['contributions'] for user in top]
 
     # Adding block to display warning message
-    if not top:
+    if top:
         msg=f"Cannot display figure with top contributors"
         if use_streamlit and st_output_area:
             st_output_area.warning(msg)
