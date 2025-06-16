@@ -30,7 +30,7 @@ from scripts.issues import (
 def contributors(repo,log,inline_display=False,viz=True):
 
     if not repo.startswith('https://api.github.com/repos/'):
-        log("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
+        print("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
         print(f"Finding the contributors of {repo} repo")
         print("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=")
         contributors = f'https://api.github.com/repos/{repo}/contributors?per_page=50'

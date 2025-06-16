@@ -140,6 +140,18 @@ def top_contributors_VIZ(data, n=var.numof_top_contributors, use_streamlit=False
     names = [user['login'] for user in top]
     contribs = [user['contributions'] for user in top]
 
+    # Adding block to display warning message
+    if not top:
+        msg=f"Cannot display figure with top contributors"
+        if use_streamlit and st_output_area:
+            st_output_area.warning(msg)
+        elif use_streamlit:
+            import streamlit as st
+            st.warning(msg)
+        else:
+            print(msg)
+        return
+    
     # Create plot
     fig, ax = plt.subplots(figsize=(10, 6))
     bars = ax.bar(names, contribs, color='skyblue')
