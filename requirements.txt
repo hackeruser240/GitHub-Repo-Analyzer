@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+# REQUIRED FOR THE STREAMLIT APPLICATION
+=======
+>>>>>>> 518e108a9d562caf7b7e82a8356aeba6a0ce5914
+streamlit
+python-dotenv
+matplotlib
+requests
+tabulate
+wordcloud
+reportlab
