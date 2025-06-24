@@ -52,6 +52,8 @@ Files located in `scripts/`:
     * You have to run `python main.py -h` for help. It takes repo name as an argument.
     * You can run it two ways: `python main.py --repo facebook/react` or `python main.py --repo https://github.com/facebook/react`. Both will work
 
+4. The app is deployed [here](https://huggingface.co/spaces/afaqAhmadK/GithubRepo-Analyzer). Please have a look!
+
 ### Sample Run:
 You may please look at the 'facebook/react' directory to have a look at the output when the script is run through command line.
 
